@@ -160,8 +160,8 @@ search-for-team
 チームプロフィール
 ――――――――――――――――――――*/
 //画像リサイズファンクション
-	$(window).on('load',this,function(){
-				$(".js-imgresize").each(function(){
+	$(".js-imgresize").each(function(){
+		$(this).on('load',this,function(){
 			var myHeight 	= $(this).height();
 			var myWidth  	= $(this).width();
 			var sizeW　　	= $(this).parent('div').width();
@@ -184,6 +184,7 @@ search-for-team
 			}
 		});
 	});
+	
 
 
 
