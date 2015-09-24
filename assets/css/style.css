@@ -2813,13 +2813,6 @@ subcol
 	left: 50px;
 	border-radius: 0px 5px 5px 0px;
 }
-.rankings li img{
-	width: 58px;
-	height: 58px;
-	position: absolute;
-	top: -4px;
-	left: -54px;
-}
 .rankings li div{
 	width: 50px;
 	height: 50px;
@@ -2845,6 +2838,13 @@ subcol
 	-webkit-transition: background-color .2s;
 	-o-transition: background-color .2s;
 	transition: background-color .2s;
+}
+.rankings li .medal{
+	width: 58px;
+	height: 58px;
+	position: absolute;
+	top: -4px;
+	left: -54px;
 }
 .adsense{
 	width: 300px;
