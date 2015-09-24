@@ -2,11 +2,6 @@
 
 /* temporary */
 
-#access-ranking-team-page{
-	margin-bottom: 20px;
-}
-
-
 html{
 	height: 100%;
 	text-rendering: optimizeLegibility;
@@ -63,7 +58,13 @@ a:hover{
 }
 h2,h3,h4{
 	font-family: "Shin Go DeBold";
+}
+.tk-futura-pt-condensed{
 	letter-spacing: .08em;
+}
+
+.mr0{
+	margin-right: 0 !important;
 }
 
 
@@ -526,55 +527,7 @@ search-for-column
 	margin-bottom: 20px;
 }
 
-/*---------------------
-pick-up
-----------------------*/
-#search-for-column .pick-up li{
-	width: 210px;
-	height: 210px;
-	float: left;
-	margin-right: 5px;
-	border-radius: 5px;
-	overflow: hidden;
-	-webkit-box-shadow: 2px 2px 0px #ccc;
-	box-shadow: 2px 2px 0px #ccc;	
-}
 
-#search-for-column .pick-up li:hover div{
-	top: 0;
-}
-#search-for-column .pick-up li div h4{
-	height: 55px;
-	font-size: 16px;
-	font-family: "Shin Go regular";
-	margin-bottom: 5px;
-}
-#search-for-column .pick-up li div p{
-	font-family: "Shin Go ExLight";	
-	letter-spacing: .05em;
-	font-size: 14px;
-	line-height: 24px;
-	border-top: 1px dotted white;
-	border-bottom: 1px dotted white;
-	padding: 5px 0px;
-
-}
-#search-for-column .pick-up li div a{
-	color: white;
-	font-size: 12px;
-	text-align: right;
-	margin-top: 5px;
-	float: right;
-	position: relative;
-	z-index: 3;
-}
-#search-for-column .pick-up li > a{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
 /*---------------------
 interview
 ----------------------*/
@@ -801,13 +754,12 @@ movie-containers
 
 
 /*---------------------
-news
+green-two
 ----------------------*/
-
-.green-news ul{
+.green-two ul{
 	width: 640px;
 }
-.green-news ul li{
+.green-two ul li{
 	width: 315px;
 	height: 132px;
 	overflow: hidden;
@@ -830,12 +782,12 @@ news
 	-o-transition: background-position .5s,background-color .5s;
 	transition: background-position .5s,background-color .5s;
 }
-.green-news ul li:hover{
+.green-two ul li:hover{
 	background-position: 0 0;
 	background-color: #ffff70;
 }
 
-.green-news li .news-image{
+.green-two li .green-two-image{
 	width: 132px;
 	height: 132px;
 	margin-right: 5px;
@@ -844,11 +796,11 @@ news
 	top: -5px;
 	left: -5px;
 }
-.green-news li .news-text{
+.green-two li .green-two-text{
 	width: 163px;
 	float: left;
 }
-.green-news li .news-text h4{
+.green-two li .green-two-text h4{
 	width: 163px;
 	color: #009145;
 	font-size: 16px;
@@ -856,7 +808,7 @@ news
 	margin-bottom: 5px;
 	background-color: #fff;
 }
-.green-news li .news-text p{
+.green-two li .green-two-text p{
 	width: 163px;
 	font-size: 12px;
 	line-height: 20px;
@@ -864,20 +816,20 @@ news
 	border-bottom: 1px dotted #009145;
 	background-color: #fff;
 }
-.green-news li .news-text h4,
-.green-news li .news-text p{
+.green-two li .green-two-text h4,
+.green-two li .green-two-text p{
 	position: relative;
 	top: 10px;
 	-webkit-transition: background-color .5s, top .5s;
 	-o-transition: background-color .5s, top .5s;
 	transition: background-color .5s, top .5s;
 }
-.green-news li:hover .news-text h4,
-.green-news li:hover .news-text p{
+.green-two li:hover .green-two-text h4,
+.green-two li:hover .green-two-text p{
 	top: 0;
 	background-color: #fffF70;
 }
-.green-news li .news-text a.news-link{
+.green-two li .green-two-text a.green-two-link{
 	font-size: 12px;
 	position: absolute;
 	bottom: -50px;
@@ -888,10 +840,10 @@ news
 	transition: bottom .5s;
 	background-color: #ffff70;
 }
-.green-news li:hover .news-text a.news-link{
+.green-two li:hover .green-two-text a.green-two-link{
 	bottom: 5px;
 }
-.green-news li > a{
+.green-two li > a{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -899,7 +851,9 @@ news
 	height: 100%;
 }
 
-/*-----------green-three-----------*/
+/*---------------------
+green-three
+----------------------*/
 .green-three li{
 	width: 210px;
 	height: 210px;
@@ -911,12 +865,12 @@ news
 	box-shadow: 2px 2px 0px #ccc;	
 	margin-bottom: 10px;
 }
-.green-three li .faq-image{
+.green-three li .green-three-image{
 	width: 210px;
 	height: 210px;
 	overflow: hidden;
 }
-.green-three li .faq-text{
+.green-three li .green-three-text{
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -933,17 +887,16 @@ news
 	-o-transition: top .5s;
 	transition: top .5s;
 }
-.green-three li:hover .faq-text{
+.green-three li:hover .green-three-text{
 	top: 0;
 }
-.green-three li .faq-text h4{
+.green-three li .green-three-text h4{
 	height: 55px;
 	font-size: 16px;
 	font-family: "Shin Go regular";
 	margin-bottom: 5px;
 }
-.green-three li .faq-text p{
-	letter-spacing: .05em;
+.green-three li .green-three-text p{
 	font-size: 14px;
 	line-height: 24px;
 	border-top: 1px dotted white;
@@ -951,7 +904,7 @@ news
 	padding: 5px 0px;
 	color: white;
 }
-.green-three li .faq-text a{
+.green-three li .green-three-text a{
 	color: white;
 	font-size: 12px;
 	text-align: right;
@@ -968,73 +921,6 @@ news
 	height: 100%;
 }
 
-/*-----------orange-three-----------*/
-.orange-three li{
-	width: 210px;
-	height: 210px;
-	float: left;
-	margin-right: 5px;
-	border-radius: 5px;
-	overflow: hidden;
-	-webkit-box-shadow: 2px 2px 0px #ccc;
-	box-shadow: 2px 2px 0px #ccc;	
-	margin-bottom: 10px;
-}
-.orange-three li img{
-	width: 100%;
-	height: 100%;
-}
-.orange-three li div{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	padding: 10px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	color: white;
-	top: 145px;
-	left: 0;
-	background-image: url(../images/bg1.gif);
-	background-color: rgba(232,96,0,.7);
-	-webkit-transition: top .5s;
-	-o-transition: top .5s;
-	transition: top .5s;
-}
-.orange-three li:hover div{
-	top: 0;
-}
-.orange-three li div h4{
-	height: 55px;
-	font-size: 16px;
-	font-family: "Shin Go regular";
-	margin-bottom: 5px;
-}
-.orange-three li div p{
-	letter-spacing: .05em;
-	font-size: 14px;
-	line-height: 24px;
-	border-top: 1px dotted white;
-	border-bottom: 1px dotted white;
-	padding: 5px 0px;
-	color: white;
-}
-.orange-three li div a{
-	color: white;
-	font-size: 12px;
-	text-align: right;
-	margin-top: 5px;
-	float: right;
-	position: relative;
-	z-index: 3;
-}
-.orange-three li > a{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
 
 /*-----------greenmodule-----------*/
 .greenmodule h3{
@@ -2876,6 +2762,7 @@ subcol
 	border-radius: 10px;
 	position: relative;
 	overflow: hidden;
+	margin-bottom: 20px;
 }
 .rankings h3{
 	font-size: 24px;
@@ -2963,7 +2850,7 @@ subcol
 	width: 300px;
 	height: 250px;
 	background-color: #eee;
-	margin:20px 0px;
+	margin-bottom:20px;
 	padding: 0;
 }
 

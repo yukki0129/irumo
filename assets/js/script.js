@@ -4,11 +4,8 @@ $(function(){
 
 //css初期設定系
 	$('#search-for-column li:last-of-type').css({marginRight:'0', marginBottom:'0'});
-	$('#search-for-column .pick-up li:nth-of-type(3n)').css('margin-right','0');
 	$('.team-page-recomend li:nth-of-type(3n)').css('margin-right','0');
 	$('#search-for-column .faq li:nth-of-type(3n)').css('margin-right','0');	
-	$('#search-for-column .generation ul li:nth-of-type(2n)').css('margin-right','0');
-	$('.green-news ul li:nth-of-type(2n)').css('margin-right','0');
 	$('.team-page-detail > div > ul > li:nth-of-type(2n)').css('margin-right','0');	
 	$('.team-page-detail div > ul > div ul li:last-of-type').css('margin-right','0');		
 	$('#search-for-team .category:nth-of-type(2n)').css('margin-right','0');
@@ -63,12 +60,12 @@ search-for-team
 		});
 	}
 	textCut('.js-textcut-85',85,'…');
+	textCut('.js-textcut-50',50,'…');
+	textCut('.js-textcut-25',25,'…');
 	textCut('.js-textcut-20',20,'…');
-	textCut('.green-three li div h4, .orange-three li div h4',18,'…');
-	textCut('.green-three li div p, .orange-three li div p',45,'…');
+	textCut('.js-textcut-18',18,'…');
+	textCut('.js-textcut-10',10,'…');
 	textCut('#search-for-column .hotmovie .movie-description p',100,'…');
-	textCut('.green-news li div h4',16,'…');
-	textCut('.green-news li div p',24,'…');
 	textCut('.green-news.team-page-columns li div h4',8,'…');
 	textCut('.rankings li a',20,'…');
 	textCut('#search-for-column .interview div div h4',25,'…');
