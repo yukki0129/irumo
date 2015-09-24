@@ -80,6 +80,7 @@ js
 ----------------------*/
 .js-imgresize{
 	display: none;
+	position: relative;
 }
 
 
@@ -2814,7 +2815,7 @@ subcol
 	border-radius: 0px 5px 5px 0px;
 }
 .rankings li div{
-	width: 50px;
+	width: 51px;
 	height: 50px;
 	margin-right: 10px;
 	display: inline-block;
