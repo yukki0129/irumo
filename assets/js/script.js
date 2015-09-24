@@ -48,30 +48,27 @@ search-for-team
 	});
 
 //記事タイトル、本文の文字省略
-	function textCut(target,thres,word){//（ターゲットセレクタ，省略開始文字数，後に付ける文字）
+	function textCut(target,thres){//（ターゲットセレクタ，省略開始文字数）
 		$(target).each(function(){
 			var originalText = $(this).text();
 			var textLength   = originalText.length;
 			var textThres    = thres;
 			if(textLength > textThres){
 				var shortText = originalText.slice(0,textThres);
-				$(this).text(shortText).append(word);
+				$(this).text(shortText).append('…');
 			}
 		});
 	}
-	textCut('.js-textcut-85',85,'…');
-	textCut('.js-textcut-50',50,'…');
-	textCut('.js-textcut-25',25,'…');
-	textCut('.js-textcut-20',20,'…');
-	textCut('.js-textcut-18',18,'…');
-	textCut('.js-textcut-10',10,'…');
-	textCut('#search-for-column .hotmovie .movie-description p',100,'…');
+	textCut('.js-textcut-100',100);
+	textCut('.js-textcut-85',85);
+	textCut('.js-textcut-65',65);
+	textCut('.js-textcut-50',50);
+	textCut('.js-textcut-25',25);
+	textCut('.js-textcut-20',20);
+	textCut('.js-textcut-18',18);
+	textCut('.js-textcut-15',15);
+	textCut('.js-textcut-10',10);
 	textCut('.green-news.team-page-columns li div h4',8,'…');
-	textCut('.rankings li a',20,'…');
-	textCut('#search-for-column .interview div div h4',25,'…');
-	textCut('#search-for-column .interview div div p',100,'…');
-	textCut('#search-for-column .hotmovie .movie-description h4',15,'…');
-	textCut('#search-for-column .hotmovie .movie-description p',65,'…');
 	textCut('.column-page-team-prof div ul li.column-page-team-name',24,'…');
 	textCut('.column-page-team-prof div ul li.column-page-team-description',60,'…');
 	textCut('.column-result-container ul h3 a',25,'…');
@@ -84,7 +81,6 @@ search-for-team
 	textCut('.user .rightmenu .article-unit .writer-prof',60,'…');
 	textCut('.team-column h3 a',25,'…');
 	textCut('.team-column p',60,'…');
-	textCut('.rankings a',21,'…');
 	textCut('.team-page-columns h5 a',20,'…');
 	textCut('.team-page-columns p',120,'');
 

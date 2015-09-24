@@ -135,8 +135,6 @@ header nav ul li img{
 	width: 198px;
 	height: 60px;
 }
-
-
 header nav ul li a{
 	display: block;
 	width: 100%;
@@ -190,7 +188,6 @@ slider
 	top: 240px;
 	cursor: pointer;
 }
-
 #slider .slider-button img{
 	width: 30px;
 	height: 60px;
@@ -226,7 +223,6 @@ top-margin
 	height: 400px;
 	width: 100%;
 }
-
 #wrapper{
 	width: 100%;
 	display: inline-block;
@@ -449,7 +445,6 @@ search-for-column
 	vertical-align: middle;
 	margin-left: 10px;
 }
-
 #search-for-column h3{
 	padding-left: 5px;
 	border-radius: 5px 5px 0px 0px ;
@@ -787,7 +782,6 @@ green-two
 	background-position: 0 0;
 	background-color: #ffff70;
 }
-
 .green-two li .green-two-image{
 	width: 132px;
 	height: 132px;
