@@ -182,6 +182,7 @@ search-for-team
 				var myLeft 	= (myWidth - mySizeW)/2;
 				$(this).css('left',-myLeft);
 			}
+			$(this).fadeIn(500);
 		});
 	});
 	
