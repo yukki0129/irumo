@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>mybo_test｜ユーザー管理画面-ログイン</title>
+	<link rel="stylesheet" href="../assets/css/style.css" type="text/css"/>
+	<script type="text/javascript" src="../assets/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="../assets/js/script.js"></script>
+	<script type="text/javascript" src="../assets/js/user.js"></script>
+	<script src="https://use.typekit.net/rkc2mcc.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?ZsbKpHRhP6U%3D" charset="utf-8"></script>
+</head>
+<body class="user">
+
+	<header>
+		<h2><img src="images/mybo_logo.png"><span>管理ページ</span><strong><a target="_blank" href="">チームプロフィールページへ移動する</a></strong></h2>
+	</header>
+	<div class="leftmenu">	
+		<ul class="left-top">
+			<li class="team-profile"><a href="user-prof.html">チームのプロフィールを<br>編集する</a></li>
+			<li class="team-profile-create"><a href="user-create.html">チームのプロフィールを<br>作成する</a></li>			
+			<li class="present"><a href="user-article.html">記事を作成する</a></li>
+			<li><a href="user-management.html">記事を管理する</a></li>
+			<li><a href="user-writer-management.html">ライター情報を管理する</a></li>
+		</ul>
+		<div class="left-bottom">
+			<div class="left-bottom-img"><img class="js-imgresize" src="images/temporary/mainimg3.jpg"></div>
+			<h3>ここにチーム名が入るここにチーム名が入る</h3>
+			<p>としてログイン中<span><a href="">ログアウト</a></span></p>
+		</div>
+	</div>
+
+	<div class="rightmenu">
+		<form class="user-article">
+			<ul>
+				<li class="article-submitbutton">
+					<ul>
+						<li><input type="submit" value="下書き保存"></li>
+						<li><input type="submit" value="公開"></li>
+					</ul>
+				</li>
+				<li class="article-tags">
+					<fieldset class="main-tag-selection">
+					<legend>記事につけるタグを選択してください。（３つまで選択可能）</legend>
+					<input id="training" type="checkbox">
+					<label for="training">トレーニング</label>
+					<input id="report" type="checkbox">
+					<label for="report">試合・大会レポート</label>
+					<input id="technic" type="checkbox">
+					<label for="technic">テクニック</label>
+					<input class="clearfix" id="commentary" type="checkbox">
+					<label for="commentary">試合解説</label>
+					<input id="education" type="checkbox">
+					<label for="education">教育</label>
+					<input id="movie" type="checkbox">
+					<label for="movie">動画</label>
+					<input class="clearfix" id="faq" type="checkbox">
+					<label for="faq">FAQ</label>
+					<input id="news" type="checkbox">
+					<label for="news">NEWS</label>
+					<input id="for-kids" type="checkbox">
+					<label for="for-kids">キッズ</label>
+					<input class="clearfix" id="for-junior-l" type="checkbox">
+					<label for="for-junior-l">ジュニア（低学年）</label>
+					<input id="for-junior-h" type="checkbox">
+					<label for="for-junior-h">ジュニア（高学年）</label>
+					<input id="for-junior-y" type="checkbox">
+					<label for="for-junior-y">ジュニアユース</label>
+					<input class="clearfix" id="for-youth" type="checkbox">
+					<label for="for-youth">ユース</label>
+					<input id="for-girls" type="checkbox">
+					<label for="for-girls">ガールズ</label>					
+					</fieldset>
+				</li>
+				<li class="main-title">
+					<label for="main-title">メインタイトル<span class="required">※この項目は必ず入力してください。</span></label>
+					<textarea id="main-title"></textarea>
+				</li>
+				<li class="uploads">
+					<fieldset class="uploads">
+					<legend>メイン画像／動画<br><span class="required">※画像／動画のいずれかは必ず入力してください。</span></legend>
+					<div>
+						<label for="upload-image">画像はこちらから</label><br>
+						<input id="upload-image" type="file" value="画像アップロード">
+					</div>
+					<div class="movie">
+						<label for="upload-movie">動画はこちらから<span class="foz12"><br>（動画サイトの埋め込みコードをペーストしてください。</span></label><br><textarea rows="5" cols="52"></textarea>
+					</div>
+					</fieldset>
+				</li>
+				<li class="main-text">
+					<label for="main-text">メイン文章<span class="required">※この項目は必ず入力してください。</span></label>
+					<textarea id="main-text" rows="5" cols="50"></textarea>
+				</li>
+
+				<li class="writer-select">
+					<label for="main-text">ライター選択</label>
+					<select>
+						<option>ライター１</option>
+						<option>ライター２</option>
+						<option>ライター３</option>
+					</select>
+				</li>
+
+				<li class="add-buttons">記事を続ける場合は追加したい内容のボタンを押してください<br>
+					<button type="button" class="add-title">タイトルを増やす</button>
+					<button type="button" class="add-load">画像／動画を増やす</button>
+					<button type="button" class="add-text">文章を増やす</button>
+				</li>			
+			</ul>
+		</form>
+
+
+
+		
+	</div>
+
+</body>
+</html>

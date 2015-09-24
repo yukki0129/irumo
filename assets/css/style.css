@@ -1,0 +1,3906 @@
+@charset "UTF-8";
+
+/* temporary */
+
+#access-ranking-team-page{
+	margin-bottom: 20px;
+}
+
+
+html{
+	height: 100%;
+	text-rendering: optimizeLegibility;
+}
+
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+li,
+dl,
+dt,
+dd{
+	margin: 0;
+	padding: 0;
+}
+ul,ol,dl{
+	list-style: none;
+}
+body{
+	height: 100%;
+	background-image: url(../images/bg5.gif);
+}
+.clearfix{
+	clear: both;
+}
+.foz12{
+	font-size: 12px;
+}
+.fow-normal{
+	font-weight: normal !important;
+}
+p{
+	font-size: 14px;
+	color: #333;
+	line-height: 22px;
+	font-family: Verdana, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+a,a:link,a:visited{
+	text-decoration: none;
+	color: #114800;
+	-webkit-transition: color .1s;
+	-o-transition: color .1s;
+	transition: color .1s;
+}
+a:hover{
+	text-decoration: underline;
+	color: #34AE00;
+}
+h2,h3,h4{
+	font-family: "Shin Go DeBold";
+	letter-spacing: .08em;
+}
+
+
+
+#allwrapper{
+	width: 1040px;
+	margin:0 auto;
+	background-color: white;
+}
+
+
+
+
+/*---------------------
+header
+----------------------*/
+header{
+	width: 1040px;
+	position: relative;
+	top: 4px;
+	z-index: 2;
+	border-radius: 0px 0px 10px 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+header nav{
+	height: 80px;
+}
+header nav h1{
+	width: 228px;
+	height: 85px;
+	float: left;
+	margin-left: 8px;
+}
+header nav ul{
+	width: 792px;
+	height: 60px;
+	float: left;
+	margin-left: 4px;
+	margin-top: 6px;
+	border-top: 1px solid #009245;
+	border-bottom: 1px solid #009245;
+}
+header nav ul li{
+	width: 198px;
+	height: 60px;
+	float: left;
+	background-color: rgba(255,255,255,.8);
+	background-image: url(../images/headericon_bg.png);
+	background-position: 0 60px;
+	background-repeat: no-repeat;
+	-webkit-transition: background-position .5s, background-color .5s;
+	-o-transition: background-position .5s, background-color .5s;
+	transition: background-position .5s, background-color .5s;
+} 
+header nav ul li:hover{
+	background-color: #FFFF70;
+	background-position: 0px 0px;
+}
+header nav ul li img{
+	width: 198px;
+	height: 60px;
+}
+
+
+header nav ul li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: white !important;
+}
+
+/*---------------------
+slider
+----------------------*/
+#slider{
+	position: absolute;
+	width: 100%;
+	height: 480px;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+#slider .slider-content-wrap{
+	width: 100%;
+	height: 100%;
+	white-space: nowrap;
+	font-size: 0;
+	position: relative;
+}
+#slider .slider-content-wrap li{
+	width: 1040px;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: .6;
+	-webkit-transition: opacity .8s;
+	-o-transition: opacity .8s;
+	transition: opacity .8s;
+}
+#slider .slider-content-wrap .present-slide{
+	opacity: 1;
+}
+
+#slider .slider-content-wrap li .slider-content{
+	width: 100%;
+	height: 100%;
+	background-size:cover;
+	background-position:center center;
+}
+#slider .slider-button{
+	position: absolute;
+	width: 30px;
+	height: 60px;
+	top: 240px;
+	cursor: pointer;
+}
+
+#slider .slider-button img{
+	width: 30px;
+	height: 60px;
+	opacity: .3;
+	-webkit-transition: opacity .2s;
+	-o-transition: opacity .2s;
+	transition: opacity .2s;
+}
+#slider .slider-button:hover img{
+	opacity: .8;
+}
+#slider .slider-marker{
+	display: inline-block;
+	position: absolute;
+	top: 450px;
+	width: auto;
+	text-align: center;
+	margin: 0 auto;
+}
+#slider .slider-marker p{
+	float: left;
+	font-size: 12px;
+	display: inline-block;
+	margin-right: 10px;
+	cursor: pointer;
+	color: rgba(0,0,0,.5);
+}
+
+/*---------------------
+top-margin
+----------------------*/
+.top-margin{
+	height: 400px;
+	width: 100%;
+}
+
+#wrapper{
+	width: 100%;
+	display: inline-block;
+	position: relative;
+}
+
+/*---------------------
+top-icon
+----------------------*/
+.top-icon-1{
+	top: 13px;
+}
+.top-icon-2{
+	top: 13px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.top-subicon-wrapper{
+	top: 0;
+	left: 0;
+	width: 26px;
+	height: 26px;
+	margin: 0 5px;
+	display: inline-block;
+}
+.top-subicon-wrapper .top-subicon{
+	top: 0;
+	left: 0;
+	opacity: 1;
+	-webkit-transition: opacity .5s;
+	-o-transition: opacity .5s;
+	transition: opacity .5s;
+}
+#search-for-column > div:hover .top-subicon{
+	opacity: 0;
+}
+.top-subicon-wrapper .top-subicon-hover{
+	top: 0;
+	left: 0;
+	opacity: 0;
+	-webkit-transition: opacity .5s;
+	-o-transition: opacity .5s;
+	transition: opacity .5s;
+}
+#search-for-column > div:hover .top-subicon-hover{
+	opacity: 1;
+}
+
+
+/*---------------------
+maincol
+----------------------*/
+#maincol{
+	width: 670px;
+	float: left;
+	margin-top: 20px;
+	padding-left: 20px;
+}
+/*---------------------
+search-for-team
+----------------------*/
+#search-for-team{
+	margin-left: 10px;
+	display: inline-block;
+}
+#search-for-team h2{
+	font-size: 32px;
+	margin-bottom: 10px;
+	letter-spacing: .1em;	
+	color: #E96000;
+	border-bottom: 3px solid #E96000;
+}
+#search-for-team h2 span{
+	font-size: 14px;
+	display: inline-block;
+	color: #E96000;	
+	letter-spacing: .05em;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+#search-for-team > div{
+	width: 320px;
+	float: left;
+}
+#search-for-team > div ~ div{
+	margin-left: 20px;
+}
+#search-for-team h3{
+	font-size: 20px;
+	color: #E96000;
+	font-family: "Shin Go Regular";
+	border-bottom: 1px solid #E96000;
+}
+.search-for-team-inner{
+	background-image: url(../images/bg_orange_4.gif);
+	padding: 10px 15px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+	border-radius: 0px 0px 10px 10px;
+}
+#search-for-team .category{
+	width: 290px;
+	padding: 5px 10px;
+	background-color: white;
+	border: 1px solid #E96000;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;		
+	font-size: 14px;
+	font-family: "Shin Go regular";
+	letter-spacing: .1em;
+	color: #E96000;
+	cursor: pointer;
+	margin-bottom: 3px;
+	border-radius: 5px;
+	-webkit-box-shadow: 2px 2px 0px #ccc;
+	box-shadow: 2px 2px 0px #ccc;
+	-webkit-transition: background-position .5s, background-color .5s, color .5s;
+	-o-transition: background-position .5s, background-color .5s, color .5s;
+	transition: background-position .5s, background-color .5s, color .5s;
+	overflow: hidden;
+	position: relative;
+}
+#search-for-team #search-from-feature .category{
+	min-height: 62px;
+	font-size: 12px;
+	color: #666;
+	font-family: "Shin Go Light";
+}
+
+#search-for-team #search-from-feature .category strong{
+	font-size: 14px;
+	font-family: "Shin Go regular";
+	letter-spacing: .1em;
+	color: #E96000;	
+	display: block;
+	margin-bottom: 5px;
+	-webkit-transition: color .5s;
+	-o-transition: color .5s;
+	transition: color .5s;	
+}
+#search-for-team .category:hover{
+	background-color: #E96000;
+	color: white;
+}
+#search-for-team #search-from-feature .category:hover strong,
+#search-for-team #search-from-feature .category:hover{
+	color: white;	
+}
+#search-for-team .category > span{
+	position: absolute;
+	right: -80px;
+	top: 0.5ex;
+	font-size: 18px;
+	font-weight: 400;
+	font-style: italic;
+	letter-spacing: .2em;
+	-webkit-transition: right .5s;
+	-o-transition: right .5s;
+	transition: right .5s;
+	vertical-align: text-top;
+}
+#search-for-team #search-from-feature .category > span{
+	color: white;
+}
+#search-for-team .category > span.opened{
+}
+#search-for-team .category:hover span{
+	right: 5px;
+}
+#search-for-team .category span span{
+	font-size: 12px;
+}
+#search-for-team .category ul{
+	width: 100%;
+	display: none;
+	background-color: #fff;
+	padding: 5px 10px;
+	border-radius: 3px;
+	margin-top: 5px;
+	margin-bottom: 3px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#search-for-team .category ul li{
+	display:inline-block;
+	color: #ccc;
+}
+
+#search-for-team .category ul li a:hover{
+	color: #E96000;
+}
+
+
+/*---------------------
+search-for-column
+----------------------*/
+#search-for-column .maincol-module{
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+#search-for-column{
+	margin-top: 20px;
+	margin-left: 10px;
+}
+#search-for-column h2{
+	font-size: 32px;
+	margin-bottom: 10px;
+	letter-spacing: .1em;	
+	color: #009145;
+	border-bottom: 3px solid #009145;
+}
+#search-for-column h2 span{
+	font-size: 14px;
+	display: inline-block;
+	color: #009145;
+	letter-spacing: .05em;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+#search-for-column h3{
+	padding-left: 5px;
+	border-radius: 5px 5px 0px 0px ;
+	border-bottom: 1px solid #009145;
+	background-image: url(../images/toppage-bg.png);
+	background-position: 0px 50px;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	position: relative;
+	-webkit-transition: background-color .5s, background-position .5s;
+	-o-transition: background-color .5s, background-position .5s;
+	transition: background-color .5s, background-position .5s;
+	height: 50px;
+}
+#search-for-column div:hover h3{
+	background-position: 0 0;
+	color: white;
+}
+#search-for-column h3 a{
+	font-size: 36px;
+	color: #009145;	
+	-webkit-transition: color .5s;
+	-o-transition: color .5s;
+	transition: color .5s;
+}
+#search-for-column h3 span{
+	font-size: 14px;
+	margin-left: 10px;
+	letter-spacing: .1em;
+	color: #009145;
+	-webkit-transition: color .5s;
+	-o-transition: color .5s;
+	transition: color .5s;	
+}
+#search-for-column div:hover h3 a,
+#search-for-column div:hover h3 span{
+	color: white;
+}
+#search-for-column h3 span.tolist{
+	margin-left: 0px;
+	display: inline-block;
+	position: absolute;
+	top: 13px;
+	right: -100px;
+	font-family: "Shin Go Light";
+	-webkit-transition: right .5s;
+	-o-transition: right .5s;
+	transition: right .5s;
+	letter-spacing: .2em;
+	padding: 0 5px;
+	background-color: white;
+	color: #009145;
+	border-radius: 5px;
+}
+#search-for-column div:hover h3 span.tolist{
+	color: #009145;
+}
+#search-for-column div:hover h3 span.tolist{
+	right: 11px;
+}
+#search-for-column > div{
+	width: 660px;
+	display: inline-block;
+}
+#search-for-column div li{
+	position: relative;
+}
+#search-for-column div .search-for-column-inner{
+	display: inline-block;
+	padding: 10px 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-image: url(../images/bg1.gif);	
+	border-radius: 0px 0px 10px 10px;
+	margin-bottom: 20px;
+}
+
+/*---------------------
+pick-up
+----------------------*/
+#search-for-column .pick-up li{
+	width: 210px;
+	height: 210px;
+	float: left;
+	margin-right: 5px;
+	border-radius: 5px;
+	overflow: hidden;
+	-webkit-box-shadow: 2px 2px 0px #ccc;
+	box-shadow: 2px 2px 0px #ccc;	
+}
+
+#search-for-column .pick-up li:hover div{
+	top: 0;
+}
+#search-for-column .pick-up li div h4{
+	height: 55px;
+	font-size: 16px;
+	font-family: "Shin Go regular";
+	margin-bottom: 5px;
+}
+#search-for-column .pick-up li div p{
+	font-family: "Shin Go ExLight";	
+	letter-spacing: .05em;
+	font-size: 14px;
+	line-height: 24px;
+	border-top: 1px dotted white;
+	border-bottom: 1px dotted white;
+	padding: 5px 0px;
+
+}
+#search-for-column .pick-up li div a{
+	color: white;
+	font-size: 12px;
+	text-align: right;
+	margin-top: 5px;
+	float: right;
+	position: relative;
+	z-index: 3;
+}
+#search-for-column .pick-up li > a{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/*---------------------
+interview
+----------------------*/
+#search-for-column .interview > div > div{
+	width: 640px;
+	height: 240px;
+	background-color: #fff;
+	border-radius: 5px;
+	-webkit-box-shadow: 2px 2px 0px #ccc;
+	box-shadow: 2px 2px 0px #ccc;	
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+}
+#search-for-column .interview div div div{
+	width: 368px;
+	height: 240px;
+	float: left;
+	overflow: hidden;
+	border-radius: 5px 0px 0px 5px;
+	margin-right: 5px;
+	position: relative;
+	top: -10px;
+	left: -10px;
+}
+#search-for-column .interview div div div a{
+	width: 368px;
+	height: 140px;
+	position: absolute;
+	font-size: 20px;
+	top: 140px;
+	right: 0;
+	-webkit-transition: background-color .5s,opacity .5s, top 
+	.5s;
+	-o-transition: background-color .5s,opacity .5s, top 
+	.5s;
+	transition: background-color .5s,opacity .5s, top 
+	.5s;
+	text-align: center;
+	padding-top: 100px;
+	color: white;
+	font-family: "Shin Go light";
+	letter-spacing: .1em;
+	opacity: 0;
+	text-decoration: none;
+	background-image: url(../images/bg6.gif);
+}
+#search-for-column .interview div div div:hover a{
+	opacity: 1;
+	background-color: rgba(0,145,69,.5);
+	top: 0;
+}
+
+#search-for-column .interview div div h4{
+	width: 247px;
+	margin-bottom: 5px;
+	float: left;
+	color: #009145;
+}
+#search-for-column .interview div div p{
+	width: 247px;
+	border-top: 1px dotted #009145;
+	border-bottom: 1px dotted #009145;
+	padding: 5px 0px;
+	float: left;
+	margin-bottom: 5px;
+	color: #333;
+}
+#search-for-column .interview div div a{
+	float: right;
+	display: block;
+	font-size: 12px;
+}
+/*---------------------
+generation
+----------------------*/
+#search-for-column .generation ul{
+	width: 640px;
+}
+#search-for-column .generation ul li{
+	width: 315px;
+	height: 70px;
+	overflow: hidden;
+	float: left;
+	background-color: #fff;
+	margin-right: 10px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	position: relative;
+	-webkit-box-shadow: 2px 2px 0px #ccc;
+	box-shadow: 2px 2px 0px #ccc;	
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+	background-image: url(../images/bg9.png);
+	background-position: 104px 70px;
+	-webkit-transition: background-position .5s, background-color .5s;
+	-o-transition: background-position .5s, background-color .5s;
+	transition: background-position .5s, background-color .5s;
+	background-repeat: no-repeat;
+	color: #009145;
+	background-color: #fff;
+}
+#search-for-column .generation ul li:hover{
+	background-position: 104px 0;
+	background-color: #FFFF70;
+}
+#search-for-column .generation ul li a{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	font-size: 14px;
+}
+#search-for-column .generation ul li h4{
+	font-size: 16px;
+	display: inline-block;
+	-webkit-transition: background-color .5s;
+	-o-transition: background-color .5s;
+	transition: background-color .5s;
+	background-color: #fff;
+}
+#search-for-column .generation ul li p{
+	color: #666;
+	display: inline-block;
+	position: relative;
+	top: -5px;
+	left: -8px;
+	-webkit-transition: background-color .5s;
+	-o-transition: background-color .5s;
+	transition: background-color .5s;
+	background-color: #fff;
+}
+#search-for-column .generation ul li:hover h4,
+#search-for-column .generation ul li:hover p{
+	background-color: #FFFF70;
+}
+#search-for-column .generation ul li span{
+	display: inline-block;
+	font-size: 12px;
+	position: absolute;
+	top: 25px;
+	right: -100px;
+	-webkit-transition: right .5s;
+	-o-transition: right .5s;
+	transition: right .5s;
+	background-color: #FFFF70;
+}
+#search-for-column .generation ul li:hover span{
+	right: 5px;
+}
+#search-for-column .generation ul li img{
+	width: 104px;
+	float: left;
+	position: relative;
+	top: -10px;
+	left: -10px;
+}
+/*---------------------
+movie-containers
+----------------------*/
+#search-for-column .hotmovie ul{
+	width: 630px;
+	height: 190px;
+	padding: 5px;
+	background-color: white;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+	-webkit-box-shadow: 2px 2px 0px #ccc;
+	box-shadow: 2px 2px 0px #ccc;		
+}
+#search-for-column .hotmovie .movie-iframe{
+	width: 356px;
+	height: 200px;
+	background-color: white;
+	float: left;
+	margin-right: 10px;
+	position: relative;
+	top: -5px;
+	left: -5px;
+}
+#search-for-column .hotmovie .movie-iframe iframe{
+	width: 356px;
+	height: 200px;
+}
+#search-for-column .hotmovie .movie-description{
+	width: 264px;
+	height: 200px;
+	background-color: white;
+	float: left;
+	font-size: 14px;
+}
+#search-for-column .hotmovie .movie-description h5{
+	font-size: 12px;
+	color: #666;
+	margin-top: 5px;
+}
+#search-for-column .hotmovie .movie-description h4{
+	font-size: 16px;
+	color: #009145;
+	margin-bottom: 5px;
+}
+#search-for-column .hotmovie .movie-description p{
+	width: 260px;
+	border-top: 1px dotted #009145;
+	border-bottom: 1px dotted #009145;
+	padding: 5px 0px;
+	float: left;
+	margin-bottom: 5px;
+	color: #333;
+}
+#search-for-column .hotmovie .movie-description a{
+	display: block;
+	position: absolute;
+	right: 0;
+	bottom: 15px;
+}
+
+
+/*---------------------
+news
+----------------------*/
+
+.green-news ul{
+	width: 640px;
+}
+.green-news ul li{
+	width: 315px;
+	height: 132px;
+	overflow: hidden;
+	float: left;
+	background-color: #fff;
+	margin-right: 10px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	position: relative;
+	-webkit-box-shadow: 2px 2px 0px #ccc;
+	box-shadow: 2px 2px 0px #ccc;	
+	padding: 5px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-image: url(../images/bg10.png);
+	background-repeat: no-repeat;
+	background-position: 0 132px;
+	-webkit-transition: background-position .5s,background-color .5s;
+	-o-transition: background-position .5s,background-color .5s;
+	transition: background-position .5s,background-color .5s;
+}
+.green-news ul li:hover{
+	background-position: 0 0;
+	background-color: #ffff70;
+}
+
+.green-news li .news-image{
+	width: 132px;
+	height: 132px;
+	margin-right: 5px;
+	float: left;
+	overflow: hidden;
+	top: -5px;
+	left: -5px;
+}
+.green-news li .news-text{
+	width: 163px;
+	float: left;
+}
+.green-news li .news-text h4{
+	width: 163px;
+	color: #009145;
+	font-size: 16px;
+	font-family: "Shin Go regular";
+	margin-bottom: 5px;
+	background-color: #fff;
+}
+.green-news li .news-text p{
+	width: 163px;
+	font-size: 12px;
+	line-height: 20px;
+	border-top: 1px dotted #009145;
+	border-bottom: 1px dotted #009145;
+	background-color: #fff;
+}
+.green-news li .news-text h4,
+.green-news li .news-text p{
+	position: relative;
+	top: 10px;
+	-webkit-transition: background-color .5s, top .5s;
+	-o-transition: background-color .5s, top .5s;
+	transition: background-color .5s, top .5s;
+}
+.green-news li:hover .news-text h4,
+.green-news li:hover .news-text p{
+	top: 0;
+	background-color: #fffF70;
+}
+.green-news li .news-text a.news-link{
+	font-size: 12px;
+	position: absolute;
+	bottom: -50px;
+	right: 10px;
+	z-index: 3;
+	-webkit-transition: bottom .5s;
+	-o-transition: bottom .5s;
+	transition: bottom .5s;
+	background-color: #ffff70;
+}
+.green-news li:hover .news-text a.news-link{
+	bottom: 5px;
+}
+.green-news li > a{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*-----------green-three-----------*/
+.green-three li{
+	width: 210px;
+	height: 210px;
+	float: left;
+	margin-right: 5px;
+	border-radius: 5px;
+	overflow: hidden;
+	-webkit-box-shadow: 2px 2px 0px #ccc;
+	box-shadow: 2px 2px 0px #ccc;	
+	margin-bottom: 10px;
+}
+.green-three li .faq-image{
+	width: 210px;
+	height: 210px;
+	overflow: hidden;
+}
+.green-three li .faq-text{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: white;
+	top: 145px;
+	left: 0;
+	background-image: url(../images/bg1.gif);
+	background-color: rgba(0,145,69,.7);
+	-webkit-transition: top .5s;
+	-o-transition: top .5s;
+	transition: top .5s;
+}
+.green-three li:hover .faq-text{
+	top: 0;
+}
+.green-three li .faq-text h4{
+	height: 55px;
+	font-size: 16px;
+	font-family: "Shin Go regular";
+	margin-bottom: 5px;
+}
+.green-three li .faq-text p{
+	letter-spacing: .05em;
+	font-size: 14px;
+	line-height: 24px;
+	border-top: 1px dotted white;
+	border-bottom: 1px dotted white;
+	padding: 5px 0px;
+	color: white;
+}
+.green-three li .faq-text a{
+	color: white;
+	font-size: 12px;
+	text-align: right;
+	margin-top: 5px;
+	float: right;
+	position: relative;
+	z-index: 3;
+}
+.green-three li > a{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*-----------orange-three-----------*/
+.orange-three li{
+	width: 210px;
+	height: 210px;
+	float: left;
+	margin-right: 5px;
+	border-radius: 5px;
+	overflow: hidden;
+	-webkit-box-shadow: 2px 2px 0px #ccc;
+	box-shadow: 2px 2px 0px #ccc;	
+	margin-bottom: 10px;
+}
+.orange-three li img{
+	width: 100%;
+	height: 100%;
+}
+.orange-three li div{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: white;
+	top: 145px;
+	left: 0;
+	background-image: url(../images/bg1.gif);
+	background-color: rgba(232,96,0,.7);
+	-webkit-transition: top .5s;
+	-o-transition: top .5s;
+	transition: top .5s;
+}
+.orange-three li:hover div{
+	top: 0;
+}
+.orange-three li div h4{
+	height: 55px;
+	font-size: 16px;
+	font-family: "Shin Go regular";
+	margin-bottom: 5px;
+}
+.orange-three li div p{
+	letter-spacing: .05em;
+	font-size: 14px;
+	line-height: 24px;
+	border-top: 1px dotted white;
+	border-bottom: 1px dotted white;
+	padding: 5px 0px;
+	color: white;
+}
+.orange-three li div a{
+	color: white;
+	font-size: 12px;
+	text-align: right;
+	margin-top: 5px;
+	float: right;
+	position: relative;
+	z-index: 3;
+}
+.orange-three li > a{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*-----------greenmodule-----------*/
+.greenmodule h3{
+	padding-left: 5px;
+	border-radius: 5px 5px 0px 0px ;
+	border-bottom: 1px solid #009145;
+	background-image: url(../images/toppage-bg.png);
+	background-position: 0px 50px;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	position: relative;
+	-webkit-transition: background-color .5s, background-position .5s, color .5s;
+	-o-transition: background-color .5s, background-position .5s, color .5s;
+	transition: background-color .5s, background-position .5s, color .5s;
+	font-size: 36px;
+	color: #009145;	
+}
+.greenmodule:hover h3{
+	background-position: 0 0;
+	color: white;
+}
+.greenmodule h3 img{
+	background-color: #fff;
+	width: 26px;
+	height: 26px;
+	margin-right: 10px;
+}
+.greenmodule h3 a{
+	color: #009145;	
+	-webkit-transition: color .5s;
+	-o-transition: color .5s;
+	transition: color .5s;
+}
+.greenmodule h3 span{
+	font-size: 14px;
+	margin-left: 10px;
+	letter-spacing: .1em;
+	color: #009145;
+	-webkit-transition: color .5s;
+	-o-transition: color .5s;
+	transition: color .5s;	
+}
+.greenmodule:hover h3 a,
+.greenmodule:hover h3 span{
+	color: white;
+}
+.greenmodule h3 span.tolist{
+	margin-left: 0px;
+	display: inline-block;
+	position: absolute;
+	top: 13px;
+	right: -100px;
+	font-family: "Shin Go Light";
+	-webkit-transition: right .5s;
+	-o-transition: right .5s;
+	transition: right .5s;
+	letter-spacing: .2em;
+	padding: 0 5px;
+	background-color: white;
+	color: #009145;
+	border-radius: 5px;
+}
+.greenmodule:hover h3 span.tolist{
+	color: #009145;
+	right: 11px;
+}
+.greenmodule > div{
+	width: 660px;
+	display: inline-block;
+}
+.greenmodule li{
+	position: relative;
+}
+.greenmodule .search-for-column-inner{
+	display: inline-block;
+	padding: 10px 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-image: url(../images/bg1.gif);	
+	border-radius: 0px 0px 10px 10px;
+	margin-bottom: 20px;
+}
+
+/*-----------orangemodule-----------*/
+.orangemodule h3{
+	padding-left: 5px;
+	border-radius: 5px 5px 0px 0px ;
+	border-bottom: 1px solid #e96000;
+	background-image: url(../images/toppage-bg-orange.png);
+	background-position: 0px 50px;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	position: relative;
+	-webkit-transition: background-color .5s, background-position .5s, color .5s;
+	-o-transition: background-color .5s, background-position .5s, color .5s;
+	transition: background-color .5s, background-position .5s, color .5s;
+	font-size: 36px;
+	color: #e96000;	
+}
+.orangemodule:hover h3{
+	background-position: 0 0;
+	color: white;
+}
+.orangemodule h3 img{
+	background-color: #fff;
+	width: 26px;
+	height: 26px;
+	margin-right: 10px;
+}
+.orangemodule h3 a{
+	color: #e96000;	
+	-webkit-transition: color .5s;
+	-o-transition: color .5s;
+	transition: color .5s;
+}
+.orangemodule h3 span{
+	font-size: 14px;
+	margin-left: 10px;
+	letter-spacing: .1em;
+	color: #e96000;
+	-webkit-transition: color .5s;
+	-o-transition: color .5s;
+	transition: color .5s;	
+}
+.orangemodule:hover h3 a,
+.orangemodule:hover h3 span{
+	color: white;
+}
+.orangemodule h3 span.tolist{
+	margin-left: 0px;
+	display: inline-block;
+	position: absolute;
+	top: 13px;
+	right: -100px;
+	font-family: "Shin Go Light";
+	-webkit-transition: right .5s;
+	-o-transition: right .5s;
+	transition: right .5s;
+	letter-spacing: .2em;
+	padding: 0 5px;
+	background-color: white;
+	color: #e96000;
+	border-radius: 5px;
+}
+.orangemodule:hover h3 span.tolist{
+	color: #e96000;
+	right: 11px;
+}
+.orangemodule > div{
+	width: 660px;
+	display: inline-block;
+}
+.orangemodule li{
+	position: relative;
+}
+.orangemodule .search-for-column-inner,
+.orangemodule .search-for-team-inner{
+	display: inline-block;
+	padding: 10px 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-image: url(../images/bg_orange_4.gif);	
+	border-radius: 0px 0px 10px 10px;
+	margin-bottom: 20px;
+}
+
+/*---------------------
+パンくず
+----------------------*/
+.breadcrumb{
+	width: 100%;
+	display: inline-block;
+}
+.breadcrumb.mb20{
+	margin-bottom: 10px;
+}
+.breadcrumb ul{
+	width: 100%;
+	display: inline-block;
+	padding-left: 10px;
+}
+.breadcrumb ul li{
+	display: inline-block;
+	font-family: "shin go regular";
+	font-size: 12px;
+}
+
+/*---------------------
+search-field
+----------------------*/
+#search-field{
+	display: inline-block;
+	width: 660px;
+	margin-top: 10px;
+}
+.search-left-wrapper{
+	width: 210px;
+	float: left;
+}
+.search-left-wrapper div{
+	width: 180px;
+	background-color: #fff;
+	background-image: url(../images/bg_orange_4.gif);
+	margin-bottom: 10px;
+	display: inline-block;
+	height: 60px;
+	padding: 10px;
+	border-radius: 5px;
+	position: relative;
+}
+.search-left-wrapper div h4{
+	padding: 5px 5px 5px 35px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #E96000;
+	display: inline-block;
+	background-color: #fff;
+	border-radius: 5px;	
+	position: relative;
+}
+.search-left-wrapper div h4 span{
+	font-size: 44px;
+	position: absolute;
+	bottom: -5px;
+	left: 8px;
+}
+.search-left-wrapper div img.yajirushi-first{
+	position: absolute;
+	left: 80px;
+	bottom: -13px;
+	z-index: 2;
+}
+.search-left-wrapper div img.yajirushi-second{
+	position: absolute;
+	right: -13px;
+	top: 25px;
+	z-index: 2;
+}
+.search-right-wrapper{
+	background-color: #fff;
+	background-image: url(../images/bg_orange_4.gif);
+	width: 430px;
+	padding: 10px;
+	float: left;
+	min-height: 150px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	position: relative;
+}
+.search-right-wrapper h4{
+	width: 100%;
+	position: relative;
+	top: 50px;
+	-webkit-transition: top .5s;
+	-o-transition: top .5s;
+	transition: top .5s;
+	padding: 5px 5px 5px 35px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #E96000;
+	display: inline-block;
+	background-color: #fff;
+	border-radius: 5px;
+}
+.search-right-wrapper h4 span{
+	font-size: 44px;
+	position: absolute;
+	bottom: -5px;
+	left: 8px;
+}
+.search-right-wrapper h4 button{
+	width: 150px;
+	display: inline-block;
+	border: 1px solid #E96000;
+	background-color: #fff;
+	color: #E96000;
+	vertical-align: middle;
+	padding: 5px 0px;
+	border-radius: 10px;
+	font-size: 14px;
+	line-height: 1;
+	font-family: "shin go medium";
+	letter-spacing: .1em;
+	position: absolute;
+	right: 10px;
+	top: 2px;
+	cursor: pointer;
+	-webkit-transition: color .5s,background-color .5s;
+	-o-transition: color .5s,background-color .5s;
+	transition: color .5s,background-color .5s;
+}
+.search-right-wrapper h4 button:hover{
+	color: white;
+	background-color: #E96000;
+}
+.search-right-wrapper div{
+	padding: 10px;
+	border-radius: 0px 0px 5px 5px;
+	background-color: #fff;
+	width: 430px;
+	height: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+	top: 50px;
+	overflow: hidden;
+	opacity: 0;
+}
+.search-right-wrapper div > ul{
+	width: 205px;
+	height: 373px;	
+	float: left;
+}
+.search-right-wrapper div ul li{
+	margin-bottom: 10px;
+	display: inline-block;
+	font-size: 16px;
+	font-family: "shin go regular";
+	color: #E96000;
+}
+.search-right-wrapper div ul li ul{
+	display: block;
+}
+.search-right-wrapper div ul li ul li{
+	font-size: 13px;
+	margin-bottom: 3px;
+	display: block;
+	color: #333;
+}
+.search-right-wrapper img{
+	position: absolute;
+	bottom: -10px;
+	left: 50px;
+	z-index: 2;
+}
+
+
+.search-condition{
+	display: inline-block;
+	width: 660px;
+	background-color: #E96000;
+	border-radius: 10px;
+	padding: 10px 10px 70px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.search-condition h3{
+	font-family: "shin go regular";
+	color: white;
+	margin-bottom: 10px;
+}
+.search-condition dl{
+	width: 50%;
+	display: block;
+	float: left;
+	color: white;
+}
+.search-condition dt{
+	font-size: 14px;
+	width: 130px;
+	display: inline-block;
+	float: left;
+	margin-bottom: 5px;
+	font-family: "shin go regular";
+	letter-spacing: .1em;
+}
+.search-condition dd{
+	width: 180px;
+	font-size: 14px;
+	display: inline;
+	float: right;
+	padding-left: 10px;
+	margin-bottom: 3px;
+	font-family: "shin go light";
+}
+.search-condition li{
+	display: inline-block;
+}
+#search-submit{
+	text-align: center;
+	position: relative;
+	top: -50px;
+	border-top: 1px solid white;
+	padding-top: 10px;
+}
+#search-submit button{
+	width: 300px;
+	display: inline-block;
+	color: white;
+	background-color: #E96000;
+	border: 1px solid white;
+	padding: 5px 0px;
+	border-radius: 10px;
+	font-size: 14px;
+	line-height: 1;
+	font-family: "shin go medium";
+	letter-spacing: .1em;
+	cursor: pointer;
+	-webkit-transition: color .5s,background-color .5s;
+	-o-transition: color .5s,background-color .5s;
+	transition: color .5s,background-color .5s;
+	-webkit-box-shadow: 2px 2px 0px #6B2702;
+	box-shadow: 2px 2px 0px #6B2702;	
+}
+#search-submit button:hover{
+	border-color: #E96000;
+	background-color: #fff;
+	color: #E96000;
+}
+/*---------------------
+search-result
+----------------------*/
+.search-result-container{
+	width: 660px;
+	height: auto;
+	margin-bottom: 20px;
+	background-image: url(../images/bg1.gif);
+	border-radius: 5px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px;
+}
+.search-result-container div{
+	width: 320px;
+	height: 200px;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	border-radius: 5px 0px 0px 5px;
+}
+.search-result-container div a{
+	position: absolute;
+	top: 100px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: white;
+	font-family: "shin go light";
+	font-size: 20px;
+	background-color: rgba(0,145,69,.5);
+	background-image: url(../images/bg1.gif);
+	opacity: 0;
+	-webkit-transition: opacity .5s, top .5s;
+	-o-transition: opacity .5s, top .5s;
+	transition: opacity .5s, top .5s;
+	padding-top: 80px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+	text-align: center;
+	text-decoration: none;
+	letter-spacing: .1em;
+}
+.search-result-container div:hover a{
+	opacity: 1;
+	top: 0;	
+}
+.search-result-container div img{
+	position: relative;
+}
+.search-result-container > ul{
+	width: 320px;
+	height: 200px;
+	float: left;
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 0px 5px 5px 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+}
+.search-result-container ul h3{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #999;
+	line-height: 24px;
+}
+.search-result-container ul h3 a{
+	font-size: 20px;
+	font-family: "shin go medium";
+	color: #009145
+}
+.search-result-container ul li ul li{
+	background-color: lightgray;
+	color: #333;
+	padding: 3px;
+	float: left;
+	margin-right: 3px;
+	margin-bottom: 5px;
+	font-size: 10px;
+}
+.search-result-container .search-result-text p{
+	border-top: 1px solid #999;
+	padding-top: 3px;
+}
+.search-result-container .search-result-text a{
+	display: inline-block;
+	font-size: 12px;
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+}
+
+/*---------------------
+column-result-containe
+----------------------*/
+.column-result-container{
+	width: 660px;
+	height: auto;
+	margin-bottom: 20px;
+	background-image: url(../images/bg1.gif);
+	border-radius: 5px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px;
+}
+.column-result-container div{
+	width: 320px;
+	height: 200px;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	border-radius: 5px 0px 0px 5px;
+}
+.column-result-container div a{
+	position: absolute;
+	top: 100px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: white;
+	font-family: "shin go light";
+	font-size: 20px;
+	background-color: rgba(0,145,69,.5);
+	background-image: url(../images/bg1.gif);
+	opacity: 0;
+	-webkit-transition: opacity .5s, top .5s;
+	-o-transition: opacity .5s, top .5s;
+	transition: opacity .5s, top .5s;
+	padding-top: 80px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+	text-align: center;
+	text-decoration: none;
+	letter-spacing: .1em;
+}
+.column-result-container div:hover a{
+	opacity: 1;
+	top: 0;	
+}
+.column-result-container div img{
+	position: relative;
+}
+.column-result-container > ul{
+	width: 320px;
+	height: 200px;
+	float: left;
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 0px 5px 5px 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+}
+.column-result-container ul h4{
+	font-size: 14px;
+	color: #666;
+	font-family: "shin go regular";
+	margin: 0;
+}
+.column-result-container ul h3{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #999;
+	line-height: 24px;
+}
+.column-result-container ul h3 a{
+	font-size: 20px;
+	font-family: "shin go medium";
+	color: #009145
+}
+.column-result-container ul li ul li{
+	background-color: lightgray;
+	color: #333;
+	padding: 3px;
+	float: left;
+	margin-right: 3px;
+	margin-bottom: 5px;
+	font-size: 10px;
+}
+.column-result-container .column-result-text p{
+	border-top: 1px solid #999;
+	padding-top: 3px;
+}
+.column-result-container .column-result-text a{
+	display: inline-block;
+	font-size: 12px;
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+}
+/*---------------------
+title-banner
+----------------------*/
+.title-banner{
+	width: 660px;
+	height: 205px;
+	margin-top: 10px;
+	position: relative;
+}
+.title-banner .title-banner-inner{
+	width: 660px;
+	height: 205px;
+	overflow: hidden;
+	border-radius: 5px;
+}
+.title-banner .title-banner-inner img{
+	position: relative;
+}
+.title-banner .title-banner-inner .dot{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-image: url(../images/bg1.gif);
+}
+.title-banner .title-banner-title{
+	display: inline-block;
+	position: absolute;
+	top: 30px;
+	padding: 8px 30px 10px;
+	color:white;
+	background-color: #11A256;
+	border-radius: 0px 10px 10px 0px;
+	background-image: url(../images/bg1.gif);
+}
+.title-banner .title-banner-title h2{
+	font-size: 32px;
+	margin-bottom: 10px;
+	line-height: 36px;
+}
+.title-banner p{
+	color: white;
+	font-size: 20px;
+}
+
+/*---------------------
+tag-list
+----------------------*/
+.tag-list{
+	width: 660px;
+	display: inline-block;
+	border-bottom: 3px solid #009145;
+	height: 70px;
+	margin-bottom: 10px;
+}
+.tag-list ul{
+	width: 660px;
+	background-color: white;
+	display: inline-block;
+}
+.tag-list ul h4{
+	width: 90px;
+	float: left;
+	height: 30px;
+	font-size: 12px;
+	margin-right: 5px;
+	line-height: 14px;
+	padding-top: 2px;
+}
+.tag-list ul li{
+	width: 90px;
+	height: 30px;
+	background-color: lightgray;
+	float: left;
+	margin-bottom: 5px;
+	position: relative;
+	margin-right: 5px;
+}
+.tag-list ul li a{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	font-size: 10px;
+}
+
+
+.search-result-display{
+	padding: 0 10px;
+	font-family: "shin go regular";
+}
+.search-result-display span{
+	font-size: 34px;
+	color: #E96000;
+	margin-right: 3px;
+
+}
+
+/*---------------------
+ranking
+----------------------*/
+.title-banner.access-ranking{
+	margin-bottom: 20px;
+}
+.title-banner.access-ranking .title-banner-title{
+	top: 15px;
+}
+
+.title-banner.access-ranking .title-banner-title h2{
+	margin-bottom: 5px;
+}
+.title-banner.access-ranking .title-banner-title p{
+	font-size: 12px;
+}
+.title-banner.team-ranking{
+	margin-bottom: 20px;
+}
+.title-banner .title-banner-title.team-ranking{
+	top: 15px;
+	background-color: #E96000;
+}
+
+.title-banner.team-ranking .title-banner-title h2{
+	margin-bottom: 5px;
+}
+.title-banner.team-ranking .title-banner-title p{
+	font-size: 12px;
+}
+.maincol-ranking-module{
+	width: 620px;
+	background-color: lightgray;
+	margin-bottom: 10px;
+	display: inline-block;
+	padding: 10px;
+}
+
+/*ranking-team*/
+.ranking-page-team-prof{
+	width: 660px;
+	display: inline-block;
+	margin-bottom: 20px;
+	background-image: url(../images/bg_orange_4.gif);
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+.ranking-page-team-prof h4{
+	border-bottom: 3px solid #E96000;
+	font-size: 20px;
+	padding-top: 0px;
+	border-radius: 5px 5px 0px 0px;
+	background-color: #fff;
+	-webkit-box-shadow: 2px 2px 0px #ccc;
+	box-shadow: 2px 2px 0px #ccc;	
+	position: relative;
+}
+.ranking-page-team-prof h4 a{
+	color: #E96000;
+}
+.ranking-page-team-prof h4 strong{
+	display: inline-block;
+	margin-right: 10px;
+	padding: 3px 10px;
+	border-radius: 5px 0px 0px 0px;
+	font-size: 52px;
+	line-height: 20px;
+}
+.ranking-page-team-prof h4 strong span{
+	font-size: 20px;
+}
+.ranking-page-team-prof h4 strong.gold{
+	background-color: yellow;
+}
+.ranking-page-team-prof h4 strong.silver{
+	background-color: silver;
+}
+.ranking-page-team-prof h4 strong.copper{
+	background-color: #BF472F;
+}
+.ranking-page-team-prof .ranking-team-team-name{
+	font-size: 16px;
+}
+.ranking-page-team-prof div{
+	display: block;
+	width: 300px;
+	height: 200px;
+	float: left;
+	overflow: hidden;
+	border-radius: 0px 0px 0px 5px;
+	position: relative;
+}
+.ranking-page-team-prof div a{
+	position: absolute;
+	top: 100px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: white;
+	font-family: "shin go light";
+	font-size: 20px;
+	background-color: rgba(233,96,0,.75);
+	background-image: url(../images/bg_orange4.gif);
+	opacity: 0;
+	-webkit-transition: opacity .5s, top .5s;
+	-o-transition: opacity .5s, top .5s;
+	transition: opacity .5s, top .5s;
+	padding-top: 80px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+	text-align: center;
+	text-decoration: none;
+	letter-spacing: .1em;
+}
+.ranking-page-team-prof div:hover a{
+	opacity: 1;
+	top: 0;	
+}
+.ranking-page-team-prof div img{
+	position: relative;
+}
+.ranking-page-team-prof ul{
+	background-color: #fff;
+	width: 340px;
+	height: 200px;
+	display: inline-block;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-box-shadow: 2px 2px 0px #ccc;
+	box-shadow: 2px 2px 0px #ccc;	
+	border-radius: 0px 0px 5px 0px;
+	position: relative;
+}
+.ranking-page-team-prof ul li{
+	display: inline-block;
+}
+.ranking-page-team-prof ul li.ranking-page-team-name{
+	font-size: 20px;
+	font-family: "shin go regular";
+	letter-spacing: .1em;
+	border-bottom: 1px solid #ccc;
+	color: #E96000;
+	display: block;
+}
+.ranking-page-team-prof ul li.ranking-page-team-data{
+	font-family: "shin go regular";
+	font-size: 12px;
+}
+.ranking-page-team-prof ul li.ranking-page-team-data a:hover{
+	color: #E96000;
+}
+.ranking-page-team-prof ul li.ranking-page-team-description p{
+	font-size: 14px;
+	border-top: 1px solid  #E96000;	
+	padding-top: 5px;
+	margin-top: 5px;
+}
+.ranking-page-team-prof ul li.ranking-page-team-description a{
+	position: absolute;
+	bottom: 5px;
+	right: 10px;
+	font-size: 12px;
+}
+.ranking-page-team-prof ul li.ranking-page-team-description a:hover{
+	color: #E96000;
+}
+
+/*ranking-column*/
+.ranking-column-container{
+	width: 660px;
+	display: inline-block;
+	margin-bottom: 20px;
+	background-image: url(../images/bg1.gif);
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+.ranking-column-container h4{
+	font-size: 20px;
+	padding-top: 0px;
+	background-color: #fff;
+	border-radius: 5px 5px 0px 0px;
+	border-bottom: 2px solid #009145;
+	-webkit-box-shadow: 2px 2px 0px #ccc;
+	box-shadow: 2px 2px 0px #ccc;	
+}
+.ranking-column-container h4 a{
+	color: #009145;
+}
+.ranking-column-container h4 strong{
+	display: inline-block;
+	margin-right: 10px;
+	padding: 3px 10px;
+	border-radius: 5px 0px 0px 0px;
+	font-size: 52px;
+	line-height: 20px;
+}
+.ranking-column-container h4 strong span{
+	font-size: 20px;
+}
+.ranking-column-container h4 strong.gold{
+	background-color: yellow;
+}
+.ranking-column-container h4 strong.silver{
+	background-color: silver;
+}
+.ranking-column-container h4 strong.copper{
+	background-color: #BF472F;
+}
+.ranking-column-container .ranking-column-team-name{
+	font-size: 16px;
+}
+.ranking-column-container div{
+	width: 320px;
+	height: 200px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	border-radius: 0px 0px 0px 5px;
+}
+.ranking-column-container div a{
+	position: absolute;
+	top: 100px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: white;
+	font-family: "shin go light";
+	font-size: 20px;
+	background-color: rgba(0,145,69,.5);
+	background-image: url(../images/bg1.gif);
+	opacity: 0;
+	-webkit-transition: opacity .5s, top .5s;
+	-o-transition: opacity .5s, top .5s;
+	transition: opacity .5s, top .5s;
+	padding-top: 80px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+	text-align: center;
+	text-decoration: none;
+	letter-spacing: .1em;
+}
+.ranking-column-container div:hover a{
+	opacity: 1;
+	top: 0;	
+}
+.ranking-column-container div img{
+	position: relative;
+}
+.ranking-column-container > ul{
+	width: 320px;
+	height: 200px;
+	float: left;
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 0px 0px 5px 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+	-webkit-box-shadow: 2px 2px 0px #ccc;
+	box-shadow: 2px 2px 0px #ccc;	
+}
+.ranking-column-container ul li ul li{
+	background-color: lightgray;
+	color: #333;
+	padding: 3px;
+	float: left;
+	margin-right: 3px;
+	margin-bottom: 5px;
+	font-size: 10px;
+}
+.ranking-column-container ul li.ranking-column-text p{
+	border-top: 1px solid #999;
+	padding-top: 3px;
+	background-color: transparent;
+}
+.ranking-column-container ul li.ranking-column-text a{
+	display: inline-block;
+	font-size: 12px;
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+}
+
+/*---------------------
+column-page
+----------------------*/
+.column-page-title{
+	margin-bottom: 0;
+	padding-bottom: 10px;
+}
+.column-page-title .post-date{
+	font-size: 14px;
+	font-family: "shin go regular";
+	color: #999;
+}
+.column-page-title h2{
+	width: 660px;
+	font-size: 34px;
+	line-height: 48px;
+	margin-bottom: 10px;
+	font-family: "shin go medium";
+	letter-spacing: .05em;
+	border-bottom: 3px solid #009145;
+	padding-bottom: 5px;
+	color:#009145;
+}
+.sns-buttons{
+	width: 400px;
+}
+.sns-buttons .fb-like{
+	margin-right: 10px !important;
+}
+.sns-buttons .fb-like span{
+	vertical-align: top !important;
+}
+.sns-buttons .twitter-share-button{
+	height: 20px;
+	vertical-align: top;
+	margin-right: 10px;
+}
+.sns-buttons.sns-lower{
+	margin-bottom: 60px;
+}
+
+.column-page-content{
+	width: 660px;
+	margin-bottom: 10px;
+}
+.column-page-content .column-page-main-image{
+	max-width: 660px;
+	max-height: 460px;
+	margin: 20px auto;
+	display: block;
+	border-radius: 5px;
+}
+.column-page-content .column-page-main-text{
+	font-size: 16px;
+	width: 580px;
+	margin: 10px auto 10px;
+	line-height: 28px;
+}
+.column-page-content .column-page-main-text:first-letter{
+	font-size: 3.2em;
+	float: left;
+	line-height: 1;
+	position: relative;
+	top: 7px;
+	display: block;
+	margin-right: 5px;
+	margin-top: 6px;
+	font-family: "shin go medium";
+	font-weight: bold;
+	color: #009145;
+}
+.column-page-content .column-page-subtitle{
+	width: 660px;
+	font-size: 24px;
+	margin: 30px 0 20px;
+	font-family: "shin go medium";
+	color: #009145;
+	border-top: 1px dotted #009145;
+	padding-top: 5px;
+}
+.column-page-content .column-page-sub-image{
+	max-width: 660px;
+	max-height: 460px;
+	margin: 10px auto 20px;
+	display: block;
+	border-radius: 5px;
+}
+.column-page-content .column-page-sub-text{
+	font-size: 16px;
+	width: 580px;
+	margin: 10px auto 10px;
+	line-height: 28px;
+}
+.column-page-content .column-page-sub-text:first-letter{
+	font-size: 3.2em;
+	float: left;
+	line-height: 1;
+	position: relative;
+	top: 7px;
+	display: block;
+	margin-right: 5px;
+	margin-top: 6px;
+	font-family: "shin go medium";
+	font-weight: bold;
+	color: #009145;
+}
+.column-page-team-prof{
+	border-top: 3px solid #009145;
+	padding-top: 20px;
+	margin-top: 20px;
+}
+.column-page-team-prof div div{
+	display: block;
+	width: 300px;
+	height: 200px;
+	float: left;
+	overflow: hidden;
+	border-radius: 5px;
+}
+.column-page-team-prof div div a{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.column-page-team-prof div ul{
+	background-color: #fff;
+	width: 340px;
+	height: 200px;
+	display: inline-block;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-box-shadow: 2px 2px 0px #ccc;
+	box-shadow: 2px 2px 0px #ccc;	
+}
+.column-page-team-prof div ul li{
+	display: inline-block;
+}
+.column-page-team-prof div ul li.column-page-team-name{
+	font-size: 20px;
+	font-family: "shin go regular";
+	letter-spacing: .1em;
+	border-bottom: 1px solid #ccc;
+	color: #E96000;
+	margin-bottom: 5px;
+	display: block;
+}
+.column-page-team-prof div ul li.column-page-team-data{
+	font-family: "shin go regular";
+	font-size: 12px;
+}
+.column-page-team-prof div ul li.column-page-team-data a:hover{
+	color: #E96000;
+}
+.column-page-team-prof div ul li.column-page-team-description{
+	font-size: 14px;
+	border-top: 1px solid  #E96000;	
+	padding-top: 5px;
+	margin-top: 5px;
+}
+.column-page-recomend{
+	margin-top: 20px;
+}
+
+/*---------------------
+team-page
+----------------------*/
+.maincol-module{
+	display: inline-block;
+	margin-left: 10px;
+}
+.team-page-title{
+	margin-bottom: 0;
+	padding-bottom: 10px;
+}
+.team-page-title h2{
+	width: 660px;
+	font-size: 34px;
+	line-height: 48px;
+	margin-bottom: 10px;
+	font-family: "shin go medium";
+	letter-spacing: .05em;
+	border-bottom: 3px solid #009145;
+	padding-bottom: 5px;
+	color:#009145;
+}
+.team-page-title .sns-buttons{
+	width: 400px;
+	padding-left: 0;
+}
+.team-page-title .fb-like{
+	margin-right: 10px !important;
+}
+.team-page-title .fb-like span{
+	vertical-align: top !important;
+}
+.team-page-title .twitter-share-button{
+	height: 20px;
+	vertical-align: top;
+	margin-right: 10px;
+}
+.team-page-tags,
+.column-page-tags{
+	width: 660px;
+	height: auto;
+	border-bottom: 1px solid #009145;
+	margin-bottom: 5px;
+	display: inline-block;
+}
+.team-page-tags strong,
+.column-page-tags strong{
+	display: block;
+	float: left;
+	width: 50px;
+	font-size: 20px;
+	letter-spacing: .1em;
+	color: #666;
+}
+.team-page-tags ul,
+.column-page-tags ul{
+	width: 610px;
+	display: inline-block;
+}
+.team-page-tags ul li,
+.column-page-tags ul li{
+	width: 90px;
+	height: 30px;
+	float: left;
+	margin-right: 5px;
+	background-color: lightgray;
+	margin-bottom: 5px;
+	font-size: 10px;
+}
+.team-page-content{
+	width: 660px;
+	margin-bottom: 10px;
+}
+.team-page-content .team-page-main-image{
+	max-width: 660px;
+	max-height: 460px;
+	margin: 10px auto 20px;
+	display: block;
+	border-radius: 5px;
+}
+.team-page-content .team-page-main-text{
+	font-size: 16px;
+	width: 580px;
+	margin: 10px auto 10px;
+	line-height: 28px;
+}
+.team-page-content .team-page-main-text:first-letter{
+	font-size: 3.2em;
+	float: left;
+	line-height: 1;
+	position: relative;
+	top: 7px;
+	display: block;
+	margin-right: 5px;
+	margin-top: 6px;
+	font-family: "shin go medium";
+	font-weight: bold;
+	color: #009145;
+}
+
+.team-page-contact li{
+	width: 280px;
+	height: 80px;
+	float: left;
+	margin-left: 40px;
+	background-color: white;
+	border: 1px solid #E96000;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background-image: url(../images/bg_orange_4.gif);
+	-webkit-box-shadow: 2px 2px 0px #ccc;
+	box-shadow: 2px 2px 0px #ccc;
+	-webkit-transition: background-color .5s;
+	-o-transition: background-color .5s;
+	transition: background-color .5s;
+}
+.team-page-contact li ~ li{
+	margin-left: 20px;
+}
+.team-page-contact li:hover{
+	background-color: #E96000;
+}
+.team-page-contact li a{
+	font-family: "shin go regular";
+	letter-spacing: .1em;
+	font-size: 16px;
+	width: 320px;
+	height: 80px;
+	text-align: center;
+	vertical-align: middle;	
+	display: table-cell;
+	cursor: pointer;
+	color: #E96000;
+	-webkit-transition: color .5s;
+	-o-transition: color .5s;
+	transition: color .5s;
+}
+.team-page-contact li:hover a{
+	color: white;
+}
+.team-page-contact li a span{
+	background-color: #fff;
+	padding: 5px;
+	border-radius: 10px;
+	-webkit-transition: background-color .5s;
+	-o-transition: background-color .5s;
+	transition: background-color .5s;
+}
+.team-page-contact li:hover a span{
+	background-color: #E96000;
+}
+
+.team-page-coachs{
+	width: 660px;
+	margin-top: 20px;
+}
+.team-page-coachs ul{
+	width: 660px;
+}
+.team-page-coachs ul li{
+	width: 315px;
+	height: 100%;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	background-color: #fff;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 5px;
+	-webkit-box-shadow: 2px 2px 0px #ccc;
+	box-shadow: 2px 2px 0px #ccc;		
+}
+.team-page-coachs ul li h5{
+	font-size: 20px;
+	color: #009145;
+	font-family: "shin go regular";
+	letter-spacing: .1em;
+}
+.team-page-coachs ul li div{
+	width: 105px;
+	height: 105px;
+	overflow: hidden;
+	float: left;
+	position: relative;
+	margin-right: 15px;
+	border-radius: 5px;	
+	margin-top: 5px;
+}
+.team-page-coachs ul li div img{
+	position: absolute;
+}
+.team-page-coachs ul li p{
+	font-size: 14px;
+}
+.team-page-columns h6{
+	margin: 0;
+}
+.team-page-introduction li{
+	width: 310px;
+	float: left;
+	margin-right: 20px;
+}
+.team-page-introduction li div{
+	width: 310px;
+	height: 310px;
+	vertical-align: middle;
+	display: table-cell;
+	line-height: 0;
+	overflow: hidden;
+}
+.team-page-introduction li img{
+	max-width: 310px;
+	max-height: 310px;
+	border-radius: 5px;
+}
+.team-page-introduction li p{
+	margin-top: 6px;
+	padding: 5px 10px;
+	background-color: #fff;
+	border-radius: 5px;
+	text-align: center;
+	-webkit-box-shadow: 2px 2px 0px #ccc;
+	box-shadow: 2px 2px 0px #ccc;	
+}
+.team-page-detail > div > ul{
+	background-color: #fff;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: inline-block;
+	border-radius: 5px;
+	-webkit-box-shadow: 2px 2px 0px #ccc;
+	box-shadow: 2px 2px 0px #ccc;		
+}
+.team-page-detail div > ul > li{
+	width: 295px;
+	float: left;
+	margin-right: 30px;
+}
+.team-page-detail div > ul > li h4,
+.team-page-detail div > ul > div h4{
+	font-family: "shin go medium";
+	color: #009145;
+	border-bottom: 1px solid #009145;
+	letter-spacing: .1em;
+	font-size: 14px;	
+}
+.team-page-detail div > ul ul{
+	padding: 5px 0px 20px;
+	display: inline-block;
+}
+.team-page-detail div > ul > div{
+	width: 620px;
+}
+.team-page-detail div > ul > div ul{
+	padding-top: 10px;
+}
+.team-page-detail div > ul > div ul li{
+	width: 620px;
+	text-align: center;
+	clear: both;
+	display: inline-block;
+	margin-bottom: 5px;
+	border-radius: 10px;
+}
+.team-page-detail div > ul > div ul li h5{
+	background-color: #B8D3B3;
+	width: 50px;
+	float: left;
+	height: 50px;
+	font-family: "shin go regular";
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-top: 15px;
+	border-radius: 10px 0px 0px 10px;
+	background-image: url(../images/bg1.gif);
+}
+.team-page-detail div > ul > div ul li h5.holiday{
+	background-color: #009145;
+	color: white;
+}
+.team-page-detail div > ul > div ul li p{
+	float: left;
+	width: 570px;
+	height: 50px;
+	overflow: scroll;
+	background-color: #fafafa;
+	border-left: 2px solid white;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: left;
+	font-size: 12px;
+	line-height: 16px;
+	border-radius: 0px 10px 10px 0px;
+}
+
+.contact-second{
+	margin-bottom: 20px;
+}
+
+.team-page-recomend{
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.inquiry-wrapper{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.inquiry-background{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.8);
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.inquiry-content{
+	width: 530px;
+	padding: 30px 50px;
+	z-index: 3;
+	position: fixed;
+	background-color: white;
+	display: none;
+	width: auto;
+	top: 50px;
+	height: 500px;
+	padding-bottom: 50px;
+	overflow: scroll;
+	border-radius: 10px;
+}
+.inquiry-wrapper h4{
+	margin-bottom: 20px;
+	border-bottom: 1px solid #009145;
+}
+.inquiry-wrapper .closebutton{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+.inquiry-wrapper .agreement{
+	width: 508px;
+	height: 200px;
+	overflow: scroll;
+	padding: 10px;
+	border-top: solid 1px #999;
+	border-right: solid 1px #999;
+	border-left: solid 1px #999;
+	border-bottom: 0px;
+	font-size: 12px;
+	margin:0px auto;
+}
+.inquiry-wrapper .agreement h5{
+	text-align: center;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.inquiry-wrapper label{
+	width: 200px;
+	float: left;
+	font-size: 14px;
+	margin-right: 20px;
+	vertical-align: 0.5ex;
+	cursor: pointer;
+}
+.inquiry-wrapper label span{
+	vertical-align: 0.3ex;
+	font-size: 10px;
+}
+.inquiry-wrapper label span.required{
+	font-size: 10px;
+	color: #FF3E2F;
+}
+.inquiry-wrapper input{
+	width: 300px;
+	margin-bottom: 20px;
+}
+.inquiry-wrapper textarea{
+	width: 300px;
+	height: 150px;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+.inquiry-wrapper .consent-wrap{
+	width: 528px;
+	margin: 0px auto;
+	padding-top: 8px;
+	padding-bottom: 5px;
+	border-top: dotted 1px #999;
+	border-right: solid 1px #999;
+	border-left: solid 1px #999;
+	border-bottom: solid 1px #999;
+}
+.inquiry-wrapper .consent-wrap div{
+	width: 250px;
+	margin: 0 auto;
+}
+.inquiry-wrapper .consent-label{
+	width: auto;
+	margin-right: 0;
+}
+.inquiry-wrapper .consent-checkbox{
+	width: 30px;
+	vertical-align: 0.5ex;
+	margin-bottom: 0;
+}
+.inquiry-wrapper .submitbutton{
+	width: auto;
+	height: 30px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+/*-----oocss定義-----*/
+
+.disp-ib{
+	display: inline-block;
+}
+.m0{
+	margin: 0;
+}
+.mt20{
+	margin-top: 20px;
+}
+.mr5{
+	margin-right: 5px;
+}
+.w-660{
+	width: 660px;
+}
+.w-100p{
+	width: 100%;
+}
+.h-a{
+	height: auto;
+}
+.h-16{
+	height: 16px;
+}
+.mb20{
+	margin-bottom: 20px;
+}
+.bgi-green1{
+	background-image: url(../images/bg1.gif);
+}
+.radius5{
+	border-radius: 5px;	
+}
+.boxsizing{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+.p3{
+	padding: 3px;
+}
+.p10{
+	padding: 10px;
+}
+.pb5{
+	padding-bottom: 5px;
+}
+.img-size1{
+	width: 320px;
+	height: 200px;
+}
+.fl-l{
+	float: left;
+}
+.detail-size1{
+	width: 320px;
+	height: 200px;
+}
+.bgcol-white{
+	background-color: #fff;	
+}
+.bgcol-gray{
+	background-color: #999;
+}
+.radius0-5-5-0{
+	border-radius: 0px 5px 5px 0px;
+}
+.radius5-0-0-5{
+	border-radius: 5px 0px 0px 5px;
+}
+
+.relative{
+	position: relative;
+}
+.absolute{
+	position: absolute;
+}
+.b0{
+	bottom: 0;
+}
+.r0{
+	right: 0;
+}
+.b5{
+	bottom: 5px;
+}
+.r5{
+	right: 5px;
+}
+.ov-h{
+	overflow: hidden;
+}
+.foz20{
+	font-size: 20px;
+}
+.foz14{
+	font-size: 14px !important;
+}
+.foz12{
+	font-size: 12px !important;
+}
+.foz10{
+	font-size: 10px !important;
+}
+.shin-go-light{
+	font-family: "shin go light";	
+}
+.shin-go-light{
+	font-family: "shin go medium";	
+}
+.col-white{
+	color: white !important;
+}
+.col-black{
+	color: #333 !important;
+}
+.col-green{
+	color: #009145 !important;
+}
+.effect-1 a{
+	position: absolute;
+	top: 100px;
+	left: 0;
+	width: 100%;
+	font-size: 20px;
+	color: white;
+	font-family: "shin go light";	
+	height: 100%;
+	background-color: rgba(0,145,69,.5);
+	background-image: url(../images/bg1.gif);
+	opacity: 0;
+	-webkit-transition: opacity .5s, top .5s;
+	-o-transition: opacity .5s, top .5s;
+	transition: opacity .5s, top .5s;
+	padding-top: 80px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+	text-align: center;
+	text-decoration: none;
+	letter-spacing: .1em;
+}
+.effect-1:hover a{
+	opacity: 1;
+	top: 0;	
+}
+.mt5{
+	margin-top: 5px;
+}
+.mb5{
+	margin-bottom: 5px;
+}
+.pb5{
+	padding-bottom: 5px;
+}
+.lh26{
+	line-height: 26px;
+}
+.bb-gray{
+	border-bottom: 1px solid #999;	
+}
+
+.column-result-container > ul{
+	width: 320px;
+	height: 200px;
+	float: left;
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 0px 5px 5px 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+}
+.column-result-container ul h4{
+	font-size: 14px;
+	color: #666;
+	font-family: "shin go regular";
+	margin: 0;
+}
+.column-result-container ul h3{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #999;
+	line-height: 24px;
+}
+.column-result-container ul h3 a{
+	font-size: 20px;
+	font-family: "shin go medium";
+	color: #009145
+}
+.column-result-container ul li ul li{
+	background-color: lightgray;
+	color: #333;
+	padding: 3px;
+	float: left;
+	margin-right: 3px;
+	margin-bottom: 5px;
+	font-size: 10px;
+}
+.column-result-container .column-result-text p{
+	border-top: 1px solid #999;
+	padding-top: 3px;
+}
+.column-result-container .column-result-text a{
+	display: inline-block;
+	font-size: 12px;
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+}
+
+
+
+
+/*---------------------
+subcol
+----------------------*/
+#subcol{
+	width: 320px;
+	float: right;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-top: 20px;
+	padding-right: 20px;
+}
+.subcol-module{
+	width: 300px;
+	padding:10px 0px;
+}
+.rankings{
+	background-image: url(../images/bg1.gif);
+	border: 1px solid #009145;
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+}
+.rankings h3{
+	font-size: 24px;
+	line-height: 27px;
+	margin-left: 10px;
+	color: #009145;
+}
+.rankings h4{
+	font-size: 12px;
+	margin-left: 10px;	
+	margin-top: 0;
+	margin-bottom: 10px;
+	color: #009145;
+}
+.rankings .to-list{
+	font-size: 14px;
+	color: #fff;
+	position: absolute;
+	top: 18px;
+	right: -75px;
+	-webkit-transition: right .5s;
+	-o-transition: right .5s;
+	transition: right .5s;	
+	background-color: #009145;
+	padding: 0 5px;
+	border-radius: 5px;
+}
+.rankings:hover .to-list{
+	right: 5px;
+}
+.rankings ul{
+	width: 280px;
+	height: auto;
+	padding: 0px 10px;
+}
+.rankings li{
+	width: 230px;
+	height: 50px;
+	display: inline-block;
+	background-color: white;	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+	margin-bottom: 15px;
+	-webkit-box-shadow: 2px 2px 0px #ccc;
+	box-shadow: 2px 2px 0px #ccc;	
+	left: 50px;
+	border-radius: 0px 5px 5px 0px;
+}
+.rankings li img{
+	width: 58px;
+	height: 58px;
+	position: absolute;
+	top: -4px;
+	left: -54px;
+}
+.rankings li div{
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+	display: inline-block;
+	background-size: cover;
+	background-position: center center;
+	overflow: hidden;
+}
+.rankings li a{
+	position: absolute;
+	top: -3px;
+	left: -53px;
+	width: 165px;
+	font-size: 14px;
+	display: inline-block;
+	height: 55px;
+	vertical-align: top;
+	padding-top: 5px;
+	padding-left: 115px;
+	padding-right: 5px;
+	background-color: rgba(255,255,255,0);
+	-webkit-transition: background-color .2s;
+	-o-transition: background-color .2s;
+	transition: background-color .2s;
+}
+.adsense{
+	width: 300px;
+	height: 250px;
+	background-color: #eee;
+	margin:20px 0px;
+	padding: 0;
+}
+
+/*---------------------
+footer
+----------------------*/
+footer{
+	width: 100%;
+	height: 390px;
+	background-color: #009245;
+	display: inline-block;
+	margin-top: 20px;
+	padding-top: 30px;
+	position: absolute;
+	color: white;
+	line-height: 24px;
+}
+footer .footerwrapper{
+	width: 1040px;
+	margin: 0px auto;	
+	position: relative;
+	height: 300px
+}
+footer .footerwrapper a{
+	color: white;
+	font-weight: normal;
+	font-size: 14px;
+}
+footer .footerwrapper > div{
+	width: 346px;
+	float: left;
+}
+footer .footerwrapper div > ul{
+	padding-left: 20px;
+	border-left: 1px dotted white;	
+}
+/*----footer-about----*/
+.footer-about ul{
+	padding-left: 20px;
+}
+.footer-about .sns-buttons{
+	padding-left: 0;
+	margin-bottom: 10px;
+}
+
+/*----sitemap----*/
+.sitemap{
+	position: relative;
+	top: 10px;
+}
+.sitemap h3{
+	font-size: 28px;
+	letter-spacing: .12em;
+	margin-bottom: 10px;
+
+}
+.sitemap ul{
+	width: 320px;
+	float: left;
+	display: inline-block;
+	font-size: 12px;	
+}
+/*----footer-search----*/
+.footer-search{
+	height: auto;
+	position: relative;
+	top: 10px;
+}
+.footer-search h4{
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+.footer-search ul{
+	width: 100%;
+	display: inline-block;
+	font-size: 14px;
+	padding-left: 5px !important;
+}
+.footer-search .category{
+	width: 100%;
+	line-height: 16px;
+}
+.footer-search .category ul{
+	width: 200px;
+	float: left;
+	margin-bottom: 8px;
+}
+.footer-search .category p{
+	width: 95px;
+	float: left;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	text-align: left;
+	color: white;
+}
+.footer-search .category ul li{
+	display: inline-block;
+}
+
+/*----copyright----*/
+.copyright{
+	width: 100%;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 16px;
+	letter-spacing: .1em;
+	text-align: center;
+	padding: 10px 0px;
+	border-top: 1px solid rgba(255,255,255,.4);
+	margin-top: 40px;
+	color: white;
+}
+
+/*---------------------
+user
+----------------------*/
+/*login*/
+.user{
+	background-image: none;
+	background-color: #FAFAFA;
+}
+
+.user .wrapper{
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/bg1.gif);
+	position: relative;
+}
+.user .wrapper .login-window{
+	width: 500px;
+	height: 280px;
+	background-color: white;
+	margin: 0 auto;
+	position: relative;
+	border-radius: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-box-shadow: 2px 2px 0px #ccc;
+	box-shadow: 2px 2px 0px #ccc;		
+}
+.user .wrapper .login-window h4{
+	width: 480px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	font-family: "shing go medium";
+	font-size: 20px;
+	color: #009145;
+	padding: 10px 50px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #009145;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.user .wrapper .login-window h4 img{
+	width: 170px;
+	vertical-align: middle;
+	margin-right: 20px;
+}
+.user .wrapper .login-window form{
+	position: relative;
+	top: 110px;
+	height: 80px;
+	width: 370px;
+	padding: 15px 30px 0px;
+	background-color: #009145;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+.user .wrapper .login-window label{
+	width: 150px;
+	cursor: pointer;
+	float: left;
+	font-family: "shin go regular";
+	color: white;
+}
+.user .wrapper .login-window input{
+	width: 200px;
+	margin-bottom: 10px;
+}
+.user .wrapper .login-window div{
+	padding: 0px 20px 5px 30px;
+	width: 210px;
+	height: 30px;
+	border-radius: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: inline-block;
+	margin-right: 34px;
+}
+.user .wrapper .login-window div label{
+	width: 140px;
+	font-size: 12px;
+	margin-top: 5px;
+	color: #009145;
+}
+.user .wrapper .login-window div input{
+	width: 20px;
+}
+.user .wrapper .login-window input[type=submit]{
+	width: 120px;
+	display: inline-block;
+	margin: 20px auto 0px;
+}
+.user .wrapper .login-window input[type=checkbox]{
+	width: auto;
+}
+.user header{
+	width: 100%;
+	height: 73px;
+	background-image: url(../images/bg1.gif);
+	top: 0;
+	left: 0;
+	border-radius: 0px;
+	border-bottom: 3px solid #009145;
+	background-color: #fff;
+	position: fixed;
+	z-index: 3;
+}
+.user header ul{
+	width: 450px;
+	float: right;
+	height: 50px;
+}
+.user header ul li{
+	height: 30px;
+	float: left;
+	display: inline-block;
+	margin-left: 20px;
+	padding-top: 20px;
+}
+.user header h2{
+	float: left;
+	margin-left: 25px;
+	margin-top: 3px;
+	margin-bottom: 0;
+	color: #009145;
+	position: relative;
+	width: 100%;
+}
+.user header h2 img{
+	width: 210px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;
+}
+.user header h2 span{
+	font-family: "Shin Go middle";
+	background-color: #fff;
+	padding: 5px;
+	border-radius: 5px;
+	font-size: 24px;
+	margin-right: 20px;
+	position: relative;
+	top: -3px;
+}
+.user header h2 strong{
+	position: absolute;
+	right: 50px;
+	top: 10px;
+}
+.user header h2 strong a{
+	font-size: 16px;
+	background-color: #fff;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 10px;
+	border: 1px solid #E96000;
+	color: #E96000;
+	-webkit-transition: color .2s,background-color .2s;
+	-o-transition: color .2s,background-color .2s;
+	transition: color .2s,background-color .2s;
+}
+.user header h2 strong a:hover{
+	color: white;
+	background-color: #E96000;
+	text-decoration: none;
+
+}
+
+/*--------leftmenu---------*/
+.user .leftmenu{
+	width: 250px;
+	background-color: white;
+	background-image: url(../images/bg1.gif);
+	left: 0;
+	top: 70px;
+	border-right: 1px solid #009145;
+	z-index: 2;
+	position: fixed;
+	overflow: scroll;
+	height: 100%;
+}
+.user .leftmenu .left-top{
+	width: 250px;
+	padding-top: 0px;
+}
+.user .leftmenu .left-top li{
+	height: 100px;
+	position: relative;
+	background-color: #fafafa;
+	border-bottom: 1px solid  #ccc;
+}
+.user .leftmenu .left-top li:hover,
+.user .leftmenu .left-top li.present{
+	background-color: #FFFF70;
+}
+.user .leftmenu .left-top li:hover:before,
+.user .leftmenu .left-top li.present:before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 10px;
+	height: 100px;
+	background-color: #009145;
+}
+.user .leftmenu .left-top li .present-place{
+	font-weight: bold;
+}
+.user .leftmenu .left-top li a{
+	color: #009145;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 35px 30px 30px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.user .leftmenu .left-top li.team-profile a,
+.user .leftmenu .left-top li.team-profile-create a{
+	padding: 27px 30px 30px;
+}
+.user .leftmenu .left-bottom{
+	margin-left: 15px;
+	background-color: #fff;
+	border-radius: 5px;
+	margin-top: 50px;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-box-shadow: 2px 2px 0px #ccc;
+	box-shadow: 2px 2px 0px #ccc;
+	display: inline-block;
+}
+.user .leftmenu .left-bottom .left-bottom-img{
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	border-radius: 5px;
+	position: relative;
+	display: block;
+	margin-bottom: 5px;
+}
+.user .leftmenu .left-bottom .left-bottom-img img{
+	width: auto;
+	height: auto;
+	position: relative;
+}
+.user .leftmenu .left-bottom h3{
+	width: 200px;
+	font-family: "shin go medium";
+	color: #009145;
+	font-size: 16px;
+	background-color: #fff;
+}
+.user .leftmenu .left-bottom p{
+	position: relative;
+	margin-top: 5px;
+	border-top: 1px dotted #009145;
+	padding-top: 5px;
+}
+.user .leftmenu .left-bottom p span{
+	width: 70px;
+	height: 38px;
+	position: absolute;
+	right: -10px;
+	bottom: -10px;
+	display: inline-block;
+	font-size: 10px;
+	font-family: "shin go medium";
+	background-color: #009145;
+	padding: 0px 5px;
+	border-radius: 0px 0px 5px 0px;
+}
+.user .leftmenu .left-bottom p span:hover{
+	background-color: #11a256;
+}
+.user .leftmenu .left-bottom p span a{
+	color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 7px 0px 0px 15px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*--------rightmenu---------*/
+.user .rightmenu{
+	background-color: #fafafa;
+	position: absolute;
+	right: 0;
+	padding-top: 70px;
+	padding-bottom: 50px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	padding-left: 250px;
+	height: 100%;
+}
+.user .rightmenu form{
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.user .rightmenu form > ul{
+	line-height: 0;
+	padding-bottom: 150px;
+}
+.user .rightmenu .user-prof li,
+.user .rightmenu .user-article li{
+	display: inline-block;
+	border-top: 1px solid #ddd;
+	width: 100%;
+	padding-top: 20px;
+	padding-left: 50px;
+	padding-bottom: 20px;
+	background-color: #fafafa;
+	line-height: 1em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+}
+.user .rightmenu .user-prof li:hover,
+.user .rightmenu .user-article li:hover{
+	background-image: url(../images/bg_orange_4.gif);
+}
+.user .rightmenu ul li > label{
+	width: 220px;
+	float: left;
+	margin-right: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	font-family: "shin go medium";
+}
+.user .rightmenu ul li label.writer-upload{
+	float: none;
+	margin-right: 105px;
+}
+.user .rightmenu ul li .required{
+	font-size: 12px;
+	color: red;
+	font-family: "shin go medium";
+	float: left;
+	margin-top: 5px;
+}
+.user .rightmenu ul li fieldset{
+	width: auto;
+	float: left;
+	margin-right: 20px;
+	padding-left: 0;
+	padding-right: 0;
+	border: none;
+	margin-left: 0;
+}
+.user .rightmenu ul li fieldset legend{
+	margin-bottom: 10px;
+	font-weight: bold;
+	padding-left: 0;
+}
+.user .rightmenu ul li fieldset legend span{
+	font-size: 10px;
+}
+.user .rightmenu ul li fieldset li{
+	width: auto;
+	float: left;
+}
+.user .rightmenu ul li fieldset fieldset{
+	width: auto;
+	float: left;
+	margin-right: 0px;
+}
+.user .rightmenu ul li fieldset fieldset.mr50{
+	margin-right: 50px;
+}
+.user .rightmenu ul li fieldset fieldset legend{
+	font-weight: normal;
+}
+
+.user .rightmenu ul li fieldset label{
+	width: auto;
+	float: left;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.user .rightmenu input[type=text]{
+	width: 300px;
+}
+.user .rightmenu fieldset input[type=text]{
+	margin-right: 20px;
+	width: 200px;
+}
+
+.user .rightmenu input[type=text],
+.user .rightmenu input[type=file],
+.user .rightmenu textarea{
+	float: left;
+}
+.user .rightmenu input.writer-upload{
+	float: none;
+}
+.user .rightmenu input[id=local],
+.user .rightmenu label[for=local]{
+margin-top: 20px;
+}
+.user .rightmenu .user-prof-date textarea{
+	margin-right: 40px;
+	margin-bottom: 20px;
+}
+
+.user .rightmenu input[type=checkbox]{
+	float: left;
+	margin-right: 10px;
+	vertical-align: .5ex;
+}
+.user .rightmenu input[type=submit],
+.user .rightmenu button,
+.user .login-window input[type=submit],
+.add-writer{
+	cursor: pointer;
+	font-size: 16px;
+	background-color: white;
+	border: 1px solid #E96000;
+	-webkit-box-shadow: 2px 2px 0px #ccc;
+	box-shadow: 2px 2px 0px #ccc;
+	border-radius: 10px;
+	font-family: "shin go medium";
+	color: #E96000;
+	-webkit-transition: color .2s, background-color .2s;
+	-o-transition: color .2s, background-color .2s;
+	transition: color .2s, background-color .2s;
+	letter-spacing: .1em
+}
+.user .rightmenu .user-prof input[type=submit]{
+	margin-top: 30px;
+	position: relative;
+	left: 50px;
+	width: 670px;
+	height: 70px;
+}
+.user .rightmenu input[type=submit]:hover,
+.user .rightmenu button:hover,
+.user .login-window input[type=submit]:hover,
+.add-writer:hover{
+	color: white;
+	background-color: #E96000;
+}
+.user .rightmenu .user-prof select{
+	float: left;
+	margin-right: 20px;
+}
+.user .rightmenu .user-prof > ul > li:after,
+.user .rightmenu .user-article > ul > li:after,
+.user .rightmenu.user-management div:after{
+	content: "";
+	width: 220px;
+	position: absolute;
+	top: 10px;
+	display: block;
+	background-color: #E96000;	
+	border-radius: 10px;
+	opacity: 0;
+	-webkit-transition: opacity .5s, left .5s;
+	-o-transition: opacity .5s, left .5s;
+	transition: opacity .5s, left .5s;
+	z-index: 2;
+	color: white;
+	font-size: 14px;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	line-height: 24px;
+}
+.user .rightmenu .user-prof li:after{
+	left: 680px;
+}
+.user .rightmenu .user-prof li:hover:after{
+	left: 720px;
+}
+.user .rightmenu .user-article li:after{
+	left: 700px;
+}
+.user .rightmenu .user-article li:hover:after{
+	left: 740px;
+}
+.user .rightmenu.user-management div:after{
+	left: 700px;
+}
+.user .rightmenu.user-management div:hover:after{
+	left: 740px;
+}
+.user .rightmenu form li:hover:after,
+.user .rightmenu.user-management div:hover:after{
+	opacity: 1;
+}
+
+
+
+
+.user .rightmenu form li.team-name:after{
+	content:"チーム名を入力してください。最大50文字まで入力可能です。";
+}
+.user .rightmenu form li.team-img:after{
+	content:"チームのメイン画像をアップロードしてください。5MBまで。jpg形式及びpng形式のみ可能です。";
+}
+.user .rightmenu form li.team-url:after{
+	content:"ホームページやその他ウェブサイトのURLを入力してください。最大200文字まで入力可能です。";
+}
+.user .rightmenu form li.team-introduction:after{
+	content:"チームの紹介文を入力してください。最大500文字まで入力可能です。";
+}
+.user .rightmenu form li.coach-name1:after{
+	content:"１人目のコーチの氏名を記入してください。";
+}
+.user .rightmenu form li.coach-img1:after{
+	content:"１人目のコーチの顔写真をアップロードしてください。5MBまで。jpg形式及びpng形式のみ可能です。";
+}
+.user .rightmenu form li.coach-introduction1:after{
+	content:"１人目のコーチの紹介文を入力してください。最大200文字まで入力可能です";
+}
+.user .rightmenu form li.coach-name2:after{
+	content:"２人目のコーチの氏名を記入してください。";
+}
+.user .rightmenu form li.coach-img2:after{
+	content:"２人目のコーチの顔写真をアップロードしてください。5MBまで。jpg形式及びpng形式のみ可能です。";
+}
+.user .rightmenu form li.coach-introduction2:after{
+	content:"２人目のコーチの紹介文を入力してください。最大200文字まで入力可能です";
+}
+.user .rightmenu form li.coach-name3:after{
+	content:"３人目のコーチの氏名を記入してください。";
+}
+.user .rightmenu form li.coach-img3:after{
+	content:"３人目のコーチの顔写真をアップロードしてください。5MBまで。jpg形式及びpng形式のみ可能です。";
+}
+.user .rightmenu form li.coach-introduction3:after{
+	content:"３人目のコーチの紹介文を入力してください。最大200文字まで入力可能です";
+}
+.user .rightmenu form li.coach-name4:after{
+	content:"４人目のコーチの氏名を記入してください。";
+}
+.user .rightmenu form li.coach-img4:after{
+	content:"４人目のコーチの顔写真をアップロードしてください。5MBまで。jpg形式及びpng形式のみ可能です。";
+}
+.user .rightmenu form li.coach-introduction4:after{
+	content:"４人目のコーチの紹介文を入力してください。最大200文字まで入力可能です";
+}
+.user .rightmenu form li.team-category:after{
+	content:"該当するチーム形態を選択してください。複数該当する場合は、複数選択可能です。";
+}
+.user .rightmenu form li.team-address:after{
+	content:"メイン練習場もしくは本拠地の住所を入力してください。都道府県と市町村は入力必須です。";
+}
+.user .rightmenu form li.station:after{
+	content:"最寄り駅を入力してください。可能であれば、徒歩や自動車での所要時間も入力してください。";
+}
+.user .rightmenu form li.practice-place:after{
+	content:"練習場所の名称を入力してください。最大50文字まで入力可能です。";
+}
+.user .rightmenu form li.practice-date:after{
+	content:"曜日ごとの練習スケジュールを記載してください。複数ある場合は改行して記載してください。曜日ごとに最大50文字まで入力可能です。";
+}
+.user .rightmenu form li.courses:after{
+	content:"複数のコース（スクールなど）を運営されている場合は各コースの詳細を入力してください。最大500文字まで入力可能です。";
+}
+.user .rightmenu form li.price:after{
+	content:"月額料金を入力してください。複数ある場合は、改行して入力してください。最大50文字まで入力可能です。";
+}
+.user .rightmenu form li.other-cost:after{
+	content:"月額料金以外に必要となる料金や経費を入力してください。入会金だけでなく、ユニフォーム代などの諸経費も入力してください。最大300文字まで入力可能です。";
+}
+.user .rightmenu form li.user-age:after{
+	content:"特に募集を強化しているもしくは人数の多い年代を選択してください。2つまで選択可能です。";
+}
+.user .rightmenu form li.performance:after{
+	content:"大会での優勝などこれまでの実績を記載してください。過去3年間分の実績を入力可能です。";
+}
+.user .rightmenu form li.one-phrase-img:after{
+	content:"チームを紹介するための写真（集合写真や練習風景など）をアップロードしてください。5MBまで。jpg形式及びpng形式のみ可能です。";
+}
+.user .rightmenu form li.one-phrase-text:after{
+	content:"前項目でアップロードした画像の説明文を入力してください。最大20文字まで入力可能です。";
+}
+.user .rightmenu form li.features:after{
+	content:"［起用方針］公式戦での主な起用方針を選択してください。1つまで選択可能です。　［プレイスタイル］チームの主なプレイスタイルを選択してください。1つまで選択可能です。　［その他特長］その他でチームの特長に合っているものを選択してください。複数選択可能です。";
+}
+.user .rightmenu form li.mail:after{
+	content:"チームの代表メールアドレスを入力してください。";
+}
+.user .rightmenu form li.password-after:after{
+	content:"変更後に使用したいパスワードを入力してください。";
+}
+.user .rightmenu form li.password-confirm:after{
+	content:"確認のためもう一度変更後のパスワードを入力してください。";
+}
+
+.user .rightmenu form li.article-submitbutton:after{
+	content:"記事を公開せずに一時的に保存する場合は「下書き保存」を押してください。";	
+}
+.user .rightmenu form li.article-tags:after{
+	content:"記事に関連するタグを選択してください。最大3つまで選択可能です。タグを設定することで、ユーザーが記事を探しやすくなります。";	
+}
+.user .rightmenu form li.main-title:after{
+	content:"最大100文字まで入力可能です。";	
+}
+.user .rightmenu form li.uploads:after{
+	content:"写真を掲載する場合は、写真をアップロードしてください。画像の解像度は最大5MBまでです。動画を掲載する場合は、YouTubeやFacebook等の動画タグを入力してください。";	
+}
+.user .rightmenu form li.main-text:after{
+	content:"記事の本文を記載してください。最大800字まで入力可能です。";	
+}
+.user .rightmenu form li.subtitles:after{
+	content:"最大100文字まで入力可能です。";	
+}
+.user .rightmenu form li.subloads:after{
+	content:"写真を掲載する場合は、写真をアップロードしてください。画像の解像度は最大5MBまでです。動画を掲載する場合は、YouTubeやFacebook等の動画タグを入力してください。";	
+}
+.user .rightmenu form li.subtexts:after{
+	content:"記事の本文を記載してください。最大800字まで入力可能です。";	
+}
+.user .rightmenu form li.add-buttons:after{
+	content:"記事を続けたい場合は、必要な要素（タイトル・画像／動画・本文）に応じて、以下のボタンを押して追加してください。各要素につき最大6つまで追加可能です。";	
+}
+.user .rightmenu form li.writer-select:after{
+	content:"（運営者用）ライターを選択してください。";	
+}
+.user .rightmenu.user-management div:hover:after{
+	content:"過去に作成した記事の一覧が表示されています。作成状況に応じて、公開・非公開・下書きのステータスを使い分けてください。";
+}
+
+
+.user .rightmenu .user-article .article-submitbutton li{
+	width: auto;
+	float: left;
+	background-color: transparent;
+	border-top: none;
+	padding: 0;
+	margin-right: 20px;
+}
+
+.user .rightmenu .user-article ul li fieldset.main-tag-selection label{
+	width: 199px;
+	margin-bottom: 15px;
+}
+.user .rightmenu .user-article ul li fieldset.uploads input[type=submit]{
+	width: auto;
+	margin-top: 5px;
+	height: 30px;
+}
+.user .rightmenu .user-article ul li fieldset.uploads div{
+	float: left;
+	width: 240px;
+}
+.user .rightmenu .user-article ul li fieldset.uploads div.movie{
+	width: 450px;
+}
+.user .rightmenu .user-article ul li fieldset.uploads div.movie textarea{
+	width: 426px;
+}
+.user .rightmenu .user-article ul li fieldset.uploads label{
+	float: none;
+}
+.user .rightmenu .user-article ul li fieldset.uploads input,
+.user .rightmenu .user-article ul li fieldset.uploads textarea{
+	float: none;
+	margin-top: 10px;
+}
+.user .rightmenu .user-article ul li fieldset.uploads #upload-image{
+	margin-bottom: 30px;
+}
+.user .rightmenu .user-article ul li #main-title,
+.user .rightmenu .user-article ul li.subtitles textarea{
+	width: 425px;
+	height: 50px;
+}
+.user .rightmenu .user-article ul li #main-text,
+.user .rightmenu .user-article ul li.subtexts textarea{
+	width: 425px;
+	height: 300px;
+}
+
+.user .rightmenu .user-article .subcontents{
+	display: none;
+}
+
+.user .rightmenu li.add-buttons{
+}
+.user .rightmenu li.add-buttons button{
+	margin-right: 10px;
+	margin-top: 20px;
+}
+.user .rightmenu .user-article .subloads{
+	display: none;
+	padding-top: 20px;
+}
+.user .rightmenu .user-article .subtitles,
+.user .rightmenu .user-article .subtexts{
+	display: none;
+	padding-top: 60px;	
+}
+.user .rightmenu .user-article .subtitles label,
+.user .rightmenu .user-article .subtexts label{
+	position: relative;
+	top: -40px;
+}
+.user .rightmenu .subtitles .delete-title-button,
+.user .rightmenu .subloads .delete-load-button,
+.user .rightmenu .subtexts .delete-text-button{
+	position: absolute;
+	top: 15px;
+	left: 630px;
+}
+.user .rightmenu.user-management{
+	height: 100%;
+}
+.user .rightmenu.user-management div{
+	position: relative;
+	height: 100%;
+}
+.user .rightmenu .article-unit{
+	width: 100%;
+	height: auto;
+	clear: both;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #fff;
+}
+.user .rightmenu .article-unit li{
+	height: 90px;
+	float: left;
+	border-left: 1px dotted #999;
+	margin-right: 2px;
+	padding-top: 15px;
+	border-bottom: 1px solid #ccc;
+	background-color: #fff;
+}
+.user .rightmenu .article-unit li.open{
+	color: #009145;
+}
+.user .rightmenu .article-unit li.close{
+	color: #E96000 !important;
+}
+.user .rightmenu .article-unit.define li{
+	height: 25px;
+	border-left: 1px solid rgba(0,0,0,0);
+	background-image: url(../images/bg_orange_4.gif);
+	background-color: #fff;
+	padding-top: 5px;
+	font-size: 14px;
+	margin-bottom: 0;
+	font-family: "shin go medium";
+	margin-top: 3px;
+}
+.user .rightmenu .article-unit.define .article-date{
+	padding-left: 20px;
+	width: 70px;
+}
+.user .rightmenu .article-unit .article-date{
+	width: 70px;
+	font-size: 12px;
+	padding-left: 20px;
+}
+.user .rightmenu .article-unit .article-condition{
+	width: 80px;
+	text-align: center;
+}
+.user .rightmenu .article-unit .article-title{
+	width: 290px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.user .rightmenu .article-unit .writer-name{
+	width: 100px;
+	padding-left: 5px;
+	font-size: 14px;
+}
+.user .rightmenu .article-unit .writer-prof{
+	width: 200px;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 12px;
+
+}
+.user .rightmenu .article-unit.define .writer-samb{
+	padding-left: 5px;
+}
+.user .rightmenu .article-unit .writer-samb{
+	width: 90px;
+	height: 105px;
+	overflow: hidden;
+	padding-top: 0;
+	margin-top: 0;
+}
+.user .rightmenu .article-unit .writer-samb div{
+	width: 90px;
+	height: 105px;
+	position: relative;
+}
+.user .rightmenu .article-unit .writer-samb div img{
+	position: relative;
+}
+.user .rightmenu .article-unit .article-edit{
+	width: 110px;
+	text-align: center;
+}
+.user .rightmenu .article-unit .article-delete{
+	width: 110px;
+	text-align: center;
+}
+.user .rightmenu .add-writer{
+	position: absolute;
+	top: 100px;
+	left: 1000px;
+	padding: 5px 10px;
+}
+
