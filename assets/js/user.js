@@ -1,6 +1,6 @@
 // JavaScript Document
-$(function(){
-
+(function(window, document, $) {
+var onReady = function($) {
 
 //文字省略ファンクション
 	function textCut(target,thres,word){//（ターゲットセレクタ，省略開始文字数，後に付ける文字）
@@ -49,7 +49,7 @@ $(function(){
 ――――――――――――――――――――*/
 //タイトルを追加する
 	$('.user-article').on('click','.add-title',function(){
-		var subTitleNum = 0;		
+		var subTitleNum = 0;
 		subTitleNum = $('.subtitles').length;
 		subTitleNum += 1;
 		if(subTitleNum > 6){
@@ -58,7 +58,6 @@ $(function(){
 		}
 		$('.user-article ul > li:last').before('<li class="subtitles"><label for="article_sub_text_0'+subTitleNum+'">サブタイトル'+ subTitleNum +'</label><textarea name="article[sub_text_0'+subTitleNum+']" id="article_sub_text_0'+subTitleNum+'"></textarea><button class="delete-title-button" type="button">削除する</button></li>');
 		$('.subtitles').slideDown(200).css('display','inline-block');
-		menuFixToDocumentHeightFunc();
 		rightMenuFixToWindowWidthFunc();
 	});
 //削除時のタイトルNo.の振り直し
@@ -68,7 +67,7 @@ $(function(){
 			$('.subtitles').each(function(i){
 				$(this).children('label').attr('for','sub-title'+(i+1)).text('サブタイトル'+(i+1))
 				.siblings('input').attr('id','sub-title'+(i+1));
-			});			
+			});
 		});
 	});
 //画像／動画を追加する
@@ -82,8 +81,7 @@ $(function(){
 			return false;
 		}
 		$('.user-article ul > li:last').before('<li class="subloads"><fieldset class="uploads"><legend>サブ画像／動画'+subLoadNum+'</legend><div><label class="sub-image-label" for="article_sub_image_'+ subLoadArray[subLoadNum] + '">画像はこちらから</label><br><input class="sub-image-input" name="article[sub_image_' + subLoadArray[subLoadNum] + ']" id="article_sub_image_'+ subLoadArray[subLoadNum] + '" type="file" value="画像アップロード"></div><div><label class="sub-movie-label" for="article_movie_thumbnail_0' + subLoadNum + '">動画はこちらから</label><br><textarea name="article[movie_thumbnail_0'+subLoadNum+']" id="article_movie_thumbnail_0' + subLoadNum + '" rows="5" cols="52"></textarea></div></fieldset><button class="delete-load-button" type="button">削除する</button></li>');
-		$('.subloads').slideDown(200).css('display','inline-block');		
-		menuFixToDocumentHeightFunc();
+		$('.subloads').slideDown(200).css('display','inline-block');
 		rightMenuFixToWindowWidthFunc();
 	});
 //削除時のタイトルNo.の振り直し
@@ -96,14 +94,14 @@ $(function(){
 				.siblings('input.sub-image-input').attr('id','upload-subimage'+(i+1))
 				.siblings('label.sub-movie-label').attr('for','upload-submovie'+(i+1))
 				.siblings('input.sub-movie-input').attr('id','upload-submovie'+(i+1));
-			});			
+			});
 		});
 
 	});
 
 //テキストを追加する
 	$('.user-article').on('click','.add-text',function(){
-		var subTextNum = 0;		
+		var subTextNum = 0;
 		subTextNum = $('.subtexts').length;
 		subTextNum += 1;
 		if(subTextNum > 6){
@@ -111,8 +109,7 @@ $(function(){
 			return false;
 		}
 		$('.user-article ul > li:last').before('<li class="subtexts"><label for="article_sub_text_0'+subTextNum+'">サブ文章'+subTextNum+'</label><textarea id="article_sub_text_0'+subTextNum+'" name="article[sub_text_0'+subTextNum+']" rows="5" cols="50"></textarea><button class="delete-text-button" type="button">削除する</button></li>');
-		$('.subtexts').slideDown(200).css('display','inline-block');		
-		menuFixToDocumentHeightFunc();
+		$('.subtexts').slideDown(200).css('display','inline-block');
 		rightMenuFixToWindowWidthFunc();
 	});
 //削除時のタイトルNo.の振り直し
@@ -147,4 +144,8 @@ $(function(){
 		});
 	});
 
-});
+};
+
+// DOMReady イベントハンドラーをセット
+$(document).ready(onReady);
+})(window, document, jQuery);
