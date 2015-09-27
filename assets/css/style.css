@@ -23,7 +23,7 @@ dd{
 	margin: 0;
 	padding: 0;
 }
-ul,ol,dl{
+ul,dl{
 	list-style: none;
 }
 body{
@@ -66,6 +66,7 @@ h2,h3,h4{
 .mr0{
 	margin-right: 0 !important;
 }
+
 
 
 
@@ -2460,6 +2461,9 @@ team-page
 	font-size: 14px;
 	margin-bottom: 10px;
 }
+.inquiry-wrapper .agreement h6{
+	font-size: 12px;
+}
 .inquiry-wrapper label{
 	width: 200px;
 	float: left;
@@ -2517,6 +2521,33 @@ team-page
 	margin-bottom: 50px;
 }
 
+/*---------------------
+static
+----------------------*/
+.column-page-content .static-main-text{
+	font-size: 16px;
+	width: 580px;
+	margin: 10px auto 10px;
+	line-height: 28px;
+}
+.column-page-content .static-sub-text{
+	font-size: 16px;
+	width: 580px;
+	margin: 10px auto 10px;
+	line-height: 28px;
+}
+
+.static-inquiry{
+	display: block;
+	position: relative;
+	width: 530px;
+	padding: 30px 50px;
+}	
+.static-inquiry-wrapper{
+	display: block;
+	position: relative;
+}
+
 /*-----oocss定義-----*/
 
 .disp-ib{
@@ -2531,8 +2562,14 @@ team-page
 .mr5{
 	margin-right: 5px;
 }
+.mr5{
+	margin-right: 10px;
+}
 .w-660{
 	width: 660px;
+}
+.w-100{
+	width: 100px;
 }
 .w-100p{
 	width: 100%;
@@ -2560,8 +2597,14 @@ team-page
 .p3{
 	padding: 3px;
 }
+.p20{
+	padding: 20px;
+}
 .p10{
 	padding: 10px;
+}
+.pt5{
+	padding-top: 5px;
 }
 .pb5{
 	padding-bottom: 5px;
@@ -2583,6 +2626,9 @@ team-page
 .bgcol-gray{
 	background-color: #999;
 }
+.bgcol-lightgray{
+	background-color: #eee;
+}
 .radius0-5-5-0{
 	border-radius: 0px 5px 5px 0px;
 }
@@ -2598,6 +2644,12 @@ team-page
 }
 .b0{
 	bottom: 0;
+}
+.t0{
+	top: 0;
+}
+.l0{
+	left: 0;
 }
 .r0{
 	right: 0;
@@ -2668,8 +2720,20 @@ team-page
 .mt5{
 	margin-top: 5px;
 }
+.mt10{
+	margin-top: 10px;
+}
+.mt20{
+	margin-top: 20px;
+}
+.mb0{
+	margin-bottom: 0;
+}
 .mb5{
 	margin-bottom: 5px;
+}
+.mb10{
+	margin-bottom: 10px;
 }
 .pb5{
 	padding-bottom: 5px;
@@ -2677,9 +2741,13 @@ team-page
 .lh26{
 	line-height: 26px;
 }
+.bt-gray{
+	border-top: 1px solid #999;	
+}
 .bb-gray{
 	border-bottom: 1px solid #999;	
 }
+
 
 .column-result-container > ul{
 	width: 320px;
