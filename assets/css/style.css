@@ -3737,12 +3737,16 @@ margin-top: 20px;
 	margin-top: 20px;
 }
 .user .rightmenu .user-article .subloads{
-	display: none;
+	display: inline-block;
+	height: 0;
+	overflow: hidden;
 	padding-top: 20px;
 }
 .user .rightmenu .user-article .subtitles,
 .user .rightmenu .user-article .subtexts{
-	display: none;
+	display: inline-block;
+	height: 0;
+	overflow: hidden;
 	padding-top: 60px;	
 }
 .user .rightmenu .user-article .subtitles label,

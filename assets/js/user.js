@@ -9,7 +9,7 @@
 			return false;
 		}
 		$('.user-article ul > li:last').before('<li class="subtitles"><label for="article_sub_title_0'+subTitleNum+'">サブタイトル'+ subTitleNum +'</label><textarea name="article[sub_title_0'+subTitleNum+']" id="article_sub_title_0'+subTitleNum+'"></textarea><button class="delete-title-button" type="button">削除する</button></li>');
-		$('.subtitles').slideDown(200).css('display','inline-block');
+		$('.subtitles').animate({height:'auto'},200);
 	});
 //削除時のタイトルNo.の振り直し
 	$('.rightmenu').on('click','.delete-title-button',function(){
@@ -32,7 +32,7 @@
 			return false;
 		}
 		$('.user-article ul > li:last').before('<li class="subloads"><fieldset class="uploads"><legend>サブ画像／動画'+subLoadNum+'</legend><div><label class="sub-image-label" for="article_sub_image_'+ subLoadArray[subLoadNum] + '">画像はこちらから</label><br><input class="sub-image-input" name="article[sub_image_' + subLoadArray[subLoadNum] + ']" id="article_sub_image_'+ subLoadArray[subLoadNum] + '" type="file" value="画像アップロード"></div><div><label class="sub-movie-label" for="article_movie_thumbnail_0' + subLoadNum + '">動画はこちらから</label><br><textarea name="article[movie_thumbnail_0'+subLoadNum+']" id="article_movie_thumbnail_0' + subLoadNum + '" rows="5" cols="52"></textarea></div></fieldset><button class="delete-load-button" type="button">削除する</button></li>');
-		$('.subloads').slideDown(200).css('display','inline-block');
+		$('.subloads').animate({height:'auto'},200);
 	});
 //削除時のタイトルNo.の振り直し
 	$('.rightmenu').on('click','.delete-load-button',function(){
@@ -59,7 +59,7 @@
 			return false;
 		}
 		$('.user-article ul > li:last').before('<li class="subtexts"><label for="article_sub_text_0'+subTextNum+'">サブ文章'+subTextNum+'</label><textarea id="article_sub_text_0'+subTextNum+'" name="article[sub_text_0'+subTextNum+']" rows="5" cols="50"></textarea><button class="delete-text-button" type="button">削除する</button></li>');
-		$('.subtexts').slideDown(200).css('display','inline-block');
+		$('.subtexts').animate({height:'auto'},200);
 	});
 //削除時のタイトルNo.の振り直し
 	$('.rightmenu').on('click','.delete-text-button',function(){
