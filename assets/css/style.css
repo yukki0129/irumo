@@ -2747,6 +2747,9 @@ static
 .bb-gray{
 	border-bottom: 1px solid #999;	
 }
+.ta-c{
+	text-align: center;
+}
 
 
 .column-result-container > ul{
