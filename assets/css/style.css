@@ -2571,6 +2571,15 @@ static
 .w-100{
 	width: 100px;
 }
+.w-200{
+	width: 200px;
+}
+.w-300{
+	width: 300px;
+}
+.w-400{
+	width: 400px;
+}
 .w-100p{
 	width: 100%;
 }
@@ -2605,6 +2614,15 @@ static
 }
 .pt5{
 	padding-top: 5px;
+}
+.pt10{
+	padding-top: 10px;
+}
+.pt20{
+	padding-top: 20px;
+}
+.pt30{
+	padding-top: 30px;
 }
 .pb5{
 	padding-bottom: 5px;
@@ -2735,6 +2753,9 @@ static
 .mb10{
 	margin-bottom: 10px;
 }
+.ml10{
+	margin-left: 10px;
+}
 .pb5{
 	padding-bottom: 5px;
 }
@@ -2749,6 +2770,9 @@ static
 }
 .ta-c{
 	text-align: center;
+}
+.va-m{
+	vertical-align: middle;
 }
 
 
