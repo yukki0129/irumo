@@ -2681,6 +2681,9 @@ static
 .ov-h{
 	overflow: hidden;
 }
+.foz32{
+	font-size: 32px;
+}
 .foz20{
 	font-size: 20px;
 }
