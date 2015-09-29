@@ -2553,6 +2553,9 @@ static
 .disp-ib{
 	display: inline-block;
 }
+.disp-b{
+	display: block !important;
+}
 .m0{
 	margin: 0;
 }
@@ -2588,6 +2591,9 @@ static
 }
 .h-16{
 	height: 16px;
+}
+.h-500{
+	height: 500px;
 }
 .mb20{
 	margin-bottom: 20px;
@@ -2761,6 +2767,12 @@ static
 }
 .pb5{
 	padding-bottom: 5px;
+}
+.pb10{
+	padding-bottom: 10px;
+}
+.pb20{
+	padding-bottom: 20px;
 }
 .lh26{
 	line-height: 26px;
@@ -2960,6 +2972,7 @@ footer{
 	position: absolute;
 	color: white;
 	line-height: 24px;
+	left: 0;
 }
 footer .footerwrapper{
 	width: 1040px;
