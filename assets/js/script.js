@@ -1,16 +1,19 @@
 // JavaScript Document
-$(function(){
+var ready;
+
+ready = function() {
 	var documentHeight = $(document).height();
 
 //css初期設定系
 	$('#search-for-column li:last-of-type').css({marginRight:'0', marginBottom:'0'});
 	$('.team-page-recomend li:nth-of-type(3n)').css('margin-right','0');
-	$('#search-for-column .faq li:nth-of-type(3n)').css('margin-right','0');	
-	$('.team-page-detail > div > ul > li:nth-of-type(2n)').css('margin-right','0');	
-	$('.team-page-detail div > ul > div ul li:last-of-type').css('margin-right','0');		
+	$('#search-for-column .faq li:nth-of-type(3n)').css('margin-right','0');
+	$('.team-page-detail > div > ul > li:nth-of-type(2n)').css('margin-right','0');
+	$('.team-page-detail div > ul > div ul li:last-of-type').css('margin-right','0');
 	$('#search-for-team .category:nth-of-type(2n)').css('margin-right','0');
 	$('.team-page-coachs ul li:nth-of-type(2n)').css('margin-right','0');
 	$('.team-page-columns ul li:last-of-type div').css('margin-bottom','0');
+	$('.team-page-columns ul li:nth-of-type(2n)').css('margin-right','0');
 	$('.team-page-introduction ul li:nth-of-type(2n)').css('margin-right','0');
 	$('.team-page-contact ul li:nth-of-type(2n)').css('margin-right','0');
 	$('.team-page-tags ul li:last-of-type').css('margin-right','0');
@@ -20,10 +23,10 @@ $(function(){
 //tag-listの各行の先頭以外に左マージン
 	$('.tag-list ul li:nth-of-type(6),.tag-list ul li:nth-of-type(13)').css('margin-right','0');
 	$('.tag-list ul li:gt(9)').css('margin-bottom','0px');
-	
+
 	$('#subcol div:first-child').css('margin-top','0');
-	
-//パンくずに「＞」を追加	
+
+//パンくずに「＞」を追加
 	$('.breadcrumb ul li:not(:last-child)').append(' >');
 
 	$('.column-page-team-prof div ul li.column-page-team-data:not(:last)').append(' ／');
@@ -31,7 +34,7 @@ $(function(){
 
 /*――――――――――――――――――――
 search-for-team
-――――――――――――――――――――*/	
+――――――――――――――――――――*/
 	$('#search-for-team ul li ul li:not(:last-of-type)').each(function(){
 		$(this).append(' ／ ');
 	});
@@ -77,14 +80,14 @@ search-for-team
 	textCut('.ranking-column-container ul li.ranking-column-text p',123,'…');
 	textCut('.ranking-column-container h4 a',13,'…');
 	textCut('.ranking-page-team-prof h4 a',23,'…');
-	textCut('.ranking-page-team-prof ul li.ranking-page-team-description p',123,'…');	
+	textCut('.ranking-page-team-prof ul li.ranking-page-team-description p',123,'…');
 	textCut('.user .rightmenu .article-unit .writer-prof',60,'…');
 	textCut('.team-column h3 a',25,'…');
 	textCut('.team-column p',60,'…');
 	textCut('.team-page-columns h5 a',20,'…');
 	textCut('.team-page-columns p',120,'');
 
-	
+
 /*――――――――――――――――――――
 絞り込み検索
 ――――――――――――――――――――*/
@@ -106,7 +109,7 @@ search-for-team
 		var thisValue = $(this).siblings('label').text();
 		$(this).attr('value',thisValue).attr('id',i).siblings('label').attr('for',i);
 	});
-	
+
 //検索条件部分にチェックされた内容を表示
 	$('.search-right-wrapper input').change(function(){
 		$('.search-condition .search-refine-checked').remove();
@@ -115,7 +118,7 @@ search-for-team
 				var changedContentCategory = $(this).closest('ul').attr('class');
 				$('.search-condition .' + changedContentCategory).after('<dd class="search-refine-checked">' + changedContent);
 		});
-	});	
+	});
 	$('#search-condition dl dt:not(:first-child)').css('margin-top','20');
 
 //検索条件部分にプルダウンから選択された内容を表示
@@ -178,7 +181,7 @@ search-for-team
 			$(this).fadeIn(500);
 		});
 	});
-	
+
 
 
 
@@ -201,7 +204,7 @@ search-for-team
 	function dispInquiryFunc(target){
 		$(target + '-button').on('click',this,function(){
 			$('.inquiry-wrapper,' + target).fadeIn();
-		});		
+		});
 	}
 	dispInquiryFunc('.inquiry-for-team');
 	dispInquiryFunc('.inquiry-for-game');
@@ -217,10 +220,10 @@ search-for-team
 			var mail 				= $(this).children('.mail').val();
 			var mailConfirm = $(this).children('.mail-confirm').val();
 			$(this).find('input.required-item,textarea').each(function(){
-				var value = $(this).val(); 
+				var value = $(this).val();
 				var name = $(this).attr('name');
 				if(value ==''){
-					emptyForm += 1;	
+					emptyForm += 1;
 					array += name + '、';
 				}
 			});
@@ -230,7 +233,7 @@ search-for-team
 				return false;
 			}else if(mail !== mailConfirm){
 				alert('２つのメールアドレスが一致しません。ご確認のうえ、再入力してください。');
-				return false;				
+				return false;
 			}
 		});
 //同意ボタンにチェックがないと送信できない＆送信ボタン内の文字の変化
@@ -244,4 +247,7 @@ search-for-team
 	});
 
 
-});
+};
+
+$(document).ready(ready);
+$(document).on('page:load', ready);
