@@ -28,10 +28,6 @@ ready = function() {
 
 //パンくずに「＞」を追加
 	$('.breadcrumb ul li:not(:last-child)').append(' >');
-
-	$('.column-page-team-prof div ul li.column-page-team-data:not(:last)').append(' ／');
-	$('.ranking-page-team-prof ul li.ranking-page-team-data:not(:last)').append(' ／');
-
 /*――――――――――――――――――――
 search-for-team
 ――――――――――――――――――――*/

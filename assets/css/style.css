@@ -1773,21 +1773,6 @@ ranking
 .ranking-page-team-prof ul li{
 	display: inline-block;
 }
-.ranking-page-team-prof ul li.ranking-page-team-name{
-	font-size: 20px;
-	font-family: "shin go regular";
-	letter-spacing: .1em;
-	border-bottom: 1px solid #ccc;
-	color: #E96000;
-	display: block;
-}
-.ranking-page-team-prof ul li.ranking-page-team-data{
-	font-family: "shin go regular";
-	font-size: 12px;
-}
-.ranking-page-team-prof ul li.ranking-page-team-data a:hover{
-	color: #E96000;
-}
 .ranking-page-team-prof ul li.ranking-page-team-description p{
 	font-size: 14px;
 	border-top: 1px solid  #E96000;	
@@ -1802,6 +1787,40 @@ ranking
 }
 .ranking-page-team-prof ul li.ranking-page-team-description a:hover{
 	color: #E96000;
+}
+
+
+/*team-tags*/
+.team-tags{
+	font-size: 20px;
+	font-family: "shin go regular";
+	letter-spacing: .1em;
+	border-bottom: 1px solid #ccc;
+	color: #E96000;
+	display: block;
+}
+.team-tags{
+	font-family: "shin go regular";
+	height: auto;
+	float: left;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	font-size: 12px;
+	text-align: center;
+	padding: 2px 5px;
+	border-radius: 5px;
+	background-color: #E96000;
+	-webkit-box-shadow: 2px 2px 0px #cccccc;
+	box-shadow: 2px 2px 0px #cccccc;
+	-webkit-transition: background-color .2s;
+	-o-transition: background-color .2s;
+	transition: background-color .2s;
+}
+.team-tags:hover{
+	background-color: #FA7111;	
+}
+.team-tags a{
+	color: white;
 }
 
 /*ranking-column*/
@@ -1903,15 +1922,7 @@ ranking
 	-webkit-box-shadow: 2px 2px 0px #ccc;
 	box-shadow: 2px 2px 0px #ccc;	
 }
-.ranking-column-container ul li ul li{
-	background-color: lightgray;
-	color: #333;
-	padding: 3px;
-	float: left;
-	margin-right: 3px;
-	margin-bottom: 5px;
-	font-size: 10px;
-}
+
 .ranking-column-container ul li.ranking-column-text p{
 	border-top: 1px solid #999;
 	padding-top: 3px;
@@ -2075,13 +2086,6 @@ column-page
 	margin-bottom: 5px;
 	display: block;
 }
-.column-page-team-prof div ul li.column-page-team-data{
-	font-family: "shin go regular";
-	font-size: 12px;
-}
-.column-page-team-prof div ul li.column-page-team-data a:hover{
-	color: #E96000;
-}
 .column-page-team-prof div ul li.column-page-team-description{
 	font-size: 14px;
 	border-top: 1px solid  #E96000;	
@@ -2151,15 +2155,25 @@ team-page
 	width: 610px;
 	display: inline-block;
 }
-.team-page-tags ul li,
-.column-page-tags ul li{
-	width: 90px;
-	height: 30px;
+.column-tags{
+	height: auto;
 	float: left;
 	margin-right: 5px;
-	background-color: lightgray;
 	margin-bottom: 5px;
-	font-size: 10px;
+	font-size: 12px;
+	text-align: center;
+	padding: 2px 5px;
+	border-radius: 5px;
+	color: white;
+	background-color: #009145;
+	-webkit-box-shadow: 2px 2px 0px #cccccc;
+	box-shadow: 2px 2px 0px #cccccc;
+	-webkit-transition: background-color .2s;
+	-o-transition: background-color .2s;
+	transition: background-color .2s;
+}
+.column-tags:hover{
+	background-color: #22b367;
 }
 .team-page-content{
 	width: 660px;
@@ -2640,6 +2654,9 @@ static
 .fl-l{
 	float: left;
 }
+.fl-n{
+	float: none !important;
+}
 .detail-size1{
 	width: 320px;
 	height: 200px;
@@ -2761,6 +2778,9 @@ static
 }
 .mb10{
 	margin-bottom: 10px;
+}
+.mb30{
+	margin-bottom: 30px;
 }
 .ml10{
 	margin-left: 10px;
@@ -3311,6 +3331,7 @@ user
 	-webkit-box-shadow: 2px 2px 0px #ccc;
 	box-shadow: 2px 2px 0px #ccc;
 	display: inline-block;
+	margin-bottom: 100px;
 }
 .user .leftmenu .left-bottom .left-bottom-img{
 	width: 200px;
@@ -3425,7 +3446,7 @@ user
 }
 .user .rightmenu ul li .required{
 	font-size: 12px;
-	color: red;
+	color: red;			<li><a href="user-change-pass.html">パスワードを変更する</a></li>
 	font-family: "shin go medium";
 	float: left;
 	margin-top: 5px;
@@ -3733,10 +3754,6 @@ margin-top: 20px;
 	width: auto;
 	margin-top: 5px;
 	height: 30px;
-}
-.user .rightmenu .user-article ul li fieldset.uploads div{
-	float: left;
-	width: 240px;
 }
 .user .rightmenu .user-article ul li fieldset.uploads div.movie{
 	width: 450px;
