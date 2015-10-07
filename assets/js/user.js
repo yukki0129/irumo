@@ -78,18 +78,6 @@ $(function(){
 	var ready;
 
 	ready = function() {
-	//文字省略ファンクション
-		function textCut(target,thres,word){//（ターゲットセレクタ，省略開始文字数，後に付ける文字）
-			$(target).each(function(){
-				var originalText = $(this).text();
-				var textLength   = originalText.length;
-				var textThres    = thres;
-				if(textLength > textThres){
-					var shortText = originalText.slice(0,textThres);
-					$(this).text(shortText).append(word);
-				}
-			});
-		}
 
 	/*――――――――――――――――――――
 	管理画面
@@ -123,9 +111,6 @@ $(function(){
 	/*――――――――――――――――――――
 	記事作成画面
 	――――――――――――――――――――*/
-
-	//記事管理画面のタイトル文字数省略
-		textCut('.article-title',53,'…');
 
 	//編集ボタン押下時に確認アラート表示
 		$('.rightmenu').on('click','.article-edit',function(){

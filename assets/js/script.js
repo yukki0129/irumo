@@ -46,44 +46,6 @@ search-for-team
 		});
 	});
 
-//記事タイトル、本文の文字省略
-	function textCut(target,thres){//（ターゲットセレクタ，省略開始文字数）
-		$(target).each(function(){
-			var originalText = $(this).text();
-			var textLength   = originalText.length;
-			var textThres    = thres;
-			if(textLength > textThres){
-				var shortText = originalText.slice(0,textThres);
-				$(this).text(shortText).append('…');
-			}
-		});
-	}
-	textCut('.js-textcut-100',100);
-	textCut('.js-textcut-85',85);
-	textCut('.js-textcut-65',65);
-	textCut('.js-textcut-50',50);
-	textCut('.js-textcut-25',25);
-	textCut('.js-textcut-20',20);
-	textCut('.js-textcut-18',18);
-	textCut('.js-textcut-15',15);
-	textCut('.js-textcut-10',10);
-	textCut('.green-news.team-page-columns li div h4',8,'…');
-	textCut('.column-page-team-prof div ul li.column-page-team-name',24,'…');
-	textCut('.column-page-team-prof div ul li.column-page-team-description',60,'…');
-	textCut('.column-result-container ul h3 a',25,'…');
-	textCut('.column-result-container .column-result-text p',40,'…');
-	textCut('.search-result-container .search-result-text p',83,'…');
-	textCut('.ranking-column-container ul li.ranking-column-text p',123,'…');
-	textCut('.ranking-column-container h4 a',13,'…');
-	textCut('.ranking-page-team-prof h4 a',23,'…');
-	textCut('.ranking-page-team-prof ul li.ranking-page-team-description p',123,'…');
-	textCut('.user .rightmenu .article-unit .writer-prof',60,'…');
-	textCut('.team-column h3 a',25,'…');
-	textCut('.team-column p',60,'…');
-	textCut('.team-page-columns h5 a',20,'…');
-	textCut('.team-page-columns p',120,'');
-
-
 /*――――――――――――――――――――
 絞り込み検索
 ――――――――――――――――――――*/
