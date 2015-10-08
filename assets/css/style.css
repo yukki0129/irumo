@@ -1994,19 +1994,6 @@ column-page
 	margin: 10px auto 10px;
 	line-height: 28px;
 }
-.column-page-content .column-page-main-text:first-letter{
-	font-size: 3.2em;
-	float: left;
-	line-height: 1;
-	position: relative;
-	top: 7px;
-	display: block;
-	margin-right: 5px;
-	margin-top: 6px;
-	font-family: "shin go medium";
-	font-weight: bold;
-	color: #009145;
-}
 .column-page-content .column-page-subtitle{
 	width: 660px;
 	font-size: 24px;
@@ -2028,19 +2015,6 @@ column-page
 	width: 580px;
 	margin: 10px auto 10px;
 	line-height: 28px;
-}
-.column-page-content .column-page-sub-text:first-letter{
-	font-size: 3.2em;
-	float: left;
-	line-height: 1;
-	position: relative;
-	top: 7px;
-	display: block;
-	margin-right: 5px;
-	margin-top: 6px;
-	font-family: "shin go medium";
-	font-weight: bold;
-	color: #009145;
 }
 .column-page-team-prof{
 	border-top: 3px solid #009145;
@@ -2191,19 +2165,6 @@ team-page
 	width: 580px;
 	margin: 10px auto 10px;
 	line-height: 28px;
-}
-.team-page-content .team-page-main-text:first-letter{
-	font-size: 3.2em;
-	float: left;
-	line-height: 1;
-	position: relative;
-	top: 7px;
-	display: block;
-	margin-right: 5px;
-	margin-top: 6px;
-	font-family: "shin go medium";
-	font-weight: bold;
-	color: #009145;
 }
 
 .team-page-contact li{
