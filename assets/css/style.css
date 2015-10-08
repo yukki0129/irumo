@@ -2571,6 +2571,9 @@ static
 .h-500{
 	height: 500px;
 }
+.mb0{
+	margin-bottom: 0 !important;
+}
 .mb20{
 	margin-bottom: 20px;
 }
@@ -3392,6 +3395,13 @@ user
 }
 .user .rightmenu ul li fieldset fieldset legend{
 	font-weight: normal;
+}
+.user .rightmenu .user-prof li.features fieldset{
+	float: none;
+	margin-bottom: 20px;
+}
+.user .rightmenu .user-prof li.features fieldset legend span{
+	color: red;
 }
 
 .user .rightmenu ul li fieldset label{

@@ -100,11 +100,21 @@
 					<textarea id="coach-introduction" rows="5" cols="50"></textarea>
 				</li>
 				<li class="team-category">
-	        <label class="clearfix" for="team-category">チーム種別</label>
-	        <label><input type="checkbox" value="サッカークラブ" name="team[search_attributes][team_variety][]" id="team_search_attributes_team_variety_" />サッカークラブ</label>
-	        <label><input type="checkbox" value="サッカースクール" name="team[search_attributes][team_variety][]" id="team_search_attributes_team_variety_" />サッカースクール</label>
-	        <label><input type="checkbox" value="フットサルクラブ" name="team[search_attributes][team_variety][]" id="team_search_attributes_team_variety_" />フットサルクラブ</label>
-	        <label><input type="checkbox" value="フットサルスクール" name="team[search_attributes][team_variety][]" id="team_search_attributes_team_variety_" />フットサルスクール</label>
+          <fieldset>
+  	        <legend class="clearfix" for="team-category">チーム種別</legend>
+  	        <label>
+              <input type="checkbox" value="サッカークラブ" name="team[search_attributes][team_variety][]" id="team_search_attributes_team_variety_" />サッカークラブ
+            </label>
+  	        <label>
+              <input type="checkbox" value="サッカースクール" name="team[search_attributes][team_variety][]" id="team_search_attributes_team_variety_" />サッカースクール
+            </label>
+  	        <label>
+              <input type="checkbox" value="フットサルクラブ" name="team[search_attributes][team_variety][]" id="team_search_attributes_team_variety_" />フットサルクラブ
+            </label>
+  	        <label>
+              <input type="checkbox" value="フットサルスクール" name="team[search_attributes][team_variety][]" id="team_search_attributes_team_variety_" />フットサルスクール
+            </label>
+          </fieldset>
 	      </li>
 				<li class="team-address">
 					<fieldset class="clearfix">
@@ -121,12 +131,9 @@
 				<li class="practice-place">
         <fieldset class="clearfix">
           <legend>練習場所（３つまで設定可能）</legend>
-          <textarea placeholder="練習場所1" name="team[practice_place_01]" id="team_practice_place_01">
-</textarea>
-          <textarea placeholder="練習場所2" name="team[practice_place_02]" id="team_practice_place_02">
-</textarea>
-          <textarea placeholder="練習場所3" name="team[practice_place_02]" id="team_practice_place_02">
-</textarea>
+          <textarea class="mr10" placeholder="練習場所1" name="team[practice_place_01]" id="team_practice_place_01"></textarea>
+          <textarea class="mr10" placeholder="練習場所2" name="team[practice_place_02]" id="team_practice_place_02"></textarea>
+          <textarea placeholder="練習場所3" name="team[practice_place_02]" id="team_practice_place_02"></textarea>
         </fieldset>
       </li>
       <li class="practice-date">
@@ -187,12 +194,24 @@
       <li class="user-age">
         <fieldset class="age clearfix">
           <legend>募集年代（２つまで選択可能）</legend>
-          <label for="kids"><input type="checkbox" value="キッズ" name="team[search_attributes][recruit_age][]" id="team_search_attributes_recruit_age_" />キッズ</label>
-          <label for="junior-l"><input type="checkbox" value="ジュニア（低学年）" name="team[search_attributes][recruit_age][]" id="team_search_attributes_recruit_age_" />ジュニア（低学年）</label>
-          <label for="junior-h"><input type="checkbox" value="ジュニア（高学年）" name="team[search_attributes][recruit_age][]" id="team_search_attributes_recruit_age_" />ジュニア（高学年）</label>
-          <label for="jinior-y"><input type="checkbox" value="ジュニアユース" name="team[search_attributes][recruit_age][]" id="team_search_attributes_recruit_age_" />ジュニアユース</label>
-          <label for="youth"><input type="checkbox" value="ユース" name="team[search_attributes][recruit_age][]" id="team_search_attributes_recruit_age_" />ユース</label>
-          <label for="girls"><input type="checkbox" value="ガールズ" name="team[search_attributes][recruit_age][]" id="team_search_attributes_recruit_age_" />ガールズ</label>
+          <label for="kids">
+            <input type="checkbox" value="キッズ" name="team[search_attributes][recruit_age][]" id="team_search_attributes_recruit_age_" />キッズ
+          </label>
+          <label for="junior-l">
+            <input type="checkbox" value="ジュニア（低学年）" name="team[search_attributes][recruit_age][]" id="team_search_attributes_recruit_age_" />ジュニア（低学年）
+          </label>
+          <label for="junior-h">
+            <input type="checkbox" value="ジュニア（高学年）" name="team[search_attributes][recruit_age][]" id="team_search_attributes_recruit_age_" />ジュニア（高学年）
+          </label>
+          <label for="jinior-y">
+            <input class="mb10" type="checkbox" value="ジュニアユース" name="team[search_attributes][recruit_age][]" id="team_search_attributes_recruit_age_" />ジュニアユース
+          </label><br>
+          <label for="youth">
+            <input type="checkbox" value="ユース" name="team[search_attributes][recruit_age][]" id="team_search_attributes_recruit_age_" />ユース
+          </label>
+          <label for="girls">
+            <input type="checkbox" value="ガールズ" name="team[search_attributes][recruit_age][]" id="team_search_attributes_recruit_age_" />ガールズ
+          </label>
         </fieldset>
       </li>
       <li class="performance">
@@ -237,36 +256,70 @@
 </textarea>
       </li>
       <li class="features">
-        <fieldset class="clearfix">
+        <fieldset class="clearfix mb0">
           <legend>特長</legend>
           <fieldset class="policy clearfix mr50">
-            <legend>起用方針（公式戦）<span>　※１つのみ選択可能</span></legend>
-            <label for="merit"><input type="checkbox" value="実力主義" name="team[search_attributes][appointment_policy][]" id="team_search_attributes_appointment_policy_" />実力主義</label>
-            <label for="equality"><input type="checkbox" value="平等主義" name="team[search_attributes][appointment_policy][]" id="team_search_attributes_appointment_policy_" />平等主義</label>
-            <label for="as-grade"><input type="checkbox" value="学年別に異る" name="team[search_attributes][appointment_policy][]" id="team_search_attributes_appointment_policy_" />学年別に異なる</label>
+            <legend>●起用方針（公式戦）<span>　※１つのみ選択可能</span></legend>
+            <label for="merit">
+              <input type="checkbox" value="実力主義" name="team[search_attributes][appointment_policy][]" id="team_search_attributes_appointment_policy_" />実力主義
+            </label>
+            <label for="equality">
+              <input type="checkbox" value="平等主義" name="team[search_attributes][appointment_policy][]" id="team_search_attributes_appointment_policy_" />平等主義
+            </label>
+            <label for="as-grade">
+              <input type="checkbox" value="学年別に異る" name="team[search_attributes][appointment_policy][]" id="team_search_attributes_appointment_policy_" />学年別に異なる
+            </label>
           </fieldset>
           <fieldset class="style">
-            <legend>プレイスタイル<span>　※１つのみ選択可能</span></legend>
-            <label for="personal"><input type="checkbox" value="個人技主体" name="team[search_attributes][playstyle][]" id="team_search_attributes_playstyle_" />個人技主体</label>
-            <label for="team-play"><input type="checkbox" value="チームプレイ主体" name="team[search_attributes][playstyle][]" id="team_search_attributes_playstyle_" />チームプレイ主体</label>
-            <label><input type="checkbox" value="フィジカル主体" name="team[search_attributes][playstyle][]" id="team_search_attributes_playstyle_" />フィジカル主体</label>
-            <label><input type="checkbox" value="バランス型" name="team[search_attributes][playstyle][]" id="team_search_attributes_playstyle_" />バランス型</label>
+            <legend>●プレイスタイル<span>　※１つのみ選択可能</span></legend>
+            <label for="personal">
+              <input type="checkbox" value="個人技主体" name="team[search_attributes][playstyle][]" id="team_search_attributes_playstyle_" />個人技主体
+            </label>
+            <label for="team-play">
+              <input type="checkbox" value="チームプレイ主体" name="team[search_attributes][playstyle][]" id="team_search_attributes_playstyle_" />チームプレイ主体
+            </label>
+            <label>
+              <input type="checkbox" value="フィジカル主体" name="team[search_attributes][playstyle][]" id="team_search_attributes_playstyle_" />フィジカル主体
+            </label>
+            <label>
+              <input type="checkbox" value="バランス型" name="team[search_attributes][playstyle][]" id="team_search_attributes_playstyle_" />バランス型
+            </label>
           </fieldset>
           <fieldset class="clearfix">
-            <legend>その他特徴<span>　※複数選択可能</span></legend>
-            <label for="foreignlang"><input type="checkbox" value="外国語教育" name="team[search_attributes][advantage][]" id="team_search_attributes_advantage_" />外国語教育</label>
-            <label for="girls"><input type="checkbox" value="女子選手多数" name="team[search_attributes][advantage][]" id="team_search_attributes_advantage_" />女子選手多数</label>
-            <label for="keeper"><input type="checkbox" value="キーパーコーチ在籍" name="team[search_attributes][advantage][]" id="team_search_attributes_advantage_" />キーパーコーチ在籍</label>
-            <label for="physical-coach"><input type="checkbox" value="フィジカルコーチ在籍" name="team[search_attributes][advantage][]" id="team_search_attributes_advantage_" />フィジカルコーチ在籍</label>
-            <label for="trainer"><input type="checkbox" value="トレーナー在籍" name="team[search_attributes][advantage][]" id="team_search_attributes_advantage_" />トレーナー在籍</label>
+            <legend>●その他特徴<span>　※複数選択可能</span></legend>
+            <label for="foreignlang">
+              <input type="checkbox" value="外国語教育" name="team[search_attributes][advantage][]" id="team_search_attributes_advantage_" />外国語教育
+            </label>
+            <label for="girls">
+              <input type="checkbox" value="女子選手多数" name="team[search_attributes][advantage][]" id="team_search_attributes_advantage_" />女子選手多数
+            </label>
+            <label class="mb10" for="keeper">
+              <input type="checkbox" value="キーパーコーチ在籍" name="team[search_attributes][advantage][]" id="team_search_attributes_advantage_" />キーパーコーチ在籍
+            </label><br>
+            <label class="clearfix" for="physical-coach">
+              <input type="checkbox" value="フィジカルコーチ在籍" name="team[search_attributes][advantage][]" id="team_search_attributes_advantage_" />フィジカルコーチ在籍
+            </label>
+            <label for="trainer">
+              <input type="checkbox" value="トレーナー在籍" name="team[search_attributes][advantage][]" id="team_search_attributes_advantage_" />トレーナー在籍
+            </label>
           </fieldset>
-          <fieldset class="clearfix">
-            <legend>その他特徴<span>　※複数選択可能</span></legend>
-            <label><input type="checkbox" value="0円～2,000円未満" name="team[search_attributes][monthly_cost][]" id="team_search_attributes_monthly_cost_02000" />0円～2,000円未満</label>
-            <label><input type="checkbox" value="2,000円～4,000円未満" name="team[search_attributes][monthly_cost][]" id="team_search_attributes_monthly_cost_20004000" />2,000円～4,000円未満</label>
-            <label><input type="checkbox" value="4,000円～6,000円未満" name="team[search_attributes][monthly_cost][]" id="team_search_attributes_monthly_cost_40006000" />4,000円～6,000円未満</label>
-            <label><input type="checkbox" value="6,000円～8,000円未満" name="team[search_attributes][monthly_cost][]" id="team_search_attributes_monthly_cost_60008000" />6,000円～8,000円未満</label>
-            <label><input type="checkbox" value="8000円以上" name="team[search_attributes][monthly_cost][]" id="team_search_attributes_monthly_cost_8000" />8000円以上</label>
+          <fieldset class="clearfix mb0">
+            <legend>●その他特徴<span>　※複数選択可能</span></legend>
+            <label>
+              <input type="checkbox" value="0円～2,000円未満" name="team[search_attributes][monthly_cost][]" id="team_search_attributes_monthly_cost_02000" />0円～2,000円未満
+            </label>
+            <label>
+              <input type="checkbox" value="2,000円～4,000円未満" name="team[search_attributes][monthly_cost][]" id="team_search_attributes_monthly_cost_20004000" />2,000円～4,000円未満
+            </label>
+            <label class="mb10">
+              <input type="checkbox" value="4,000円～6,000円未満" name="team[search_attributes][monthly_cost][]" id="team_search_attributes_monthly_cost_40006000" />4,000円～6,000円未満
+            </label><br>
+            <label class="clearfix">
+              <input type="checkbox" value="6,000円～8,000円未満" name="team[search_attributes][monthly_cost][]" id="team_search_attributes_monthly_cost_60008000" />6,000円～8,000円未満
+            </label>
+            <label>
+              <input type="checkbox" value="8000円以上" name="team[search_attributes][monthly_cost][]" id="team_search_attributes_monthly_cost_8000" />8000円以上
+            </label>
           </fieldset>
         </fieldset>
       </li>
