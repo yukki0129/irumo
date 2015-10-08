@@ -18,12 +18,6 @@ ready = function() {
 	$('.team-page-contact ul li:nth-of-type(2n)').css('margin-right','0');
 	$('.team-page-tags ul li:last-of-type').css('margin-right','0');
 
-
-
-//tag-listの各行の先頭以外に左マージン
-	$('.tag-list ul li:nth-of-type(6),.tag-list ul li:nth-of-type(13)').css('margin-right','0');
-	$('.tag-list ul li:gt(9)').css('margin-bottom','0px');
-
 	$('#subcol div:first-child').css('margin-top','0');
 
 //パンくずに「＞」を追加
