@@ -16,14 +16,14 @@
 	<header>
 		<h2><img src="../assets/images/mybo_logo.png"><span>管理ページ</span><strong><a target="_blank" href="">ログアウト</a></strong></h2>
 	</header>
-	<div class="leftmenu">	
+	<div class="leftmenu">
 		<ul class="left-top">
 			<li class="present team-profile"><a href="user-prof.html">チームのプロフィールを<br>編集する</a></li>
-			<li class="team-profile-create"><a href="user-create.html">チームのプロフィールを<br>作成する</a></li>					
+			<li class="team-profile-create"><a href="user-create.html">チームのプロフィールを<br>作成する</a></li>
 			<li><a href="user-article.html">記事を作成する</a></li>
 			<li><a href="user-management.html">記事を管理する</a></li>
 			<li><a href="user-writer-management.html">ライター情報を管理する</a></li>
-			<li><a href="user-change-pass.html">パスワードを変更する</a></li>			
+			<li><a href="user-change-pass.html">パスワードを変更する</a></li>
 		</ul>
 		<div class="left-bottom">
 			<div class="left-bottom-img"><img class="js-imgresize" src="images/temporary/mainimg3.jpg"></div>
@@ -42,7 +42,7 @@
 				<li class="team-img">
 					<label class="clearfix" for="team-img">チームのプロフィール画像</label>
 					<input id="coach-img" type="file"></input>
-				</li>				
+				</li>
 				<li class="team-url">
 					<label class="clearfix" for="url">ウェブサイトURL</label>
 					<input id="url" type="text"></input>
@@ -100,20 +100,18 @@
 					<textarea id="coach-introduction" rows="5" cols="50"></textarea>
 				</li>
 				<li class="team-category">
-					<label class="clearfix" for="team-category">チーム種別</label>
-						<select id="team-category" type="text">
-							<option>サッカークラブ</option>
-							<option>サッカースクール</option>
-							<option>フットサルクラブ</option>
-							<option>フットサルスクール</option>
-						</select>
-				</li>
+	        <label class="clearfix" for="team-category">チーム種別</label>
+	        <label><input type="checkbox" value="サッカークラブ" name="team[search_attributes][team_variety][]" id="team_search_attributes_team_variety_" />サッカークラブ</label>
+	        <label><input type="checkbox" value="サッカースクール" name="team[search_attributes][team_variety][]" id="team_search_attributes_team_variety_" />サッカースクール</label>
+	        <label><input type="checkbox" value="フットサルクラブ" name="team[search_attributes][team_variety][]" id="team_search_attributes_team_variety_" />フットサルクラブ</label>
+	        <label><input type="checkbox" value="フットサルスクール" name="team[search_attributes][team_variety][]" id="team_search_attributes_team_variety_" />フットサルスクール</label>
+	      </li>
 				<li class="team-address">
 					<fieldset class="clearfix">
 						<legend>住所<br><span class="required">※この項目は必ず入力してください。</span></legend>
 						<label for="pref">都道府県</label><input id="pref" required type="text">
 						<label for="cities">市区町村</label><input id="cities" required type="text">
-						<label class="clearfix" for="local">地名・番地</label><input id="local" required type="text">		
+						<label class="clearfix" for="local">地名・番地</label><input id="local" required type="text">
 					</fieldset>
 				</li>
 				<li class="station">
@@ -121,152 +119,175 @@
 					<input id="station" type="text"></input>
 				</li>
 				<li class="practice-place">
-					<fieldset class="clearfix">
-						<legend>練習場所（３つまで設定可能）</legend>
-						<input type="text"></input>
-						<input type="text"></input>
-						<input type="text"></input>
-					</fieldset>
-				</li>
-				<li class="practice-date">
-					<fieldset class="user-prof-date clearfix">
-						<legend>練習曜日</legend>
-							<label for="sun">日曜日</label>
-							<textarea cols="30" rows="5" id="sun" type="text"></textarea>
-							<label for="mon">月曜日</label>
-							<textarea cols="30" rows="5" id="mon" type="text"></textarea>
-							<label class="clearfix" for="tuesday">火曜日</label>
-							<textarea cols="30" rows="5" id="tuesday" type="text"></textarea>
-							<label for="wed">水曜日</label>
-							<textarea cols="30" rows="5" id="wed" type="text"></textarea>
-							<label class="clearfix" for="thu">木曜日</label>
-							<textarea cols="30" rows="5" id="thu" type="text"></textarea>
-							<label for="fri">金曜日</label>
-							<textarea cols="30" rows="5" id="fri" type="text"></textarea>
-							<label class="clearfix" for="sat">土曜日</label>
-							<textarea cols="30" rows="5" id="sat" type="text"></textarea>
-					</fieldset>
-				</li>				
-				<li class="courses">
-					<label class="clearfix" for="courses">コース一覧</label>
-					<textarea id="courses" rows="5" cols="50"></textarea>
-				</li>
-				<li class="price">
-					<label class="clearfix" for="price">料金</label>
-					<textarea id="price" rows="5" cols="50"></textarea>
-				</li>
-				<li class="other-cost">
-					<label class="clearfix" for="other-cost">その他料金・必要経費</label>
-					<textarea id="other-cost" rows="5" cols="50"></textarea>
-				</li>
-				<li class="user-age">
-					<fieldset class="age clearfix">
-						<legend>強化年代（２つまで選択可能）</legend>
-						<input id="kids" type="checkbox">
-						<label for="kids">キッズ</label>
-						<input id="junior-l" type="checkbox">
-						<label for="junior-l">ジュニア（低学年）</label>
-						<input id="junior-h" type="checkbox">
-						<label for="junior-h">ジュニア（高学年）</label>
-						<input id="jinior-y" type="checkbox">
-						<label for="jinior-y">ジュニアユース</label>
-						<input id="youth" type="checkbox">
-						<label for="youth">ユース</label>
-						<input id="girls" type="checkbox">
-						<label for="girls">ガールズ</label>
-					</fieldset>
-				</li>
-				<li class="performance">
-					<label class="clearfix" for="performance">実績</label>
-					<textarea id="performance" rows="5" cols="50"></textarea>
-				</li>				
-				<li class="one-phrase-img">
-					<label class="clearfix" for="one-phrase-img">ひとこと紹介1 画像</label>
-					<input id="one-phrase-img" type="file"></input>
-				</li>
-				<li class="one-phrase-text">
-					<label class="clearfix" for="one-phrase-text">ひとこと紹介1 テキスト</label>
-					<input id="one-phrase-text" type="text"></input>
-				</li>
-				<li class="one-phrase-img">
-					<label class="clearfix" for="one-phrase-img">ひとこと紹介2 画像</label>
-					<input id="one-phrase-img" type="file"></input>
-				</li>
-				<li class="one-phrase-text">
-					<label class="clearfix" for="one-phrase-text">ひとこと紹介2 テキスト</label>
-					<input id="one-phrase-text" type="text"></input>
-				</li>
-				<li class="one-phrase-img">
-					<label class="clearfix" for="one-phrase-img">ひとこと紹介3 画像</label>
-					<input id="one-phrase-img" type="file"></input>
-				</li>
-				<li class="one-phrase-text">
-					<label class="clearfix" for="one-phrase-text">ひとこと紹介3 テキスト</label>
-					<input id="one-phrase-text" type="text"></input>
-				</li>
-				<li class="one-phrase-img">
-					<label class="clearfix" for="one-phrase-img">ひとこと紹介4 画像</label>
-					<input id="one-phrase-img" type="file"></input>
-				</li>
-				<li class="one-phrase-text">
-					<label class="clearfix" for="one-phrase-text">ひとこと紹介4 テキスト</label>
-					<input id="one-phrase-text" type="text"></input>
-				</li>										
-				<li class="features">	
-					<fieldset class="clearfix">
-						<legend>特長</legend>
-						<fieldset class="policy clearfix mr50">
-							<legend>起用方針（公式戦）<span>　※１つのみ選択可能</span></legend>
-							<input id="merit" type="checkbox">
-							<label for="merit">実力主義</label>
-							<input id="equality" class="clearfix" type="checkbox">
-							<label for="equality">平等主義</label>
-							<input id="as-grade" class="clearfix" type="checkbox">
-							<label for="as-grade">学年別に異なる</label>
-						</fieldset>
-						<fieldset class="style">
-							<legend>プレイスタイル<span>　※１つのみ選択可能</span></legend>
-							<input id="personal" class="clearfix" type="checkbox">
-							<label for="personal">個人技主体</label>
-							<input id="team-play" class="clearfix" type="checkbox">
-							<label for="team-play">チームプレイ主体</label>
-							<input id="physical" class="clearfix" type="checkbox">
-							<label for="physical">フィジカル主体</label>
-							<input id="ballance" class="clearfix" type="checkbox">
-							<label for="ballance">バランス型</label>
-						</fieldset>
-						<fieldset class="clearfix">
-							<legend>その他特徴<span>　※複数選択可能</span></legend>
-							<input id="foreignlang" class="clearfix" type="checkbox">
-							<label for="foreignlang">外国語教育</label>
-							<input id="girls" class="clearfix" type="checkbox">
-							<label for="girls">女子選手多数</label>
-							<input id="keeper" class="clearfix" type="checkbox">
-							<label for="keeper">キーパーコーチ在籍</label>
-							<input id="physical-coach" class="clearfix" type="checkbox">
-							<label for="physical-coach">フィジカルコーチ在籍</label>
-							<input id="trainer" class="clearfix" type="checkbox">
-							<label for="trainer">トレーナー在籍</label>
-						</fieldset>
-					</fieldset>
-				</li>
-
-				<li class="mail">
-					<label class="clearfix" for="mail">メールアドレス</label>
-					<input id="mail" type="text"></input>
-				</li>
-				<li class="password-after">
-					<label class="clearfix" for="password-after">変更後パスワード</label>
-					<input class="pass" id="password-after" type="password"></input>
-				</li>
-				<li class="password-confirm">
-					<label class="clearfix" for="password-confirm">変更後パスワード（確認）</label>
-					<input class="pass-confirm" id="password-confirm" type="password"></input>
-				</li>				
-				<input type="submit" value="変更を保存する">
-			</ul>
-		</form>
-		
+        <fieldset class="clearfix">
+          <legend>練習場所（３つまで設定可能）</legend>
+          <textarea placeholder="練習場所1" name="team[practice_place_01]" id="team_practice_place_01">
+</textarea>
+          <textarea placeholder="練習場所2" name="team[practice_place_02]" id="team_practice_place_02">
+</textarea>
+          <textarea placeholder="練習場所3" name="team[practice_place_02]" id="team_practice_place_02">
+</textarea>
+        </fieldset>
+      </li>
+      <li class="practice-date">
+        <fieldset class="user-prof-date clearfix">
+          <legend>練習曜日</legend>
+          <div class="">
+            <label for="team_practice_mon">月曜日</label>
+            <textarea id="mon" name="team[practice_mon]" cols="30" rows="5">
+</textarea>
+          </div>
+          <div>
+            <label for="team_practice_tue">火曜日</label>
+            <textarea id="tue" name="team[practice_tue]" cols="30" rows="5">
+</textarea>
+          </div>
+          <div>
+            <label for="team_practice_wed">水曜日</label>
+            <textarea id="wed" name="team[practice_wed]" cols="30" rows="5">
+</textarea>
+          </div>
+          <div>
+            <label for="team_practice_thu">木曜日</label>
+            <textarea id="thu" name="team[practice_thu]" cols="30" rows="5">
+</textarea>
+          </div>
+          <div>
+            <label for="team_practice_thu">金曜日</label>
+            <textarea id="fri" name="team[practice_fri]" cols="30" rows="5">
+</textarea>
+          </div>
+          <div>
+            <label for="team_practice_sat">土曜日</label>
+            <textarea id="sat" name="team[practice_sat]" cols="30" rows="5">
+</textarea>
+          </div>
+          <div>
+            <label for="team_practice_sun">日曜日</label>
+            <textarea id="sun" name="team[practice_sun]" cols="30" rows="5">
+</textarea>
+          </div>
+        </fieldset>
+      </li>
+      <li class="courses">
+        <label class="clearfix" for="courses">コース一覧</label>
+        <textarea name="team[course_list]" id="team_course_list" cols="50" rows="5">
+</textarea>
+      </li>
+      <li class="price">
+        <label class="clearfix" for="team_price">料金</label>
+        <textarea id="price" name="team[price]" cols="50" rows="5">
+</textarea>
+      </li>
+      <li class="other-cost">
+        <label class="clearfix" for="team_other_pay">その他料金・必要経費</label>
+        <textarea id="other-cost" name="team[other_pay]" cols="50" rows="5">
+</textarea>
+      </li>
+      <li class="user-age">
+        <fieldset class="age clearfix">
+          <legend>募集年代（２つまで選択可能）</legend>
+          <label for="kids"><input type="checkbox" value="キッズ" name="team[search_attributes][recruit_age][]" id="team_search_attributes_recruit_age_" />キッズ</label>
+          <label for="junior-l"><input type="checkbox" value="ジュニア（低学年）" name="team[search_attributes][recruit_age][]" id="team_search_attributes_recruit_age_" />ジュニア（低学年）</label>
+          <label for="junior-h"><input type="checkbox" value="ジュニア（高学年）" name="team[search_attributes][recruit_age][]" id="team_search_attributes_recruit_age_" />ジュニア（高学年）</label>
+          <label for="jinior-y"><input type="checkbox" value="ジュニアユース" name="team[search_attributes][recruit_age][]" id="team_search_attributes_recruit_age_" />ジュニアユース</label>
+          <label for="youth"><input type="checkbox" value="ユース" name="team[search_attributes][recruit_age][]" id="team_search_attributes_recruit_age_" />ユース</label>
+          <label for="girls"><input type="checkbox" value="ガールズ" name="team[search_attributes][recruit_age][]" id="team_search_attributes_recruit_age_" />ガールズ</label>
+        </fieldset>
+      </li>
+      <li class="performance">
+        <label class="clearfix" for="team_performance">実績</label>
+        <textarea id="performance" name="team[performance]" cols="50" rows="5">
+</textarea>
+      </li>
+      <li class="one-phrase-img">
+        <label class="clearfix" for="team_one_phrase_image_one">ひとこと紹介1 画像</label>
+        <input id="one-phrase-img" type="file" name="team[one_phrase_image_one]" />
+      </li>
+      <li class="one-phrase-text">
+        <label class="clearfix" for="team_one_phrase_01">ひとこと紹介1 テキスト</label>
+        <textarea id="one-phrase-text" name="team[one_phrase_01]">
+</textarea>
+      </li>
+      <li class="one-phrase-img">
+        <label class="clearfix" for="team_one_phrase_image_two">ひとこと紹介2 画像</label>
+        <input type="file" name="team[one_phrase_image_two]" id="team_one_phrase_image_two" />
+      </li>
+      <li class="one-phrase-text">
+        <label class="clearfix" for="team_one_phrase_02">ひとこと紹介2 テキスト</label>
+        <textarea name="team[one_phrase_02]" id="team_one_phrase_02">
+</textarea>
+      </li>
+      <li class="one-phrase-img">
+        <label class="clearfix" for="team_one_phrase_image_three">ひとこと紹介3 画像</label>
+        <input type="file" name="team[one_phrase_image_three]" id="team_one_phrase_image_three" />
+      </li>
+      <li class="one-phrase-text">
+        <label class="clearfix" for="team_one_phrase_03">ひとこと紹介3 テキスト</label>
+        <textarea name="team[one_phrase_03]" id="team_one_phrase_03">
+</textarea>
+      </li>
+      <li class="one-phrase-img">
+        <label class="clearfix" for="team_one_phrase_image_four">ひとこと紹介4 画像</label>
+        <input type="file" name="team[one_phrase_image_four]" id="team_one_phrase_image_four" />
+      </li>
+      <li class="one-phrase-text">
+        <label class="clearfix" for="team_one_phrase_04">ひとこと紹介4 テキスト</label>
+        <textarea name="team[one_phrase_04]" id="team_one_phrase_04">
+</textarea>
+      </li>
+      <li class="features">
+        <fieldset class="clearfix">
+          <legend>特長</legend>
+          <fieldset class="policy clearfix mr50">
+            <legend>起用方針（公式戦）<span>　※１つのみ選択可能</span></legend>
+            <label for="merit"><input type="checkbox" value="実力主義" name="team[search_attributes][appointment_policy][]" id="team_search_attributes_appointment_policy_" />実力主義</label>
+            <label for="equality"><input type="checkbox" value="平等主義" name="team[search_attributes][appointment_policy][]" id="team_search_attributes_appointment_policy_" />平等主義</label>
+            <label for="as-grade"><input type="checkbox" value="学年別に異る" name="team[search_attributes][appointment_policy][]" id="team_search_attributes_appointment_policy_" />学年別に異なる</label>
+          </fieldset>
+          <fieldset class="style">
+            <legend>プレイスタイル<span>　※１つのみ選択可能</span></legend>
+            <label for="personal"><input type="checkbox" value="個人技主体" name="team[search_attributes][playstyle][]" id="team_search_attributes_playstyle_" />個人技主体</label>
+            <label for="team-play"><input type="checkbox" value="チームプレイ主体" name="team[search_attributes][playstyle][]" id="team_search_attributes_playstyle_" />チームプレイ主体</label>
+            <label><input type="checkbox" value="フィジカル主体" name="team[search_attributes][playstyle][]" id="team_search_attributes_playstyle_" />フィジカル主体</label>
+            <label><input type="checkbox" value="バランス型" name="team[search_attributes][playstyle][]" id="team_search_attributes_playstyle_" />バランス型</label>
+          </fieldset>
+          <fieldset class="clearfix">
+            <legend>その他特徴<span>　※複数選択可能</span></legend>
+            <label for="foreignlang"><input type="checkbox" value="外国語教育" name="team[search_attributes][advantage][]" id="team_search_attributes_advantage_" />外国語教育</label>
+            <label for="girls"><input type="checkbox" value="女子選手多数" name="team[search_attributes][advantage][]" id="team_search_attributes_advantage_" />女子選手多数</label>
+            <label for="keeper"><input type="checkbox" value="キーパーコーチ在籍" name="team[search_attributes][advantage][]" id="team_search_attributes_advantage_" />キーパーコーチ在籍</label>
+            <label for="physical-coach"><input type="checkbox" value="フィジカルコーチ在籍" name="team[search_attributes][advantage][]" id="team_search_attributes_advantage_" />フィジカルコーチ在籍</label>
+            <label for="trainer"><input type="checkbox" value="トレーナー在籍" name="team[search_attributes][advantage][]" id="team_search_attributes_advantage_" />トレーナー在籍</label>
+          </fieldset>
+          <fieldset class="clearfix">
+            <legend>その他特徴<span>　※複数選択可能</span></legend>
+            <label><input type="checkbox" value="0円～2,000円未満" name="team[search_attributes][monthly_cost][]" id="team_search_attributes_monthly_cost_02000" />0円～2,000円未満</label>
+            <label><input type="checkbox" value="2,000円～4,000円未満" name="team[search_attributes][monthly_cost][]" id="team_search_attributes_monthly_cost_20004000" />2,000円～4,000円未満</label>
+            <label><input type="checkbox" value="4,000円～6,000円未満" name="team[search_attributes][monthly_cost][]" id="team_search_attributes_monthly_cost_40006000" />4,000円～6,000円未満</label>
+            <label><input type="checkbox" value="6,000円～8,000円未満" name="team[search_attributes][monthly_cost][]" id="team_search_attributes_monthly_cost_60008000" />6,000円～8,000円未満</label>
+            <label><input type="checkbox" value="8000円以上" name="team[search_attributes][monthly_cost][]" id="team_search_attributes_monthly_cost_8000" />8000円以上</label>
+          </fieldset>
+        </fieldset>
+      </li>
+<input type="hidden" value="1" name="team[search_attributes][id]" id="team_search_attributes_id" />      <li class="mail">
+        <label class="clearfix" for="email">メールアドレス<br>
+        <span class="required">※この項目は必ず入力してください。</span></label>
+        <input autocomplete="off" id="mail" type="email" value="test@test.com" name="team[email]" />
+      </li>
+      <li class="password-after">
+        <label class="clearfix" for="password">変更後パスワード<br>
+        <span class="required">※この項目は必ず入力してください。</span></label>
+          <input autocomplete="off" class="pass" id="password-after" type="password" name="team[password]" />
+      </li>
+      <li class="password-confirm">
+        <label class="clearfix" for="password_confirmation">変更後パスワード（確認）<br>
+        <span class="required">※この項目は必ず入力してください。</span></label>
+        <input autocomplete="off" class="pass-confirm" id="password-confirm" type="password" name="team[password_confirmation]" />
+      </li>
+      <input type="submit" name="commit" value="変更を保存する" />
+    </ul>
+</form>
 	</div>
 
 </body>

@@ -16,14 +16,14 @@
 	<header>
 		<h2><img src="../assets/images/mybo_logo.png"><span>管理ページ</span><strong><a target="_blank" href="">ログアウト</a></strong></h2>
 	</header>
-	<div class="leftmenu">	
+	<div class="leftmenu">
 		<ul class="left-top">
 			<li class="team-profile"><a href="user-prof.html">チームのプロフィールを<br>編集する</a></li>
-			<li class="team-profile-create"><a href="user-create.html">チームのプロフィールを<br>作成する</a></li>			
+			<li class="team-profile-create"><a href="user-create.html">チームのプロフィールを<br>作成する</a></li>
 			<li class="present"><a href="user-article.html">記事を作成する</a></li>
 			<li><a href="user-management.html">記事を管理する</a></li>
 			<li><a href="user-writer-management.html">ライター情報を管理する</a></li>
-			<li><a href="user-change-pass.html">パスワードを変更する</a></li>			
+			<li><a href="user-change-pass.html">パスワードを変更する</a></li>
 		</ul>
 		<div class="left-bottom">
 			<div class="left-bottom-img"><img class="js-imgresize" src="images/temporary/mainimg3.jpg"></div>
@@ -42,79 +42,78 @@
 					</ul>
 				</li>
 				<li class="article-tags">
-					<fieldset class="main-tag-selection">
-					<legend>記事につけるタグを選択してください。（３つまで選択可能）</legend>
-					<input id="training" type="checkbox">
-					<label for="training">トレーニング</label>
-					<input id="report" type="checkbox">
-					<label for="report">試合・大会レポート</label>
-					<input id="technic" type="checkbox">
-					<label for="technic">テクニック</label>
-					<input class="clearfix" id="commentary" type="checkbox">
-					<label for="commentary">試合解説</label>
-					<input id="education" type="checkbox">
-					<label for="education">教育</label>
-					<input id="movie" type="checkbox">
-					<label for="movie">動画</label>
-					<input class="clearfix" id="faq" type="checkbox">
-					<label for="faq">FAQ</label>
-					<input id="news" type="checkbox">
-					<label for="news">NEWS</label>
-					<input id="for-kids" type="checkbox">
-					<label for="for-kids">キッズ</label>
-					<input class="clearfix" id="for-junior-l" type="checkbox">
-					<label for="for-junior-l">ジュニア（低学年）</label>
-					<input id="for-junior-h" type="checkbox">
-					<label for="for-junior-h">ジュニア（高学年）</label>
-					<input id="for-junior-y" type="checkbox">
-					<label for="for-junior-y">ジュニアユース</label>
-					<input class="clearfix" id="for-youth" type="checkbox">
-					<label for="for-youth">ユース</label>
-					<input id="for-girls" type="checkbox">
-					<label for="for-girls">ガールズ</label>					
-					</fieldset>
-				</li>
-				<li class="main-title">
-					<label for="main-title">メインタイトル<span class="required">※この項目は必ず入力してください。</span></label>
-					<textarea id="main-title"></textarea>
-				</li>
-				<li class="uploads">
-					<fieldset class="uploads">
-					<legend>メイン画像／動画<span class="required fl-n">※画像／動画のいずれかは必ず入力してください。</span></legend>
-					<div>
-						<label for="upload-image">画像はこちらから</label><br>
-						<input id="upload-image" type="file" value="画像アップロード">
-					</div>
-					<div class="movie">
-						<label for="upload-movie">動画はこちらから<span class="foz12"><br>（動画サイトの埋め込みコードをペーストしてください。</span></label><br><textarea rows="5" cols="52"></textarea>
-					</div>
-					</fieldset>
-				</li>
-				<li class="main-text">
-					<label for="main-text">メイン文章<span class="required">※この項目は必ず入力してください。</span></label>
-					<textarea id="main-text" rows="5" cols="50"></textarea>
-				</li>
+		      <fieldset class="main-tag-selection">
+		      <p>現在付与されているラベル:  </p>
+		      <legend>記事につけるタグを選択してください。（３つまで選択可能）</legend>
+		      <label><input type="checkbox" name="article[label_list][]" id="article_label_list_" value="トレーニング" />トレーニング</label>
+		      <label><input type="checkbox" name="article[label_list][]" id="article_label_list_" value="試合・大会レポート" />試合・大会レポート</label>
+		      <label><input type="checkbox" name="article[label_list][]" id="article_label_list_" value="テクニック" />テクニック</label>
+		      <label><input type="checkbox" name="article[label_list][]" id="article_label_list_" value="試合解説" />試合解説</label>
+		      <label><input type="checkbox" name="article[label_list][]" id="article_label_list_" value="教育" />教育</label>
+		      <label><input type="checkbox" name="article[label_list][]" id="article_label_list_" value="動画" />動画</label>
+		      <label><input type="checkbox" name="article[label_list][]" id="article_label_list_" value="キッズ" />キッズ</label>
+		      <label><input type="checkbox" name="article[label_list][]" id="article_label_list_" value="ジュニア（低学年）" />ジュニア（低学年）</label>
+		      <label><input type="checkbox" name="article[label_list][]" id="article_label_list_" value="ジュニア（高学年）" />ジュニア（高学年）</label>
+		      <label><input type="checkbox" name="article[label_list][]" id="article_label_list_" value="ジュニアユース" />ジュニアユース</label>
+		      <label><input type="checkbox" name="article[label_list][]" id="article_label_list_" value="ユース" />ユース</label>
+		      <label><input type="checkbox" name="article[label_list][]" id="article_label_list_" value="ガールズ" />ガールズ</label>
 
-				<li class="writer-select">
-					<label for="main-text">ライター選択</label>
-					<select>
-						<option>ライター１</option>
-						<option>ライター２</option>
-						<option>ライター３</option>
-					</select>
-				</li>
+		      <label><input type="checkbox" name="article[label_list][]" id="article_label_list_" value="FAQ" />FAQ</label>
+		      <label><input type="checkbox" name="article[label_list][]" id="article_label_list_" value="NEWS" />NEWS</label>
 
-				<li class="add-buttons">記事を続ける場合は追加したい内容のボタンを押してください<br>
+		      </fieldset>
+		    </li>
+
+		    <li class="main-title">
+		    <label for="main-title">メインタイトル<span class="required">※この項目は必ず入力してください。</span></label>
+		    <textarea id="main-title" name="article[main_title]">
+		</textarea>
+		    </li>
+		    <li class="uploads">
+		    <fieldset class="uploads">
+		      <legend>メイン画像／動画<span class="required fl-n">※画像／動画のいずれかは必ず入力してください。</span></legend>
+		      <div>
+		      <label for="article_main_image">画像はこちらから</label><br>
+		      <input id="upload-image" type="file" name="article[main_image]" />
+		      </div>
+		      <div class="movie">
+		      <label for="article_main_movie_thumbnail">動画はこちらから</label>
+		        <span class="foz12"><br>
+		        （youtubeの埋め込みコードをペーストしてください。詳しくは<a href="https://support.google.com/youtube/answer/171780" target="_blank">こちら</a>）
+		      </span><br><textarea name="article[main_movie_thumbnail]" id="article_main_movie_thumbnail">
+		</textarea>
+		      </div>
+		      </fieldset>
+		    </li>
+		    <li class="main-text">
+		    <label for="article_main_text">メイン文章</label>
+		    <textarea id="main-text" name="article[main_text]" cols="50" rows="5">
+		</textarea>
+		    </li>
+
+
+		    <li class="writer-select">
+		      <label for="article_writer_id">ライター選択</label>
+		      <select name="article[writer_id]" id="article_writer_id"><option value=""></option>
+		<option value="1">testWriter1</option></select>
+		    </li>
+		    <li class="article-submitbutton">
+		      <ul>
+		        <li><input type="submit" name="draft" value="下書き" /></li>
+		        <li><input type="submit" name="public" value="公開" /></li>
+		      </ul>
+		    </li>
+		    <li class="add-buttons">記事を続ける場合は追加したい内容のボタンを押してください<br>
 					<button type="button" class="add-title">タイトルを増やす</button>
 					<button type="button" class="add-load">画像／動画を増やす</button>
 					<button type="button" class="add-text">文章を増やす</button>
-				</li>			
-			</ul>
+				</li>
+		  </ul>
 		</form>
 
 
 
-		
+
 	</div>
 
 </body>
