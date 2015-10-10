@@ -182,6 +182,13 @@ slider
 	background-size:cover;
 	background-position:center center;
 }
+#slider img{
+	display: none;
+}
+#slider .slider-content-wrap li.second-previous-slide img,
+#slider .slider-content-wrap li.second-next-slide img{
+	display: block;
+}
 #slider .slider-button{
 	position: absolute;
 	width: 30px;

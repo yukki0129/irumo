@@ -2,6 +2,7 @@ $(function(){
 /*――――――――――――――――――――
 slider
 ――――――――――――――――――――*/
+
 //マーカーをコンテンツ数ぶん追加する
 	$('#slider .slider-content').each(function(){
 		$('.slider-marker').append('<p>●');
@@ -48,12 +49,14 @@ slider
 		nextLeft = presentLeft + slideWidth;			
 		$('.previous-slide').css('left',previousLeft);
 		$('.next-slide').css('left',nextLeft);
-		$('.present-slide').css('left',presentLeft);	
+		$('.present-slide').css('left',presentLeft);
 	}
 	slidePositionFunc();
 	$(window).resize(function(){
 		slidePositionFunc();
 	});	
+	$('#slider img').css('display','block');
+
 //左右ボタン位置調整
 	function sliderButtonPositionFunc(){
 		var sliderButtonWidth = $('.slider-button').width();
@@ -94,6 +97,7 @@ slider
 				$('.next-slide').remove();
 				$('.slider-content-wrap li').removeClass().each(function(i){
 					$(this).addClass(newClassArray[i]);
+					$('#slider img').css('display','block');
 				});
 			});
 			var markerNum = slideNum + 1;//slideNumと同じ番号のマーカー
@@ -127,6 +131,7 @@ slider
 				$('.previous-slide').remove();
 				$('.slider-content-wrap li').removeClass().each(function(i){
 					$(this).addClass(newClassArray[i]);
+					$('#slider img').css('display','block');
 				});
 			});
 			var markerNum = slideNum + 1;
@@ -161,6 +166,7 @@ slider
 							$('.previous-slide').remove();
 							$('.slider-content-wrap li').removeClass().each(function(i){
 								$(this).addClass(newClassArray[i]);
+								$('#slider img').css('display','block');
 							});
 						});
 					}else if(slideNum == i + 1){
@@ -178,6 +184,7 @@ slider
 							$('.next-slide').remove();
 							$('.slider-content-wrap li').removeClass().each(function(i){
 								$(this).addClass(newClassArray[i]);
+								$('#slider img').css('display','block');								
 							});
 						});
 					}else if(slideNum <= i - 2){
@@ -199,6 +206,7 @@ slider
 							slideVolume = parseInt(slideVolume,10);
 							var newPosition = slideVolume - widthByDifference;
 							$('.next-slides' + counter).animate({left: newPosition},animateDuration,easing);
+							$('#slider img').css('display','block');
 						};
 						$('.present-slide').animate({left: presentLeft - widthByDifference},animateDuration,easing);
 						$('.next-slide').animate({left: nextLeft - widthByDifference},animateDuration,easing);
@@ -206,6 +214,7 @@ slider
 							$('.slider-content-wrap li:lt(-3)').remove();
 							$('.slider-content-wrap li').removeClass().each(function(i){
 								$(this).addClass(newClassArray[i]);
+								$('#slider img').css('display','block');								
 							});
 						});
 					}else if(slideNum >= i + 2){
@@ -225,7 +234,8 @@ slider
 							var slideVolume = $('.previous-slides' + counter).css('left');
 							slideVolume = parseInt(slideVolume,10);
 							var newPosition = slideVolume + widthByDifference;
-							$('.previous-slides' + counter).animate({left: newPosition},animateDuration,easing);						
+							$('.previous-slides' + counter).animate({left: newPosition},animateDuration,easing);
+							$('#slider img').css('display','block');
 						};
 						
 						$('.present-slide').animate({left: presentLeft + widthByDifference},animateDuration,easing);
@@ -234,6 +244,7 @@ slider
 							$('.slider-content-wrap li:gt(2)').remove();
 							$('.slider-content-wrap li').removeClass().each(function(i){
 								$(this).addClass(newClassArray[i]);
+								$('#slider img').css('display','block');								
 							});
 						});
 					};
@@ -267,6 +278,7 @@ slider
 				$('.previous-slide').remove();
 				$('.slider-content-wrap li').removeClass().each(function(i){
 					$(this).addClass(newClassArray[i]);
+					$('#slider img').css('display','block');					
 				});
 			});
 			var markerNum = slideNum + 1;
