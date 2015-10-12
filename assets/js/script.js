@@ -30,13 +30,17 @@ search-for-team
 	});
 
 	$('#search-for-team ul li.category').each(function(){
-		$(this).click(function(){
-			if($(this).children('span').is('.opened')){
-				$(this).children('span').html('OPEN<span>▽</span>');
+		$(this).click(function(e){
+			if($(e.target).is('a')){
+				/*aなら何もしない*/
 			}else{
-				$(this).children('span').html('CLOSE<span>△</span>');
+				if($(this).children('span').is('.opened')){
+					$(this).children('span').html('OPEN<span>▽</span>');
+				}else{
+					$(this).children('span').html('CLOSE<span>△</span>');
+				}
+				$(this).children('span').toggleClass('opened').next('ul').slideToggle();
 			}
-			$(this).children('span').toggleClass('opened').next('ul').slideToggle();
 		});
 	});
 
