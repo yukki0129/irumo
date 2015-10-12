@@ -1437,6 +1437,18 @@ search-result
 }
 
 /*---------------------
+pagination
+----------------------*/
+.pagination{
+	width: 660px;
+	text-align: center;
+	padding-top: 10px;
+}
+.pagination span{
+	margin-right: 10px;
+}
+
+/*---------------------
 column-result-containe
 ----------------------*/
 .column-result-container{
