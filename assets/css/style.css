@@ -1415,15 +1415,6 @@ search-result
 	font-family: "shin go medium";
 	color: #009145
 }
-.search-result-container ul li ul li{
-	background-color: lightgray;
-	color: #333;
-	padding: 3px;
-	float: left;
-	margin-right: 3px;
-	margin-bottom: 5px;
-	font-size: 10px;
-}
 .search-result-container .search-result-text p{
 	border-top: 1px solid #999;
 	padding-top: 3px;
@@ -1502,7 +1493,7 @@ column-result-containe
 }
 .column-result-container > ul{
 	width: 320px;
-	height: 200px;
+	min-height: 200px;
 	float: left;
 	background-color: #fff;
 	padding: 10px;
@@ -1805,14 +1796,6 @@ ranking
 
 
 /*team-tags*/
-.team-tags{
-	font-size: 20px;
-	font-family: "shin go regular";
-	letter-spacing: .1em;
-	border-bottom: 1px solid #ccc;
-	color: #E96000;
-	display: block;
-}
 .team-tags{
 	font-family: "shin go regular";
 	height: auto;
@@ -2292,7 +2275,7 @@ team-page
 }
 .team-page-introduction li div{
 	width: 310px;
-	height: 310px;
+	height: auto;
 	vertical-align: middle;
 	display: table-cell;
 	line-height: 0;
