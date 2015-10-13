@@ -1549,6 +1549,8 @@ title-banner
 }
 .title-banner .title-banner-inner img{
 	position: relative;
+	width: 100%;
+	top: -50%;
 }
 .title-banner .title-banner-inner .dot{
 	position: absolute;
