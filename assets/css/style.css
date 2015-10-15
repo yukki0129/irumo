@@ -736,7 +736,7 @@ movie-containers
 	margin-top: 5px;
 }
 #search-for-column .hotmovie .movie-description h4{
-	font-size: 16px;
+	font-size: 14px;
 	color: #009145;
 	margin-bottom: 5px;
 }
@@ -806,7 +806,7 @@ green-two
 .green-two li .green-two-text h4{
 	width: 163px;
 	color: #009145;
-	font-size: 16px;
+	font-size: 14px;
 	font-family: "Shin Go regular";
 	margin-bottom: 5px;
 	background-color: #fff;
@@ -895,7 +895,7 @@ green-three
 }
 .green-three li .green-three-text h4{
 	height: 55px;
-	font-size: 16px;
+	font-size: 14px;
 	font-family: "Shin Go regular";
 	margin-bottom: 5px;
 }
@@ -1393,7 +1393,7 @@ search-result
 }
 .search-result-container > ul{
 	width: 320px;
-	height: 200px;
+	min-height: 200px;
 	float: left;
 	background-color: #fff;
 	padding: 10px;
@@ -1517,7 +1517,7 @@ column-result-containe
 	line-height: 24px;
 }
 .column-result-container ul h3 a{
-	font-size: 20px;
+	font-size: 16px;
 	font-family: "shin go medium";
 	color: #009145
 }
@@ -1632,7 +1632,7 @@ tag-list
 	font-family: "shin go regular";
 }
 .search-result-display span{
-	font-size: 34px;
+	font-size: 28px;
 	color: #E96000;
 	margin-right: 3px;
 
@@ -1804,7 +1804,7 @@ ranking
 	float: left;
 	margin-right: 5px;
 	margin-bottom: 5px;
-	font-size: 12px;
+	font-size: 10px;
 	text-align: center;
 	padding: 2px 5px;
 	border-radius: 5px;
@@ -1949,7 +1949,7 @@ column-page
 }
 .column-page-title h2{
 	width: 660px;
-	font-size: 34px;
+	font-size: 28px;
 	line-height: 48px;
 	margin-bottom: 10px;
 	font-family: "shin go medium";
@@ -2082,7 +2082,7 @@ team-page
 }
 .team-page-title h2{
 	width: 660px;
-	font-size: 34px;
+	font-size: 28px;
 	line-height: 48px;
 	margin-bottom: 10px;
 	font-family: "shin go medium";
@@ -2133,7 +2133,7 @@ team-page
 	float: left;
 	margin-right: 5px;
 	margin-bottom: 5px;
-	font-size: 12px;
+	font-size: 10px;
 	text-align: center;
 	padding: 2px 5px;
 	border-radius: 5px;
