@@ -801,6 +801,7 @@ green-two
 }
 .green-two li .green-two-text{
 	width: 163px;
+	height: 120px;
 	float: left;
 }
 .green-two li .green-two-text h4{
@@ -810,41 +811,29 @@ green-two
 	font-family: "Shin Go regular";
 	margin-bottom: 5px;
 	background-color: #fff;
-}
-.green-two li .green-two-text p{
-	width: 163px;
-	font-size: 12px;
-	line-height: 20px;
-	border-top: 1px dotted #009145;
-	border-bottom: 1px dotted #009145;
-	background-color: #fff;
-}
-.green-two li .green-two-text h4,
-.green-two li .green-two-text p{
+	vertical-align: middle;
 	position: relative;
-	top: 10px;
-	-webkit-transition: background-color .5s, top .5s;
-	-o-transition: background-color .5s, top .5s;
-	transition: background-color .5s, top .5s;
+	top: 50%;
+	-webkit-transition: background-color .5s;
+	-o-transition: background-color .5s;
+	transition: background-color .5s;
+  -webkit-transform: translateY(-55%);
+  -ms-transform: translateY(-55%);
+  transform: translateY(-55%);
 }
 .green-two li:hover .green-two-text h4,
-.green-two li:hover .green-two-text p{
-	top: 0;
+.green-two li:hover .green-two-text a.green-two-link{
 	background-color: #fffF70;
 }
 .green-two li .green-two-text a.green-two-link{
 	font-size: 12px;
 	position: absolute;
-	bottom: -50px;
+	bottom: 10px;
 	right: 10px;
 	z-index: 3;
-	-webkit-transition: bottom .5s;
-	-o-transition: bottom .5s;
-	transition: bottom .5s;
-	background-color: #ffff70;
-}
-.green-two li:hover .green-two-text a.green-two-link{
-	bottom: 5px;
+	-webkit-transition: background-color .5s;
+	-o-transition: background-color .5s;
+	transition: background-color .5s;
 }
 .green-two li > a{
 	position: absolute;
