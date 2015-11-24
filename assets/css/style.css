@@ -877,12 +877,12 @@ green-three
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	padding: 10px;
+	padding: 4px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	color: white;
-	top: 145px;
+	top: 130px;
 	left: 0;
 	background-image: url(../images/bg1.gif);
 	background-color: rgba(0,145,69,.7);
@@ -895,7 +895,7 @@ green-three
 }
 .green-three li .green-three-text h4{
 	height: 55px;
-	font-size: 14px;
+	font-size: 16px;
 	font-family: "Shin Go regular";
 	margin-bottom: 5px;
 }
