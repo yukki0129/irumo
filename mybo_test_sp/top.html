@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/script.js"></script>
+
+
+</head>
+<body>
+	<div class="allwrapper">
+
+		<div class="top-header lineheightfix">
+			<a href="index.html"><img class="top-header--logo" src="assets/images/header_logo_top.png" width="183"></a>
+			<img class="top-header--image" src="assets/images/header_image.png">
+		</div><!-- top-header -->		
+
+		<div class="top-search-for-team">
+			<img class="top-search-for-team--bar" src="assets/images/bar_search-for_team_banner.png">
+
+			<div class="top-search-for-team--container  paddingX-10 whiteborder-bottom">
+				<h1 class="top-search-for-team--headline">県別に探す</h1>
+				<ul>
+					<li class="top-search-for-team--area rounded-top">
+						北海道・東北エリア
+						<span class="top-search-for-team--area--plus">＋</span>
+						<ul class="top-search-for-team--area--pref js-acordion">
+							<li class="top-search-for-team--area--pref--item">北海道</li>
+							<li class="top-search-for-team--area--pref--item">青森</li>
+							<li class="top-search-for-team--area--pref--item">秋田</li>
+							<li class="top-search-for-team--area--pref--item">山形</li>
+							<li class="top-search-for-team--area--pref--item">岩手</li>
+							<li class="top-search-for-team--area--pref--item">宮城</li>
+							<li class="top-search-for-team--area--pref--item">福島</li>
+						</ul>
+					</li>
+					<li class="top-search-for-team--area">
+						関東エリア
+						<span class="top-search-for-team--area--plus">＋</span>
+						<ul class="top-search-for-team--area--pref js-acordion">
+							<li class="top-search-for-team--area--pref--item">東京</li>
+							<li class="top-search-for-team--area--pref--item">神奈川</li>
+							<li class="top-search-for-team--area--pref--item">千葉</li>
+							<li class="top-search-for-team--area--pref--item">埼玉</li>
+							<li class="top-search-for-team--area--pref--item">群馬</li>
+							<li class="top-search-for-team--area--pref--item">栃木</li>
+							<li class="top-search-for-team--area--pref--item">茨城</li>
+						</ul>						
+					</li>
+					<li class="top-search-for-team--area">
+						北陸エリア
+						<span class="top-search-for-team--area--plus">＋</span>
+						<ul class="top-search-for-team--area--pref js-acordion">
+							<li class="top-search-for-team--area--pref--item">新潟</li>
+							<li class="top-search-for-team--area--pref--item">石川</li>
+							<li class="top-search-for-team--area--pref--item">福井</li>
+							<li class="top-search-for-team--area--pref--item">富山</li>
+						</ul>						
+					</li>
+					<li class="top-search-for-team--area">
+						中部エリア
+						<span class="top-search-for-team--area--plus">＋</span>
+						<ul class="top-search-for-team--area--pref js-acordion">
+							<li class="top-search-for-team--area--pref--item">愛知</li>
+							<li class="top-search-for-team--area--pref--item">三重</li>
+							<li class="top-search-for-team--area--pref--item">岐阜</li>
+							<li class="top-search-for-team--area--pref--item">静岡</li>
+							<li class="top-search-for-team--area--pref--item">山梨</li>
+							<li class="top-search-for-team--area--pref--item">長野</li>
+						</ul>						
+					</li>
+					<li class="top-search-for-team--area">
+						関西エリア
+						<span class="top-search-for-team--area--plus">＋</span>
+						<ul class="top-search-for-team--area--pref js-acordion">
+							<li class="top-search-for-team--area--pref--item">大阪</li>
+							<li class="top-search-for-team--area--pref--item">兵庫</li>
+							<li class="top-search-for-team--area--pref--item">京都</li>
+							<li class="top-search-for-team--area--pref--item">滋賀</li>
+							<li class="top-search-for-team--area--pref--item">奈良</li>
+							<li class="top-search-for-team--area--pref--item">和歌山</li>
+						</ul>						
+					</li>
+					<li class="top-search-for-team--area">
+						中国・四国エリア
+						<span class="top-search-for-team--area--plus">＋</span>
+						<ul class="top-search-for-team--area--pref js-acordion">
+							<li class="top-search-for-team--area--pref--item">広島</li>
+							<li class="top-search-for-team--area--pref--item">岡山</li>
+							<li class="top-search-for-team--area--pref--item">山口</li>
+							<li class="top-search-for-team--area--pref--item">島根</li>
+							<li class="top-search-for-team--area--pref--item">徳島</li>
+							<li class="top-search-for-team--area--pref--item">香川</li>
+							<li class="top-search-for-team--area--pref--item">愛媛</li>
+							<li class="top-search-for-team--area--pref--item">高知</li>
+						</ul>						
+					</li>
+					<li class="top-search-for-team--area rounded-bottom box-shadow">
+						九州・沖縄エリア
+						<span class="top-search-for-team--area--plus">＋</span>
+						<ul class="top-search-for-team--area--pref js-acordion">
+							<li class="top-search-for-team--area--pref--item">福岡</li>
+							<li class="top-search-for-team--area--pref--item">佐賀</li>
+							<li class="top-search-for-team--area--pref--item">長崎</li>
+							<li class="top-search-for-team--area--pref--item">熊本</li>
+							<li class="top-search-for-team--area--pref--item">大分</li>
+							<li class="top-search-for-team--area--pref--item">宮崎</li>
+							<li class="top-search-for-team--area--pref--item">鹿児島</li>
+							<li class="top-search-for-team--area--pref--item">沖縄</li>
+						</ul>						
+					</li>
+				</ul>
+			</div>
+			
+			<div class="top-search-for-team--container">
+				<h1 class="top-search-for-team--headline paddingX-10">特徴から探す</h1>
+				<ul class="top-search-for-team--feature">
+					<li class="top-search-for-team--feature--item rounded-all box-shadow">
+						<div class="js-feature-switch">起用方針<br>（公式戦）</div>
+						<ul class="js-feature feature">
+							<div class="feature-bg"></div>
+							<div class="feature--container">
+								<h2 class="feature--head">起用方針（公式戦）</h2>
+								<a class="feature--item">実力主義</a>
+								<a class="feature--item">平等主義</a>
+								<a class="feature--item">学年別に異なる</a>
+								<span class="feature--close">×</span>
+							</div>
+						</ul>
+					</li>
+					<li class="top-search-for-team--feature--item rounded-all box-shadow">
+						<div class="js-feature-switch">プレイ<br>スタイル</div>
+						<ul class="js-feature feature">
+							<div class="feature-bg"></div>						
+							<div class="feature--container">
+								<h2 class="feature--head">プレイスタイル</h2>
+								<a class="feature--item">個人技主体</a>
+								<a class="feature--item">チームプレイ主体</a>
+								<a class="feature--item">フィジカル主体</a>
+								<a class="feature--item">バランス型</a>
+								<span class="feature--close">×</span>
+							</div>
+						</ul>						
+					</li>
+					<li class="top-search-for-team--feature--item rounded-all box-shadow">
+						<div class="js-feature-switch">募集年代</div>
+						<ul class="js-feature feature">
+							<div class="feature-bg"></div>						
+							<div class="feature--container">
+								<h2 class="feature--head">募集年代</h2>
+								<a class="feature--item">キッズ</a>
+								<a class="feature--item">ジュニア（低学年）</a>
+								<a class="feature--item">ジュニア（高学年）</a>
+								<a class="feature--item">ジュニアユース</a>
+								<a class="feature--item">ユース</a>
+								<span class="feature--close">×</span>
+							</div>
+						</ul>						
+					</li>
+					<li class="top-search-for-team--feature--item rounded-all box-shadow margin-right-0">
+						<div class="js-feature-switch">その他<br>特徴</div>
+						<ul class="js-feature feature">
+							<div class="feature-bg"></div>						
+							<div class="feature--container">
+								<h2 class="feature--head">その他特徴</h2>
+								<a class="feature--item">女子選手多数</a>
+								<a class="feature--item">外国語教育</a>
+								<a class="feature--item">キーパーコーチ在籍</a>
+								<a class="feature--item">フィジカルコーチ在籍</a>
+								<a class="feature--item">トレーナー在籍</a>
+								<span class="feature--close">×</span>
+							</div>
+						</ul>						
+					</li>
+				</ul>	
+			</div>
+
+		</div><!-- top-search-for-team -->
+
+		<div class="top-read-article">
+			<img class="top-read-article--bar" src="assets/images/bar_read_article_banner.png">
+
+			<div class="top-read-article--pickup paddingX-10">
+				<div class="article-list">
+					<img class="sumb70-70" src="assets/images/temporary-sumb.png">
+					<div class="top-read-article--pickup--text">
+						<h1 class="sumbtitle color-green"><a href="article.html">シュート練習なんてもう古い？少年サッカーの練習メニューを考えるシュート練習なんてもう古い？少年サッカーの練習メニューを考える</a></h1>
+					</div>
+				</div>
+
+				<div class="article-list">
+					<img class="sumb70-70" src="assets/images/temporary-sumb.png">
+					<div class="top-read-article--pickup--text">
+						<h1 class="sumbtitle color-green">シュート練習なんてもう古い？少年サッカーの練習メニューを考えるシュート練習なんてもう古い？少年サッカーの練習メニューを考える</h1>
+					</div>
+				</div>
+
+				<div class="article-list">
+					<img class="sumb70-70" src="assets/images/temporary-sumb.png">
+					<div class="top-read-article--pickup--text">
+						<h1 class="sumbtitle color-green">シュート練習なんてもう古い？少年サッカーの練習メニューを考えるシュート練習なんてもう古い？少年サッカーの練習メニューを考える</h1>
+					</div>
+				</div>
+
+				<div class="article-list">
+					<img class="sumb70-70" src="assets/images/temporary-sumb.png">
+					<div class="top-read-article--pickup--text">
+						<h1 class="sumbtitle color-green">シュート練習なんてもう古い？少年サッカーの練習メニューを考えるシュート練習なんてもう古い？少年サッカーの練習メニューを考える</h1>
+					</div>
+				</div>
+
+				<div class="article-list">
+					<img class="sumb70-70" src="assets/images/temporary-sumb.png">
+					<div class="top-read-article--pickup--text">
+						<h1 class="sumbtitle color-green">シュート練習なんてもう古い？少年サッカーの練習メニューを考えるシュート練習なんてもう古い？少年サッカーの練習メニューを考える</h1>
+					</div>
+				</div>
+
+				<div class="article-list no-border">
+					<img class="sumb70-70" src="assets/images/temporary-sumb.png">
+					<div class="top-read-article--pickup--text">
+						<h1 class="sumbtitle color-green">シュート練習なんてもう古い？少年サッカーの練習メニューを考えるシュート練習なんてもう古い？少年サッカーの練習メニューを考える</h1>
+					</div>
+				</div>
+
+			</div><!-- top-read-article-pickup -->
+		</div><!-- top-read-article -->
+
+
+		<div class="footer dotback">
+			<div class="adsense">
+				adsense
+			</div>
+
+			<nav class="footer--nav paddingX-10">
+
+				<div class="footer--nav--item rounded-top">
+					<div class="footer--nav--item--icon">
+						<img class="footer--nav--item--icon--img" src="assets/images/icon_team.png">
+					</div>
+					<img class="footer--nav--item--logo" src="assets/images/icon_letter_team.png">
+					<p class="footer--nav--item--text">チームを探す</p>
+				</div>
+
+				<div class="footer--nav--item">
+					<div class="footer--nav--item--icon">
+						<img class="footer--nav--item--icon--img" src="assets/images/icon_column.png">
+					</div>
+					<img class="footer--nav--item--logo" src="assets/images/icon_letter_columns.png">
+					<p class="footer--nav--item--text">コラム一覧</p>
+				</div>
+
+				<div class="footer--nav--item">
+					<div class="footer--nav--item--icon">
+						<img class="footer--nav--item--icon--img" src="assets/images/icon_interview.png">
+					</div>
+					<img class="footer--nav--item--logo" src="assets/images/icon_letter_interview.png">
+					<p class="footer--nav--item--text">選手やコーチへのインタビュー</p>
+				</div>
+				
+				<div class="footer--nav--item">
+					<div class="footer--nav--item--icon">
+						<img class="footer--nav--item--icon--img" src="assets/images/icon_movie.png">
+					</div>
+					<img class="footer--nav--item--logo" src="assets/images/icon_letter_movie.png">
+					<p class="footer--nav--item--text">注目の動画を紹介！</p>
+				</div>
+
+				<div class="footer--nav--item">
+					<div class="footer--nav--item--icon">
+						<img class="footer--nav--item--icon--img" src="assets/images/icon_news.png">
+					</div>
+					<img class="footer--nav--item--logo" src="assets/images/icon_letter_news.png">
+					<p class="footer--nav--item--text">選りすぐりのサッカーの最新情報をお届け！</p>
+				</div>
+
+				<div class="footer--nav--item rounded-bottom no-border box-shadow">
+					<div class="footer--nav--item--icon">
+						<img class="footer--nav--item--icon--img" src="assets/images/icon_faq.png">
+					</div>
+					<img class="footer--nav--item--logo" src="assets/images/icon_letter_faq.png">
+					<p class="footer--nav--item--text">よくある質問をまとめました</p>
+				</div>																												
+			</nav>
+
+			<div class="greentop-container">
+				<div class="headline">
+					<img class="headline--img" src="assets/images/headline_team_page_ranking.png">
+					<h2 class="headline--text">チームページアクセスランキング</h2>
+				</div>
+
+				<div class="article-list">
+					<img class="footer--ranking--sumb sumb70-70" src="assets/images/temporary-sumb.png">
+					<img class="footer--ranking--badge" src="assets/images/ranking_badge_1.png">
+					<p class="sumbtitle">Football Community 千代田（FC千代田）Football Community 千代田（FC千代田）Football Community 千代田（FC千代田）</p>
+				</div>
+
+				<div class="article-list">
+					<img class="footer--ranking--sumb sumb70-70" src="assets/images/temporary-sumb.png">
+					<img class="footer--ranking--badge" src="assets/images/ranking_badge_2.png">
+					<p class="sumbtitle">Football Community 千代田（FC千代田）Football Community 千代田（FC千代田）Football Community 千代田（FC千代田）</p>
+				</div>
+
+				<div class="article-list">
+					<img class="footer--ranking--sumb sumb70-70" src="assets/images/temporary-sumb.png">
+					<img class="footer--ranking--badge" src="assets/images/ranking_badge_3.png">
+					<p class="sumbtitle">Football Community 千代田（FC千代田）Football Community 千代田（FC千代田）Football Community 千代田（FC千代田）</p>
+				</div>				
+
+				<div class="article-list">
+					<img class="footer--ranking--sumb sumb70-70" src="assets/images/temporary-sumb.png">
+					<img class="footer--ranking--badge" src="assets/images/ranking_badge_4.png">
+					<p class="sumbtitle">Football Community 千代田（FC千代田）Football Community 千代田（FC千代田）Football Community 千代田（FC千代田）</p>
+				</div>
+
+				<div class="article-list">
+					<img class="footer--ranking--sumb sumb70-70" src="assets/images/temporary-sumb.png">
+					<img class="footer--ranking--badge" src="assets/images/ranking_badge_5.png">
+					<p class="sumbtitle">Football Community 千代田（FC千代田）Football Community 千代田（FC千代田）Football Community 千代田（FC千代田）</p>
+				</div>
+
+				<div class="link-button greenbutton box-shadow">▶ 一覧を見る</div>
+			</div><!-- footer-ranking -->
+
+
+			<div class="greentop-container">
+				<div class="headline">
+					<img class="headline--img" src="assets/images/headline_team-column-ranking.png">
+					<h2 class="headline--text">チームコラムアクセスランキング</h2>
+				</div>
+
+				<div class="article-list">
+					<img class="footer--ranking--sumb sumb70-70" src="assets/images/temporary-sumb.png">
+					<img class="footer--ranking--badge" src="assets/images/ranking_badge_1.png">
+					<p class="sumbtitle">体重の乗せたシュートを打つ練習【FC千代田：岡田のシュー体重の乗せたシュートを打つ練習【FC千代田</p>
+				</div>
+
+				<div class="article-list">
+					<img class="footer--ranking--sumb sumb70-70" src="assets/images/temporary-sumb.png">
+					<img class="footer--ranking--badge" src="assets/images/ranking_badge_2.png">
+					<p class="sumbtitle">体重の乗せたシュートを打つ練習【FC千代田：岡田のシュー</p>
+				</div>
+
+				<div class="article-list">
+					<img class="footer--ranking--sumb sumb70-70" src="assets/images/temporary-sumb.png">
+					<img class="footer--ranking--badge" src="assets/images/ranking_badge_3.png">
+					<p class="sumbtitle">体重の乗せたシュートを打つ練習【FC千代田：岡田のシュー</p>
+				</div>				
+
+				<div class="article-list">
+					<img class="footer--ranking--sumb sumb70-70" src="assets/images/temporary-sumb.png">
+					<img class="footer--ranking--badge" src="assets/images/ranking_badge_4.png">
+					<p class="sumbtitle">体重の乗せたシュートを打つ練習【FC千代田：岡田のシュー</p>
+				</div>
+
+				<div class="article-list">
+					<img class="footer--ranking--sumb sumb70-70" src="assets/images/temporary-sumb.png">
+					<img class="footer--ranking--badge" src="assets/images/ranking_badge_5.png">
+					<p class="sumbtitle">体重の乗せたシュートを打つ練習【FC千代田：岡田のシュー</p>
+				</div>
+
+				<div class="link-button greenbutton box-shadow">▶ 一覧を見る</div>
+			</div><!-- footer-ranking -->			
+
+			<div class="js-to-top footer--to-top lineheightfix">
+				<img class="footer--to-top--item" src="assets/images/bar_to_top.png">
+			</div>
+
+			<div class="footer--bottom">
+				<img class="footer--bottom--logo" src="assets/images/footer_logo.png">
+				
+				<div class="footer--bottom--sns">
+					
+				</div>
+				
+				<div class="footer--bottom--links">
+						<p>マイボ！について｜広告掲載について｜マイボ！のポリシー</p>
+						<p>お問い合せ｜会社概要｜個人情報保護方針｜利用規約	</p>
+						<p>相互リンク用バナー</p>
+				</div>
+
+				<p class="footer--bottom--copyright">&copy;2016 myball.jp</p>
+			</div>
+
+		</div><!-- footer -->
+	</div><!-- allwrapper -->
+
+
+</body>
+</html>
