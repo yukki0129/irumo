@@ -366,6 +366,34 @@ article
 	padding-top: 5px;
 }
 
+.top--sns{
+	margin-top: 5px;
+	padding-top: 5px;
+	padding-left: 5px;
+	width: 100%;
+}
+
+.article--sns{
+	border-radius: 10px;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	padding-top: 10px;
+	text-align: center;
+}
+.article--sns.article{
+	background-color: #F4E7DC;	
+	margin-bottom: 20px;
+}
+.article--sns.team{
+	background-color: white;	
+}
+.article--sns--item{
+	width: 30%;
+	margin-right: 2%;
+}
+
+
+
 /*----------
 team
 ----------*/
@@ -781,6 +809,13 @@ footer
 	padding-bottom: 5px;
 }
 
+.footer--bottom--sns{
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+
+
 /*----------
 inquiry
 ----------*/
@@ -1021,6 +1056,15 @@ set
 }
 .rounded-top{
 	border-radius: 10px 10px 0px 0px;
+}
+.sns--item{
+	display: inline-block;
+	margin: 0 5px;
+	position: relative;
+	vertical-align: middle;
+}
+.sns--item.fb-share-button{
+	top: -3px;
 }
 .sumb70-70{
 	float: left;

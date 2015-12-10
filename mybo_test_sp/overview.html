@@ -11,6 +11,14 @@
 
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 	<div class="allwrapper">
 
 		<div class="header">
@@ -225,14 +233,24 @@
 			<div class="footer--bottom">
 				<img class="footer--bottom--logo" src="assets/images/footer_logo.png">
 				
+				
 				<div class="footer--bottom--sns">
-					
-				</div>
+					<div class="sns--item fb-share-button" data-href="http://myball.jp/" data-layout="button_count">
+					</div><!-- facebook -->
+
+					<div class="sns--item">
+						<a href="https://twitter.com/share" class="twitter-share-button"{count}>Tweet</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+					</div><!-- twitter -->
+
+					<div class="sns--item">
+						<a href="http://b.hatena.ne.jp/entry/http://myball.jp/" class="hatena-bookmark-button" data-hatena-bookmark-title="マイボ！" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+					</div><!-- hatena -->
+				</div><!-- sns -->
 				
 				<div class="footer--bottom--links">
 						<p>マイボ！について｜広告掲載について｜マイボ！のポリシー</p>
 						<p>お問い合せ｜会社概要｜個人情報保護方針｜利用規約	</p>
-						<p>相互リンク用バナー</p>
 				</div>
 
 				<p class="footer--bottom--copyright">&copy;2016 myball.jp</p>
