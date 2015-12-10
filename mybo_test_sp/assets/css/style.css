@@ -367,6 +367,9 @@ article
 }
 
 .top--sns{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	margin-top: 5px;
 	padding-top: 5px;
 	padding-left: 5px;
