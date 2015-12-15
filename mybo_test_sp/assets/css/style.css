@@ -66,6 +66,33 @@ top-header
 }
 
 /*----------
+breadcrumb
+----------*/
+.breadcrumb{
+/*	background-color: #F9F3E9;*/
+	border-top: 1px solid #009145;
+	height: 28px;
+	width: 100%;
+}
+.breadcrumb ul{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 28px;
+	padding-left: 10px;
+	padding-top: 2px;
+	width: 100%;
+}
+.breadcrumb ul li{
+	color: #009145;
+	display: inline-block;
+	float: left;
+	font-size: 12px;
+	font-size: 1.2rem;
+}
+
+
+/*----------
 .top-search-for-team
 ----------*/
 .top-search-for-team{
@@ -311,6 +338,7 @@ article
 .article--list{
 	border-bottom: 1px dotted #009145;
 	border-top: 1px dotted #009145;
+	position: relative;
 	padding: 0 10px 0 30px;
 }
 .article--list--item{
@@ -672,6 +700,42 @@ team
 	width: 36px;
 }
 
+.team--inquiry{
+	overflow: auto;
+	padding-bottom: 20px;
+	width: 100%;
+}
+.team--inquiry--item{
+	background-color: #E86000;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 10px;
+	color: white;
+	font-size: 14px;
+	font-size: 1.4rem;
+	font-weight: bold;
+	height: 68px;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	width: 48%;
+}
+.team--inquiry--item.left{
+	float: left;
+}
+.team--inquiry--item.right{
+	float: right;
+}
+.team--inquiry--item--text{
+	display: inline-block;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
 /*----------
 header
 ----------*/
@@ -744,7 +808,7 @@ footer
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-top: 16px;
-
+	position: relative;
 }
 .footer--nav--item--icon{
 	float: left;
@@ -817,7 +881,16 @@ footer
 	width: 100%;
 }
 
-
+/*----------
+full-link
+----------*/
+.full-link{
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
 
 /*----------
 inquiry
@@ -934,6 +1007,7 @@ button
 	margin: 10px auto;
 	text-align: center;
 	padding: 20px;
+	position: relative;
 	width: 70%;
 }
 .greenbutton{

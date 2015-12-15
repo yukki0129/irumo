@@ -34,4 +34,8 @@ $(function(){
 		$('body,html').stop().scrollTop(0);
 	});
 
+	$('.js-breadcrumb ul li:not("li:last-of-type")').each(function(){
+		$(this).append('＞ ');
+	});
+
 });
