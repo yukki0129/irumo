@@ -230,7 +230,6 @@ breadcrumb
 	position: absolute;
 	right: 10px;
 	top: 5px;
-
 }
 /*----------
 .top-read-for-article
@@ -443,6 +442,30 @@ team
 	font-size: 1.4rem;
 	margin-bottom: 10px;
 }
+.team--inquiry-form{
+	background-color: white;
+	border-radius: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 80%;
+	left: 5%;
+	overflow: scroll;
+	padding: 10px;
+	position: fixed;
+	top: 10%;
+	width: 90%;
+	z-index: 3;
+}
+.team--inquiry-bg{
+	background-color: rgba(51,51,51,.7);
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}
 
 .detail--container{
 	display: inline-block;
@@ -634,6 +657,11 @@ team
 	color: #E86000;
 	font-size: 18px;
 	font-size: 1.8em;
+}
+.search--submit{
+	line-height: 0;
+	-webkit-appearance: none;
+	width: 100%;
 }
 .category{
 	position: relative;
@@ -917,7 +945,7 @@ inquiry
 .inquiry-form--item--input{
 	float: right;
 	padding: 2px;
-	width: 180px;
+	width: 50%;
 }
 .inquiry-form--item--input.textarea{
 	float: none;
@@ -1184,12 +1212,10 @@ set
 /*----------
 js
 ----------*/
-.js-acordion{
-	display: none;
-}
-.js-feature{
-	display: none;
-}
-.js-search{
+.js-acordion,
+.js-feature,
+.js-search,
+.js-team-inquiry,
+.js-team-inquiry-bg{
 	display: none;
 }
