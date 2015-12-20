@@ -566,20 +566,29 @@ team
 	color: #999;
 	content: '▼';
 	display: inline-block;
-	position: absolute;
-	top: 7px;
-	right: 10px;
+	position: relative;
+	top: -27px;
+	right: -90%;
 }
 .search--button--select{
 	-moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-	border: 0;  
+  background: white no-repeat;
+	border: 0;
 	font-size: 16px;
 	font-size: 1.6rem;
 	font-weight: bold;	
   height: 100%;
   width: 100%;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.search--button--select option{
+	background-color: #fff;
+	background-image: none;
+	-webkit-box-shadow: none;
+  box-shadow: none;
 }
 .search--left{
 	float: left;
