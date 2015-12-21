@@ -1,13 +1,12 @@
 $(function(){
 
-	$('.js-acordion').parents('li').click(function(event){
-		var target = $(event.target);
-			$(this).children('.js-acordion').slideToggle(200,'swing').prev('span').toggleClass('open');
-			if($(this).children('span').is('.open')){
-				$(this).children('span').text('−');
-			}else{
-				$(this).children('span').text('＋');
-			}
+	$('.js-acordion-triger').click(function(){
+		$(this).siblings('.js-acordion').slideToggle(200,'swing').prev('.js-acordion-plus').toggleClass('open');
+		if($(this).siblings('.js-acordion-plus').is('.open')){
+			$(this).siblings('.js-acordion-plus').text('−');
+		}else{
+			$(this).siblings('.js-acordion-plus').text('＋');
+		}
 	});
 
 	$('.js-search-switch').click(function(){

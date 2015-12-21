@@ -124,20 +124,26 @@ breadcrumb
 	padding-top: 7px;
 	padding-left: 10px;
 	padding-right: 10px;
+	position: relative;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;	
 	margin-bottom: 1px;
 	width: 100%;
 }
+.top-search-for-team--area--label{
+	display: block;
+	height: 100%;
+	width: 100%;
+}
 .top-search-for-team--area--plus{
 	color: #b2a8a1;
-	float: right;
 	font-size: 18px;
 	font-size: 1.8rem;
 	font-weight: normal;
-	position: relative;
-	top: -3px;
+	position: absolute;
+	right: 10px;
+	top: 3px;
 }
 .top-search-for-team--area--pref{
 	background-color: #fff;
@@ -1227,4 +1233,8 @@ js
 .js-team-inquiry,
 .js-team-inquiry-bg{
 	display: none;
+}
+.js-acordion-triger{
+	display: block;
+	width: 100%;
 }
