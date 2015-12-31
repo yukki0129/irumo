@@ -1193,13 +1193,21 @@ set
 	width: 70px;
 }
 .sumbtitle{
+	display: table-cell;
 	font-size: 16px;
 	font-size: 1.6rem;
+	font-weight: bold;
+	height: 70px;
 	line-height: 20px;
 	line-height: 2rem;
-	font-weight: bold;
 	position: relative;
 	top: -.2rem;
+	vertical-align: middle;
+}
+.sumbtitle.ranking-title{
+	display: table-cell;
+	height: 70px;
+	vertical-align: middle;
 }
 .sumbdate{
 	color: #999999;
