@@ -1214,6 +1214,7 @@ set
 	font-size: 10px;
 	font-size: 1.0rem;
 	font-weight: normal;
+	display: table-cell;
 }
 .textoverflow-hidden{
 	overflow: hidden;
